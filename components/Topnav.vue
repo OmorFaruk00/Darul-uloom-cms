@@ -16,7 +16,7 @@
             </div>
             <div class="user-text">
               <h4 class="pt-3">{{ $auth.user.name }}</h4>
-              <p >{{ $auth.user.rel_designation.designation }}</p>
+              <p >{{ $auth.user.rel_designation?$auth.user.rel_designation:'' }}</p>
             </div>
             <button class="btn-logout" @click="logout">Log out</button>
           </div>
@@ -34,7 +34,7 @@ export default {
     }
   },
 
-  mounted() {    
+  mounted() {
     //toggle sidebar
     $("#menu-toggle").click(function (e) {
       e.preventDefault();
@@ -45,7 +45,7 @@ export default {
     userprofile() {
       document.getElementById("user").classList.toggle("show");
     },
-   
+
 
     logout() {
       this.$auth.logout().then(response => {

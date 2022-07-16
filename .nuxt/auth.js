@@ -42,7 +42,7 @@ export default function (ctx, inject) {
   // Register strategies
   // laravelSanctum
   $auth.registerStrategy('laravelSanctum', new CookieScheme($auth, {
-  "url": "http://localhost:8001",
+  "url": "http://localhost:8000",
   "token": {
     "property": "token",
     "global": true,
@@ -61,7 +61,7 @@ export default function (ctx, inject) {
         "Content-Type": "application/json",
         "Accept": "application/json"
       },
-      "url": "http://localhost:8001/sanctum/csrf-cookie"
+      "url": "http://localhost:8000/sanctum/csrf-cookie"
     },
     "login": {
       "withCredentials": true,
@@ -70,7 +70,7 @@ export default function (ctx, inject) {
         "Content-Type": "application/json",
         "Accept": "application/json"
       },
-      "url": "http://localhost:8001/api/login",
+      "url": "http://localhost:8000/api/login",
       "method": "post"
     },
     "logout": {
@@ -80,7 +80,7 @@ export default function (ctx, inject) {
         "Content-Type": "application/json",
         "Accept": "application/json"
       },
-      "url": "http://localhost:8001/api/logout",
+      "url": "http://localhost:8000/api/logout",
       "method": "post"
     },
     "user": {
@@ -90,7 +90,7 @@ export default function (ctx, inject) {
         "Content-Type": "application/json",
         "Accept": "application/json"
       },
-      "url": "http://localhost:8001/api/user",
+      "url": "http://localhost:8000/api/user",
       "method": "get"
     }
   },
