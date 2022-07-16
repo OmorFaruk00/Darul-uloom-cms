@@ -2,9 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
-import scrollBehavior from './router.scrollBehavior.js'
-
-const _bff9b9cc = () => interopDefault(import('../pages/account/index.vue' /* webpackChunkName: "pages/account/index" */))
+import scrollBehavior from './router.scrollBehavior.js'bff9b9cc = () => interopDefault(import('../pages/account/index.vue' /* webpackChunkName: "pages/account/index" */))
 const _4275d176 = () => interopDefault(import('../pages/admission/index.vue' /* webpackChunkName: "pages/admission/index" */))
 const _78bf08cb = () => interopDefault(import('../pages/app.vue' /* webpackChunkName: "pages/app" */))
 const _1f1dcec8 = () => interopDefault(import('../pages/dum-ac/index.vue' /* webpackChunkName: "pages/dum-ac/index" */))
@@ -76,29 +74,36 @@ export const routerOptions = {
     name: "account"
   }, {
     path: "/admission",
-    component: _4275d176,
+    component: _03b8fec9,
     name: "admission"
   }, {
     path: "/app",
-    component: _78bf08cb,
+    component: _4ff55a9e,
     name: "app"
   }, {
     path: "/dum-ac",
-    component: _1f1dcec8,
+    component: _6b4e2429,
     name: "dum-ac"
   }, {
     path: "/employee",
-    component: _68d6c877,
+    component: _bec1b678,
     name: "employee"
   }, {
     path: "/profile",
-    component: _3fdc10d4,
+    component: _7e5344ae,
     name: "profile"
   }, {
     path: "/student",
-    component: _094c3cb0,
+    component: _47c3708a,
     name: "student"
   }, {
+    path: "/account/class",
+    component: _9f55725a,
+    name: "account-class"
+  }, {
+    path: "/account/purpose",
+    component: _584eb2b9,
+    name: "account-purpose"
     path: "/admission/admissionInActiveBatch",
     component: _31236216,
     name: "admission-admissionInActiveBatch"
@@ -112,83 +117,83 @@ export const routerOptions = {
     name: "admission-department"
   }, {
     path: "/admission/form-import",
-    component: _d353031c,
+    component: _8f2dbcf6,
     name: "admission-form-import"
   }, {
     path: "/admission/form-sale",
-    component: _97d25958,
+    component: _cae5c1b2,
     name: "admission-form-sale"
   }, {
     path: "/admission/form-stock",
-    component: _22fdd159,
+    component: _0b50ffe6,
     name: "admission-form-stock"
   }, {
     path: "/dum-ac/blog",
-    component: _2f8ce56a,
+    component: _6566b1de,
     name: "dum-ac-blog"
   }, {
     path: "/dum-ac/committee",
-    component: _af4473ec,
+    component: _6ec0f552,
     name: "dum-ac-committee"
   }, {
     path: "/dum-ac/contact",
-    component: _ec440f2c,
+    component: _7cb35692,
     name: "dum-ac-contact"
   }, {
     path: "/dum-ac/event",
-    component: _f5f12c32,
+    component: _a5025098,
     name: "dum-ac-event"
   }, {
     path: "/dum-ac/facilitie",
-    component: _1c49947f,
+    component: _3c8b53cc,
     name: "dum-ac-facilitie"
   }, {
     path: "/dum-ac/gallery",
-    component: _3499841f,
+    component: _1cecb2ac,
     name: "dum-ac-gallery"
   }, {
     path: "/dum-ac/notice",
-    component: _e54c44fe,
+    component: _73d02954,
     name: "dum-ac-notice"
   }, {
     path: "/dum-ac/program",
-    component: _48a254d1,
+    component: _30f5835e,
     name: "dum-ac-program"
   }, {
     path: "/dum-ac/slider",
-    component: _298a884a,
+    component: _1000d41d,
     name: "dum-ac-slider"
   }, {
     path: "/dum-ac/tution",
-    component: _eb70d104,
+    component: _70bde351,
     name: "dum-ac-tution"
   }, {
     path: "/employee/department",
-    component: _3af8abc0,
+    component: _03e4e55a,
     name: "employee-department"
   }, {
     path: "/employee/designation",
-    component: _4b5b78df,
+    component: _2a3a6ca8,
     name: "employee-designation"
   }, {
     path: "/employee/employee",
-    component: _2221a4dc,
+    component: _0a17cf2f,
     name: "employee-employee"
   }, {
     path: "/employee/office-time",
-    component: _e1bd1134,
+    component: _2ea8c833,
     name: "employee-office-time"
   }, {
     path: "/profile/qualification",
-    component: _33ac7e76,
+    component: _f5e1716e,
     name: "profile-qualification"
   }, {
     path: "/profile/social",
-    component: _28f4c8c8,
+    component: _584e6bae,
     name: "profile-social"
   }, {
     path: "/profile/training",
-    component: _25a963c9,
+    component: _45eb2316,
     name: "profile-training"
   }, {
     path: "/profile/update",
@@ -208,59 +213,59 @@ export const routerOptions = {
     name: "admission-department-create"
   }, {
     path: "/dum-ac/blog/create",
-    component: _46ac66d3,
+    component: _6f23d4a0,
     name: "dum-ac-blog-create"
   }, {
     path: "/dum-ac/committee/create",
-    component: _e9e17418,
+    component: _73057047,
     name: "dum-ac-committee-create"
   }, {
     path: "/dum-ac/event/create",
-    component: _439a1db7,
+    component: _2a10698a,
     name: "dum-ac-event-create"
   }, {
     path: "/dum-ac/facilitie/create",
-    component: _d6c573c2,
+    component: _7c937072,
     name: "dum-ac-facilitie-create"
   }, {
     path: "/dum-ac/notice/create",
-    component: _45961d5d,
+    component: _2de94bea,
     name: "dum-ac-notice-create"
   }, {
     path: "/dum-ac/program/create",
-    component: _1946dfe6,
+    component: _156f3320,
     name: "dum-ac-program-create"
   }, {
     path: "/dum-ac/slider/create",
-    component: _2f7acbb4,
+    component: _17cdfa41,
     name: "dum-ac-slider-create"
   }, {
     path: "/dum-ac/tution/create",
-    component: _3340ba00,
+    component: _629a5ce6,
     name: "dum-ac-tution-create"
   }, {
     path: "/employee/department/create",
-    component: _4bd116fe,
+    component: _294f306a,
     name: "employee-department-create"
   }, {
     path: "/employee/designation/create",
-    component: _47c7edbf,
+    component: _cdaa92dc,
     name: "employee-designation-create"
   }, {
     path: "/employee/employee/create",
-    component: _49c74162,
+    component: _6096616f,
     name: "employee-employee-create"
   }, {
     path: "/profile/qualification/create",
-    component: _69979b08,
+    component: _448dec95,
     name: "profile-qualification-create"
   }, {
     path: "/profile/social/create",
-    component: _a63bbabc,
+    component: _62167496,
     name: "profile-social-create"
   }, {
     path: "/profile/training/create",
-    component: _91913fd6,
+    component: _c1a4eb30,
     name: "profile-training-create"
   }, {
     path: "/admission/batch/update/:id?",
@@ -268,23 +273,23 @@ export const routerOptions = {
     name: "admission-batch-update-id"
   }, {
     path: "/dum-ac/committee/update/:id",
-    component: _56181728,
+    component: _2656bd3f,
     name: "dum-ac-committee-update-id"
   }, {
     path: "/employee/employee/detail/:id?",
-    component: _01ba6062,
+    component: _469e9c22,
     name: "employee-employee-detail-id"
   }, {
     path: "/employee/employee/update/:id?",
-    component: _374488da,
+    component: _123ada67,
     name: "employee-employee-update-id"
   }, {
     path: "/admission/print-receive/:id?",
-    component: _21940a12,
+    component: _72f6d2e5,
     name: "admission-print-receive-id"
   }, {
     path: "/",
-    component: _0ae5cb08,
+    component: _451378e2,
     name: "index"
   }],
 
