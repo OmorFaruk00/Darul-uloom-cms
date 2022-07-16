@@ -1,3 +1,4 @@
+require('dotenv').config()
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -15,7 +16,7 @@ export default {
       // {rel: 'icon', type: 'image/x-icon', href: '/favicon.png'},
       {rel: 'stylesheet', id: 'bootstrap-style', href: '/css/bootstrap.min.css'},
       {rel: 'stylesheet', id: 'font-awesome-style', href: '/css/font-awesome.min.css'},
-      // {rel: 'stylesheet', id: 'style-style', href: '/css/style.css'},
+      {rel: 'stylesheet', id: 'style-style', href: '/css/style.css'},
 
 
 
@@ -34,8 +35,9 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-   '@/assets/css/main.css',
+
+  css: [   
+  //  '@/assets/css/main.css',
   //  '/css/font-awesome.min.css',
 
 
@@ -44,8 +46,9 @@ export default {
 
 
   plugins: [
-    {src: 'plugins/owl.js', ssr: false},
+    {src: '~/plugins/owl.js', ssr: false},
     {src: '~/plugins/vue-toaster.js', ssr: false},
+    {src: '~/plugins/fontawesome.js', ssr: false},
   ],
 
 
@@ -76,7 +79,8 @@ export default {
     strategies: {
       laravelSanctum: {
         provider: 'laravel/sanctum',
-        url: 'http://localhost:8001',
+        // url: 'https://api.darululoom-moniram.com',
+        url: 'http://localhost:8000',
         token: {
           property: 'token',
           global: true,
@@ -102,10 +106,11 @@ export default {
         }
   },
 
+ 
+  axios: {   
+    baseURL: 'http://localhost:8000/api',
+    // baseURL: 'https://api.darululoom-moniram.com/api',
 
-
-  axios: {
-    baseURL: 'http://localhost:8001/api',
     credentials: true
   },
 
@@ -116,6 +121,7 @@ export default {
     '@nuxtjs/auth-next',
     'bootstrap-vue/nuxt',
     'nuxt-sweetalert2',
+    '@nuxtjs/dotenv',
   ],
 
 

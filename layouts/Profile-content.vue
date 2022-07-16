@@ -2,9 +2,10 @@
   <div>
     <Topnav />
     <div class="d-flex" id="wrapper">
-      <div class=" " id="sidebar-wrapper">
+      <div class="" id="sidebar-wrapper">
         <div class="list-group sidebar">
           <nuxt-link class="sidebar-item" to="/profile"><img src="/images/profile.png" alt="" /> Profile</nuxt-link>
+          <nuxt-link class="sidebar-item" to="/profile/update"><img src="/images/profile-edit.png" alt="" /> Upadte Profile</nuxt-link>
           <nuxt-link class="sidebar-item" to="/profile/qualification"><img src="/images/qualification.png" alt="" /> Academic Qualification</nuxt-link>
           <nuxt-link class="sidebar-item" to="/profile/social"><img src="/images/social.png" alt="" /> Social Contact
           </nuxt-link>
@@ -14,7 +15,7 @@
       <!-- /#sidebar-wrapper -->
       <!-- Page Content -->
       <div id="page-content-wrapper">
-        <div class="container-fluid">
+        <div class="container-fluid ">
           <router-view />
         </div>
       </div>
@@ -28,8 +29,12 @@
 export default {};
 </script>
 <style scoped>
+.main{
+  overflow: scroll;
+}
+  
 .sidebar {
-  line-height: 50px;  
+  line-height: 50px;
   
 }
 
@@ -54,13 +59,11 @@ img {
 
 #sidebar-wrapper {
   min-height: 100vh;
-  margin-left: -15rem;
-  -webkit-transition: margin 0.25s ease-out;
-  -moz-transition: margin 0.25s ease-out;
-  -o-transition: margin 0.25s ease-out;
-  transition: margin 0.25s ease-out;
-  padding-top: 58px;
+  padding-top: 50px;  
   background: #f6f6f6;
+  
+ 
+
 }
 
 #menu-toggle {
@@ -114,5 +117,6 @@ img {
 
 #page-content-wrapper {
   background-color: #fff !important;
+ 
 }
 </style>

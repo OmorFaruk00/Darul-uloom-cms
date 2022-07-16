@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h3 class="py-5 title">Welcome To Employee Management System</h3>
+        <h3 class="py-5 text-center font-weight-bold">Welcome To Employee Management System</h3>
         
     </div>
 </template>

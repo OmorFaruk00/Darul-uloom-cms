@@ -1,7 +1,7 @@
 <template>
     <div class="form-bg pt-5">
         <div class="container">
-            <div class="form-container offset-md-2  col-md-8">
+            <div class="form-shadow p-5 offset-md-2  col-md-8">
                 <div class="form-horizontal">
                     <div class="form-group">
                         <label>Start Sl No</label>
@@ -11,7 +11,7 @@
                     <div class="form-group">
                         <label>End Sl No</label>
                         <input type="text" class="form-control" v-model="form.end" @keyup="slEnd" />
-                        />
+                        
                         <h6 v-if="errors.end" v-text="errors.end[0]" class="text-danger"></h6>
                     </div>
                     <div class="form-group">

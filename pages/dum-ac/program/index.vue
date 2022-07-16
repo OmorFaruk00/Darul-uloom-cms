@@ -31,7 +31,7 @@
                     <td>{{ program.id }}</td>
                     <td>{{ program.name }}</td>
                     <td>{{ program.duration }}</td>
-                    <td><img :src="'http://localhost:8000/images/dum/' + program.image" alt="image" style="height:80px" />
+                    <td><img :src="base_url + '/images/dum/' + program.image" alt="image" style="height:80px" />
                     </td>
                     <td>
                       <button v-if="program.status == 1" class="btn-active" @click="programStatus(program.id)">
@@ -72,18 +72,18 @@
                 <input type="text" class="form-control" id="name" placeholder="Title" v-model="program.name" />
                 <p v-if="errors.title" v-text="errors.title[0]" class="text-danger"></p>
               </div>
-               <div class="form-group">
-                    <label>Duration</label>
-                    <select class="form-control" v-model="program.duration">
-                        <option disabled selected value="">Select Duration</option>
-                        <option value="1 Year">1 Year</option>
-                        <option value="2 Year">2 Year</option>
-                        <option value="3 Year">3 Year</option>
-                        <option value="4 Year">4 Year</option>
-                        
-                    </select>
-                    <h6 v-if="errors.duration" v-text="errors.duration[0]" class="text-danger"></h6>
-          </div>
+              <div class="form-group">
+                <label>Duration</label>
+                <select class="form-control" v-model="program.duration">
+                  <option disabled selected value="">Select Duration</option>
+                  <option value="1 Year">1 Year</option>
+                  <option value="2 Year">2 Year</option>
+                  <option value="3 Year">3 Year</option>
+                  <option value="4 Year">4 Year</option>
+
+                </select>
+                <h6 v-if="errors.duration" v-text="errors.duration[0]" class="text-danger"></h6>
+              </div>
               <div class="form-group">
                 <label for="" class="">Image</label>
                 <input required type="file" id="program_image" class="form-control" name="image"
@@ -114,9 +114,10 @@ export default {
         name: "",
         duration: "",
         new_image: "",
-       
+
       },
       errors: {},
+      base_url: process.env.url
     };
   },
   methods: {
@@ -147,9 +148,9 @@ export default {
       let formData = new FormData();
       formData.append('name', this.program.name)
       formData.append('duration', this.program.duration)
-      if(this.program.new_image) {
+      if (this.program.new_image) {
         formData.append('image', this.program.new_image)
-      }      
+      }
       this.$axios
         .$post("/program/update/" + this.program.id, formData)
         .then((res) => {

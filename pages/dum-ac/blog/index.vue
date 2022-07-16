@@ -31,8 +31,9 @@
                                         <td>{{ blog.id }}</td>
                                         <td>{{ blog.title }}</td>
                                         <td>{{ blog.description }}</td>
-                                        <td><img :src="'http://localhost:8000/images/dum/' + blog.image" alt="image"
-                                                style="height:80px" /></td>
+                                        <td><img :src="base_url + '/images/dum/' + blog.image" alt="image"
+                                                style="height:80px" />
+                                        </td>
                                         <td>
                                             <button v-if="blog.status == 1" class="btn-active"
                                                 @click="blogStatus(blog.id)">
@@ -111,9 +112,10 @@ export default {
                 title: "",
                 description: "",
                 new_image: "",
-                
+
             },
             errors: {},
+            base_url: process.env.url
         };
     },
     methods: {
@@ -144,9 +146,9 @@ export default {
             let formData = new FormData();
             formData.append('title', this.blog.title)
             formData.append('description', this.blog.description)
-            if(this.blog.new_image) {
+            if (this.blog.new_image) {
                 formData.append('image', this.blog.new_image)
-            }           
+            }
             this.$axios
                 .$post("/blog/update/" + this.blog.id, formData)
                 .then((res) => {

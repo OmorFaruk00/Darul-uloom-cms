@@ -63,6 +63,27 @@
     "_name": "_584eb2b9"
   },
   {
+    "name": "admission-admissionInActiveBatch",
+    "path": "/admission/admissionInActiveBatch",
+    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/admission/admissionInActiveBatch/index.vue",
+    "chunkName": "pages/admission/admissionInActiveBatch/index",
+    "_name": "_31236216"
+  },
+  {
+    "name": "admission-batch",
+    "path": "/admission/batch",
+    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/admission/batch/index.vue",
+    "chunkName": "pages/admission/batch/index",
+    "_name": "_3f80983e"
+  },
+  {
+    "name": "admission-department",
+    "path": "/admission/department",
+    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/admission/department/index.vue",
+    "chunkName": "pages/admission/department/index",
+    "_name": "_a1cf453e"
+  },
+  {
     "name": "admission-form-import",
     "path": "/admission/form-import",
     "component": "/home/it/Public/prantho/laravel/Darul-uloom-cms/pages/admission/form-import.vue",
@@ -203,6 +224,34 @@
     "_name": "_45eb2316"
   },
   {
+    "name": "profile-update",
+    "path": "/profile/update",
+    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/profile/update.vue",
+    "chunkName": "pages/profile/update",
+    "_name": "_32bda196"
+  },
+  {
+    "name": "admission-admissionInActiveBatch-create",
+    "path": "/admission/admissionInActiveBatch/create",
+    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/admission/admissionInActiveBatch/create.vue",
+    "chunkName": "pages/admission/admissionInActiveBatch/create",
+    "_name": "_2e0fda69"
+  },
+  {
+    "name": "admission-batch-create",
+    "path": "/admission/batch/create",
+    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/admission/batch/create.vue",
+    "chunkName": "pages/admission/batch/create",
+    "_name": "_4f6b12fd"
+  },
+  {
+    "name": "admission-department-create",
+    "path": "/admission/department/create",
+    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/admission/department/create.vue",
+    "chunkName": "pages/admission/department/create",
+    "_name": "_5ba7997d"
+  },
+  {
     "name": "dum-ac-blog-create",
     "path": "/dum-ac/blog/create",
     "component": "/home/it/Public/prantho/laravel/Darul-uloom-cms/pages/dum-ac/blog/create.vue",
@@ -299,6 +348,13 @@
     "component": "/home/it/Public/prantho/laravel/Darul-uloom-cms/pages/profile/training/create.vue",
     "chunkName": "pages/profile/training/create",
     "_name": "_c1a4eb30"
+  },
+  {
+    "name": "admission-batch-update-id",
+    "path": "/admission/batch/update/:id?",
+    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/admission/batch/update/_id.vue",
+    "chunkName": "pages/admission/batch/update/_id",
+    "_name": "_3d2014f5"
   },
   {
     "name": "dum-ac-committee-update-id",

@@ -31,7 +31,7 @@
                     <td>{{ notice.id }}</td>
                     <td>{{ notice.title }}</td>
                     <td>{{ notice.description }}</td>
-                    <td><img :src="'http://localhost:8000/images/dum/' + notice.image" alt="image" style="height:80px" />
+                    <td><img :src="base_url + '/images/dum/' + notice.image" alt="image" style="height:80px" />
                     </td>
                     <td>
                       <button v-if="notice.status == 1" class="btn-active" @click="noticeStatus(notice.id)">
@@ -111,6 +111,7 @@ export default {
         slug: "",
       },
       errors: {},
+      base_url: process.env.url
     };
   },
   methods: {
@@ -141,10 +142,10 @@ export default {
       let formData = new FormData();
       formData.append('title', this.notice.title)
       formData.append('description', this.notice.description)
-      if(this.notice.new_image) {
+      if (this.notice.new_image) {
         formData.append('image', this.notice.new_image)
       }
-      
+
       this.$axios
         .$post("/notice/update/" + this.notice.id, formData)
         .then((res) => {

@@ -141,8 +141,7 @@ export default {
     },
     methods: {
 
-        addCommittee() {
-            console.log(this.committee);
+        addCommittee() {        
 
 
             let formData = new FormData();

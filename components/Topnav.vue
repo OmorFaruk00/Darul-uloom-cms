@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <nav class="navbar navbar-expand-lg topnav">
+  <div class="sticky-top">
+    <nav class="navbar navbar-expand-lg topnav ">
       <button class="btn btn-primary" id="menu-toggle"> <img src="/images/menu.png" alt="">
       </button>
       <nuxt-link to="/app">
@@ -12,14 +12,13 @@
           <div id="user" class="dropdown-content pt-4">
             <div class="user-info d-flex justify-content-center">
 
-              <img :src="'http://localhost:8000/images/emp/' + profile.profile_photo" alt="image" class="profile" />
+              <img :src="base_url+'/images/emp/' + $auth.user.profile_photo" alt="image" class="profile" />
             </div>
             <div class="user-text">
-              <h4 class="pt-3">{{ profile.name }}</h4>
-              <p v-if="profile.rel_designation">{{ profile.rel_designation.designation }}</p>
+              <h4 class="pt-3">{{ $auth.user.name }}</h4>
+              <p >{{ $auth.user.rel_designation.designation }}</p>
             </div>
             <button class="btn-logout" @click="logout">Log out</button>
-
           </div>
         </div>
       </div>
@@ -31,11 +30,11 @@ export default {
   data() {
     return {
       profile: [],
+      base_url:process.env.url,
     }
   },
 
-  mounted() {
-    this.getUser();
+  mounted() {    
     //toggle sidebar
     $("#menu-toggle").click(function (e) {
       e.preventDefault();
@@ -46,12 +45,7 @@ export default {
     userprofile() {
       document.getElementById("user").classList.toggle("show");
     },
-    getUser() {
-      this.$axios.get('/profile')
-        .then(response => {
-          this.profile = response.data;
-        });
-    },
+   
 
     logout() {
       this.$auth.logout().then(response => {
@@ -82,7 +76,8 @@ export default {
   color: #fff;
   border: none;
   padding: 5px 15px;
-  border-radius: 8px;
+  border-radius: 18px;
+  font-weight: bolder;
 }
 
 .btn-logout:hover {
@@ -173,6 +168,8 @@ a {
 
 .topnav {
   background: #337ab7;
+  position: sticky;
+    top: 0px;
 
 }
 

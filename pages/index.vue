@@ -1,7 +1,7 @@
 <template>
 	<div class="bg">
 		<div class="">
-			<div class="welcome">				
+			<div class="welcome">
 				<h1 aria-label="welcome"></h1>
 			</div>
 			<div class="d-flex justify-content-end h-100">
@@ -20,67 +20,60 @@
 
 						</div>
 					</div>
-					
 
-					<div class="card-body">	
+
+					<div class="card-body">
 						<div class="alert alert-danger" v-if="login_error">
-                   <strong>{{login_error}}!</strong> 
-                      </div>					
-						
-							<div class="input-group form-group pb-2">
-								<div class="input-group-prepend">
-									<span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg"
-											class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-											<path fill-rule="evenodd"
-												d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
-												clip-rule="evenodd" />
-										</svg></span>
-								</div>
-								<input type="text" class="form-control" placeholder="username" v-model="login.email" autocomplete>
-			
-							</div>
-								<p
-								v-if="errors.email"
-								v-text="errors.email[0]"
-								class="text-danger"
-							  ></p>
+							<strong>{{ login_error }}!</strong>
+						</div>
 
-							<div class="input-group form-group pb-3">
-								<div class="input-group-prepend">
-									<span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg"
-											class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-											<path fill-rule="evenodd"
-												d="M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z"
-												clip-rule="evenodd" />
-										</svg></span>
-								</div>
-								<input type="password" class="form-control" placeholder="password" v-model="login.password">
+						<div class="input-group form-group pb-2">
+							<div class="input-group-prepend">
+								<span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5"
+										viewBox="0 0 20 20" fill="currentColor">
+										<path fill-rule="evenodd"
+											d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+											clip-rule="evenodd" />
+									</svg></span>
 							</div>
-								<p
-								v-if="errors.password"
-								v-text="errors.password[0]"
-								class="text-danger"
-							  ></p>
-							
-						
-							<div class="row">
-								<div class="col-sm-12 col-md-6 col-xl-6">
-									<div class="remember">
+							<input type="text" class="form-control" placeholder="username" v-model="login.email"
+								autocomplete>
+
+						</div>
+						<p v-if="errors.email" v-text="errors.email[0]" class="text-danger"></p>
+
+						<div class="input-group form-group pb-3">
+							<div class="input-group-prepend">
+								<span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5"
+										viewBox="0 0 20 20" fill="currentColor">
+										<path fill-rule="evenodd"
+											d="M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z"
+											clip-rule="evenodd" />
+									</svg></span>
+							</div>
+							<input type="password" class="form-control" placeholder="password" v-model="login.password">
+						</div>
+						<p v-if="errors.password" v-text="errors.password[0]" class="text-danger"></p>
+
+
+						<div class="row">
+							<div class="col-sm-12 col-md-6 col-xl-6">
+								<div class="remember">
 									<input type="checkbox" class="text-white">Remember Me
 								</div>
 
-								</div>
-								<div class="col-sm-12 col-md-6 col-xl-6">
-									<div class="forgot">
+							</div>
+							<div class="col-sm-12 col-md-6 col-xl-6">
+								<div class="forgot">
 									<a href="#" class="text-danger">Forgot your password?</a>
-								</div>									
 								</div>
-							</div>							
-							<div class="form-group py-4">
-								<!-- <nuxt-link class="btn float-right login_btn" to="/app">Login</nuxt-link> -->
-								<button class="btn float-right login_btn" @click="userLogin">Login</button>
-							</div>						
-						
+							</div>
+						</div>
+						<div class="form-group py-4">
+							<!-- <nuxt-link class="btn float-right login_btn" to="/app">Login</nuxt-link> -->
+							<button class="btn float-right login_btn" @click="userLogin">Login</button>
+						</div>
+
 					</div>
 				</div>
 			</div>
@@ -91,33 +84,42 @@
 <script>
 
 export default {
-	auth:false,
-	mounted(){		
+	auth: false,
+	mounted() {
 
 
-},
-  data() {
-    return {
-      login: {
-        email: '',
-        password: ''
-      },
-	  errors:[],
-	  login_error:''
-    }
-  },
-  methods: {
-    async userLogin() {		
-      await this.$auth.loginWith('laravelSanctum', {data:this.login} ); 	  
-		this.$router.push('/app');
-		this.$toaster.success("Login Successful");
-	}
-		  
+	},
+	data() {
+		return {
+			login: {
+				email: '',
+				password: ''
+			},
+			errors: [],
+			login_error: ''
+		}
+	},
+	methods: {
 	
+		async userLogin() {
+			await this.$auth.loginWith('laravelSanctum', { data: this.login }).then(res=>{				
+				if(res.status==203){					
+					this.login_error = res.data.message
+				}
+				this.$toaster.success("Login Successful");
+			    this.$router.push('/app');
+			}).catch(error=>{
+				console.log(error)
+			});
+			
+			
+		}
 
-		  
-    
-  }
+
+
+
+
+	}
 }
 </script>
 <style scoped>
@@ -134,23 +136,27 @@ export default {
 	/* position: relative; */
 
 }
-.welcome{	
+
+.welcome {
 	top: 50%;
 	left: 40%;
-	transform: translate(-50%,-50%);
+	transform: translate(-50%, -50%);
 	color: red !important;
 	position: absolute;
 	font-size: 80px;
 }
+
 .login-logo {
 	display: flex;
 	justify-content: center;
 }
-.login-logo img{
+
+.login-logo img {
 	height: 100px;
 	border-radius: 50px;
-	
+
 }
+
 .login {
 	padding-top: 5%;
 	/* margin-right: 20px; */
@@ -238,65 +244,64 @@ input:focus {
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: #3f81b3 url(https://source.unsplash.com/DSwBHyWKiVw/1280x720) no-repeat center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: #3f81b3 url(https://source.unsplash.com/DSwBHyWKiVw/1280x720) no-repeat center;
 	background-size: cover;
-    overflow: hidden;
+	overflow: hidden;
 }
 
 h1 {
-    position: relative;
-    font-family: 'Roboto', Arial, sans-serif;
-    font-size: calc(10px + 10vw);
-    font-weight: 700;
-    color: #f5f5f5;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-    perspective: 500px;
+	position: relative;
+	font-family: 'Roboto', Arial, sans-serif;
+	font-size: calc(10px + 10vw);
+	font-weight: 700;
+	color: #f5f5f5;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	perspective: 500px;
 }
 
 h1::before,
 h1::after {
-    content: attr(aria-label);
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    text-shadow: 0.01em 0.01em 0.01em rgba(0, 0, 0, 0.3);
+	content: attr(aria-label);
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translate(-50%, -50%);
+	text-shadow: 0.01em 0.01em 0.01em rgba(0, 0, 0, 0.3);
 }
 
 h1::before {
-    animation: floatAbove 3.5s ease-in-out infinite;
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%);
-            clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%);
+	animation: floatAbove 3.5s ease-in-out infinite;
+	-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%);
+	clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%);
 }
 
 h1::after {
-    opacity: 0.65;
-    filter: blur(0.02em);
-    transform: translate(-50%, -50%) rotateX(21deg);
-    animation: floatBelow 3.5s ease-in-out infinite;
-    -webkit-clip-path: polygon(0% 50%, 100% 50%, 100% 100%, 0% 100%);
-            clip-path: polygon(0% 50%, 100% 50%, 100% 100%, 0% 100%);
+	opacity: 0.65;
+	filter: blur(0.02em);
+	transform: translate(-50%, -50%) rotateX(21deg);
+	animation: floatBelow 3.5s ease-in-out infinite;
+	-webkit-clip-path: polygon(0% 50%, 100% 50%, 100% 100%, 0% 100%);
+	clip-path: polygon(0% 50%, 100% 50%, 100% 100%, 0% 100%);
 }
 
 @keyframes floatAbove {
-    50% {
-        transform: translate(-50%, -60%);
-        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 0% 60%);
-                clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 0% 60%);
-    }
+	50% {
+		transform: translate(-50%, -60%);
+		-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 0% 60%);
+		clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 0% 60%);
+	}
 }
 
 @keyframes floatBelow {
-    50% {
-        transform: translate(-50%, -60%) rotateX(10deg);
-        -webkit-clip-path: polygon(0% 60%, 100% 60%, 100% 100%, 0% 100%);
-                clip-path: polygon(0% 60%, 100% 60%, 100% 100%, 0% 100%);
-    }
+	50% {
+		transform: translate(-50%, -60%) rotateX(10deg);
+		-webkit-clip-path: polygon(0% 60%, 100% 60%, 100% 100%, 0% 100%);
+		clip-path: polygon(0% 60%, 100% 60%, 100% 100%, 0% 100%);
+	}
 }
-
 </style>

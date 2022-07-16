@@ -31,7 +31,7 @@
                     <td>{{ event.id }}</td>
                     <td>{{ event.title }}</td>
                     <td>{{ event.description }}</td>
-                    <td><img :src="'http://localhost:8000/images/dum/' + event.image" alt="image" style="height:80px" />
+                    <td><img :src="base_url + '/images/dum/' + event.image" alt="image" style="height:80px" />
                     </td>
                     <td>
                       <button v-if="event.status == 1" class="btn-active" @click="eventStatus(event.id)">
@@ -47,6 +47,7 @@
                         Delete
                       </button>
                     </td>
+
                   </tr>
                 </tbody>
               </table>
@@ -111,6 +112,7 @@ export default {
         slug: "",
       },
       errors: {},
+      base_url: process.env.url,
     };
   },
   methods: {
@@ -141,10 +143,10 @@ export default {
       let formData = new FormData();
       formData.append('title', this.event.title)
       formData.append('description', this.event.description)
-      if(this.event.new_image) {
+      if (this.event.new_image) {
         formData.append('image', this.event.new_image)
       }
-      
+
       this.$axios
         .$post("/event/update/" + this.event.id, formData)
         .then((res) => {

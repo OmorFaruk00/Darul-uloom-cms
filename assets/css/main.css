@@ -1,3 +1,4 @@
+
 .action-list img{
     height: 40px;
     color: red;
@@ -115,7 +116,7 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding: 8px 15px 9px;
+    padding: 5px 15px 9px;
     border-radius: 10px;
     transition: all 0.3s ease 0s;
     border: none;

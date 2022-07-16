@@ -37,7 +37,8 @@
                     <td>{{ committee.member_type }}</td>
                     <td>{{ committee.profession }}</td>
                     <td>{{ committee.personal_phone_no }}</td>
-                    <img :src="'http://localhost:8000/images/dum/' + committee.image" alt="image" style="height:80px" />
+                    <td><img :src="base_url+'/images/dum/' + committee.image" alt="image" style="height:80px" />
+                    </td>
                     <td>
                       <button v-if="committee.status == 1" class="btn-active" @click="committeeStatus(committee.id)">
                         Active
@@ -47,8 +48,8 @@
                       </button>
                     </td>
                     <td>
-                      <nuxt-link :to="`/dum-ac/committee/update/${committee.id}`" class="btn btn-edit">Edit</nuxt-link>                      
-                      <button class="btn btn-delete" @click="committeeDelete(committee.id)">Delete</button>                      
+                      <nuxt-link :to="`/dum-ac/committee/update/${committee.id}`" class="btn-edit">Edit</nuxt-link>                      
+                      <button class="btn-delete" @click="committeeDelete(committee.id)">Delete</button>                      
 
                       
                     </td>
@@ -76,6 +77,7 @@ export default {
     return {
       committees: [],
       errors: {},
+      base_url:process.env.url
     };
   },
   methods: {

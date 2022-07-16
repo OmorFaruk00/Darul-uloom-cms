@@ -40,7 +40,7 @@
 				<nuxt-link class="app-link" to="/profile">
 					<div class="app">
 						<div class="app-icon">
-							<img src="images/app-profile1.png" class="" alt="">
+							<img src="images/app-profile.png" class="" alt="">
 						</div>
 					</div>
 					<p class="app-title">Profile</p>
@@ -56,6 +56,16 @@
 					<p class="app-title">Admission</p>
 				</nuxt-link>
 			</div>
+			<div class="col-md-3 col-xl-2 col-sm-6 app">
+				<nuxt-link class="app-link" to="/account">
+					<div class="app">
+						<div class="app-icon">
+							<img src="images/account1.jpg" class="" alt="">
+						</div>
+					</div>
+					<p class="app-title">Accounts</p>
+				</nuxt-link>
+			</div>
 
 
 
@@ -69,7 +79,8 @@
 
 
 export default {
-	// middleware: 'auth',
+	middleware: 'auth',
+	
 }
 </script>
 <style scoped>

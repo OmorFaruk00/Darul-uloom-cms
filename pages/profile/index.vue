@@ -6,34 +6,48 @@
                     <h2 class="text-center pb-4 font-weight-bold">Profile</h2>
                     <hr>
                     <div class="text-center ">
-                        <img :src="'http://localhost:8000/images/emp/' + profile.profile_photo" alt="image"
-                            class="rounded-circle profile_img" />
+                        <img :src="base_url + '/images/emp/' + profile.profile_photo" alt="image"
+                            class="rounded-circle profile_img" /><br>
                     </div>
+                    <div class="form-group focused mx-auto" style="max-width: 280px">
+                        <div class="custom-file">
+                            <input type="file" class="" name="profile_photo" ref="profile_photo" id="profile_photo"
+                                v-on:change="ProfilePicUpload()" accept="images/*" />
+                            <label class="custom-file-label" for="profile_photo">Upload Profile Picture</label>
+                        </div>
+                       
+                    </div>
+
+
                     <div class="text-center ">
                         <h4 class=" mb-2">{{ profile.name }}</h4>
-                        <h6 v-if="profile.rel_designation">{{ profile.rel_designation.designation}}</h6> 
-                        
-                                             
-                      <div class="d-flex justify-content-center" v-if="profile.rel_social">
-                            <ul class="social" v-for="social in profile.rel_social" :key="social._id" >
-                            <li v-if="social.social_name=='Facebook'">
-                                <a :href="social.social_url"><img src="/images/fb.png" alt="" class="social-icon"></a>
-                            </li>
-                            <li v-if="social.social_name=='Twitter'">
-                                <a :href="social.social_url"><img src="/images/twi.png" alt="" class="social-icon"></a>
-                            </li>
-                          <li v-if="social.social_name=='Instagram'">
-                                <a :href="social.social_url"><img src="/images/ins.png" alt="" class="social-icon"></a>
-                            </li>
-                            <li v-if="social.social_name=='LinkedIn'">
-                                <a :href="social.social_url"><img src="/images/linkedin.png" alt="" class="social-icon"></a>
-                            </li>
-                             <li v-if="social.social_name=='WhatsApp'">
-                                <a :href="social.social_url"><img src="/images/whatsapp.png" alt="" class="social-icon"></a>
-                            </li>
-                        </ul>
-                      </div>  
-                      <!-- {{profile.rel_social}}                    -->
+                        <h6 v-if="profile.rel_designation">{{ profile.rel_designation.designation }}</h6>
+
+
+                        <div class="d-flex justify-content-center" v-if="profile.rel_social">
+                            <ul class="social" v-for="social in profile.rel_social" :key="social._id">
+                                <li v-if="social.social_name == 'Facebook'">
+                                    <a :href="social.social_url"><img src="/images/fb.png" alt=""
+                                            class="social-icon"></a>
+                                </li>
+                                <li v-if="social.social_name == 'Twitter'">
+                                    <a :href="social.social_url"><img src="/images/twi.png" alt=""
+                                            class="social-icon"></a>
+                                </li>
+                                <li v-if="social.social_name == 'Instagram'">
+                                    <a :href="social.social_url"><img src="/images/ins.png" alt=""
+                                            class="social-icon"></a>
+                                </li>
+                                <li v-if="social.social_name == 'LinkedIn'">
+                                    <a :href="social.social_url"><img src="/images/linkedin.png" alt=""
+                                            class="social-icon"></a>
+                                </li>
+                                <li v-if="social.social_name == 'WhatsApp'">
+                                    <a :href="social.social_url"><img src="/images/whatsapp.png" alt=""
+                                            class="social-icon"></a>
+                                </li>
+                            </ul>
+                        </div>
                         <div class="contact-info pt-3 ">
                             <h6>E-mail :
                                 <small>{{ profile.email }}</small>
@@ -41,20 +55,20 @@
                             <h6>Phone :
                                 <small>{{ profile.personal_phone_no }}</small>
                             </h6>
-                            <h6>Mobile :
+                            <!-- <h6>Mobile :
                                 <small>{{ profile.alternative_phone_no }}</small>
-                            </h6>
+                            </h6> -->
                         </div>
-                        
-                        <hr>                        
-                        <div class="profile-info pb-4" v-if="profile.about!=null">
+
+                        <hr>
+                        <div class="profile-info pb-4" v-if="profile.about != null">
                             <div class="about">
                                 <h4 class="about-title">About</h4>
                                 <p class="about-desc">{{ profile.about }}</p>
-                                
+
                             </div>
                         </div>
-                        <div class="profile-info pb-4" v-if="profile.rel_qualification!=''">
+                        <div class="profile-info pb-4" v-if="profile.rel_qualification != ''">
                             <div class="about">
                                 <h4 class="about-title">Academic Qualification</h4>
                                 <div class="px-3">
@@ -68,19 +82,19 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr v-for="qualification in profile.rel_qualification" :key="qualification._id">
+                                            <tr v-for="qualification in profile.rel_qualification"
+                                                :key="qualification._id">
                                                 <td>{{ qualification.degree_name }}</td>
                                                 <td>{{ qualification.institute_name }}</td>
                                                 <td>{{ qualification.subject }}</td>
                                                 <td>{{ qualification.passing_year }}</td>
-
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
                         </div>
-                        <div class="profile-info pb-4" v-if="profile.rel_training!=''">
+                        <div class="profile-info pb-4" v-if="profile.rel_training != ''">
                             <div class="about">
                                 <h4 class="about-title">Training Experience</h4>
                                 <div class="px-3">
@@ -90,7 +104,7 @@
                                                 <th>Training Name</th>
                                                 <th>Institute Name</th>
                                                 <th>Duration</th>
-                                                <th>Training Year</th>                                               
+                                                <th>Training Year</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -98,7 +112,7 @@
                                                 <td>{{ training.training_name }}</td>
                                                 <td>{{ training.institute_name }}</td>
                                                 <td>{{ training.duration }}</td>
-                                                <td>{{ training.training_year }}</td>                                              
+                                                <td>{{ training.training_year }}</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -116,30 +130,61 @@ export default {
     layout: "Profile-content",
     mounted() {
         this.getUser();
-        
+
     },
     data() {
         return {
             qualifications: [],
             trainings: [],
             socials: [],
-            profile:[],
-            about:1,
+            profile: [],
+            about: '',
+            base_url: process.env.url
         }
     },
 
     methods: {
-        getUser(){
+        getUser() {
             this.$axios.get('/profile')
-            .then(response => {              
-                this.profile = response.data;
-            });
+                .then(response => {
+                    this.profile = response.data;
+                });
+        },
+        async ProfilePicUpload() {
+
+
+            let formData = new FormData();
+            formData.append("image", this.$refs.profile_photo.files[0]);
+
+            return await this.$axios
+                .post(
+                    "/upload-profile-photo",
+                    formData,
+                    {
+                        headers: {
+                            "Content-Type": "multipart/form-data"
+                        }
+                    }
+                )
+                .then(response => {
+                    this.$toaster.success(response.data.message);
+                    window.location.reload();
+
+                })
+                .catch(error => {
+                    console.log(error);
+                });
         }
     }
-    
+
 }
 </script>
-            <style scoped>
+<style scoped>
+.custom-file-label:hover{
+    cursor: pointer;
+    color: #1a5ab4;
+    
+}
 .profile-body {
     width: 100%;
     border: none;
@@ -156,12 +201,14 @@ export default {
 .profile-body:hover::after {
     transform: scaleY(1)
 }
-.profile_img{
+
+.profile_img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     margin-bottom: 20px;
 }
+
 .profile-info {
     padding: 0px 100px;
 }

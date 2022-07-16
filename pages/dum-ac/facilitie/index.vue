@@ -10,9 +10,7 @@
                   <h4 class="title">Facilitie List</h4>
                 </div>
                 <div class="col-sm-7 col-xs-12 text-right">
-                  <nuxt-link to="/dum-ac/facilitie/create" class="btn-add"
-                    >Add Facilitie</nuxt-link
-                  >
+                  <nuxt-link to="/dum-ac/facilitie/create" class="btn-add">Add Facilitie</nuxt-link>
                 </div>
               </div>
             </div>
@@ -33,32 +31,18 @@
                     <td>{{ facilitie.title }}</td>
                     <td>{{ facilitie.description }}</td>
                     <td>
-                      <button
-                        v-if="facilitie.status == 1"
-                        class="btn-active"
-                        @click="facilitieStatus(facilitie.id)"
-                      >
+                      <button v-if="facilitie.status == 1" class="btn-active" @click="facilitieStatus(facilitie.id)">
                         Active
                       </button>
-                      <button
-                        v-if="facilitie.status == 0"
-                        class="btn-inactive"
-                        @click="facilitieStatus(facilitie.id)"
-                      >
+                      <button v-if="facilitie.status == 0" class="btn-inactive" @click="facilitieStatus(facilitie.id)">
                         Inactive
                       </button>
                     </td>
                     <td>
-                      <button
-                        class="btn-edit"
-                        @click="facilitieEdit(facilitie.id)"
-                      >
+                      <button class="btn-edit" @click="facilitieEdit(facilitie.id)">
                         Edit
                       </button>
-                      <button
-                        class="btn-delete"
-                        @click="deletefacilitie(facilitie.id)"
-                      >
+                      <button class="btn-delete" @click="deletefacilitie(facilitie.id)">
                         Delete
                       </button>
                     </td>
@@ -71,67 +55,33 @@
       </div>
 
       <!-- Modal -->
-      <div
-        class="modal fade"
-        id="facilitieUpdate"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="exampleModalCenterTitle"
-        aria-hidden="true"
-      >
+      <div class="modal fade" id="facilitieUpdate" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLongTitle">
                 Facilitie Update
               </h5>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
               <div class="form-group">
                 <label for="" class="">Title</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  placeholder="Title"
-                  v-model="facilitie.title"
-                />
-                <p
-                  v-if="errors.title"
-                  v-text="errors.title[0]"
-                  class="text-danger"
-                ></p>
+                <input type="text" class="form-control" id="name" placeholder="Title" v-model="facilitie.title" />
+                <p v-if="errors.title" v-text="errors.title[0]" class="text-danger"></p>
               </div>
               <div class="form-group">
                 <label for="" class="">Description</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  placeholder="Description"
-                  v-model="facilitie.description"
-                />
-                <p
-                  v-if="errors.description"
-                  v-text="errors.description[0]"
-                  class="text-danger"
-                ></p>
+                <input type="text" class="form-control" id="name" placeholder="Description"
+                  v-model="facilitie.description" />
+                <p v-if="errors.description" v-text="errors.description[0]" class="text-danger"></p>
               </div>
             </div>
             <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-submit"
-                @click="facilitieUpdate()"
-              >
+              <button type="button" class="btn btn-submit" @click="facilitieUpdate()">
                 Update
               </button>
             </div>
@@ -208,7 +158,7 @@ export default {
     },
     facilitieStatus(id) {
       this.$axios
-        .$get("/facilitie/status/" + id )
+        .$get("/facilitie/status/" + id)
         .then((res) => {
           this.getfacilitie();
           this.$toaster.success(res.message);
@@ -220,4 +170,5 @@ export default {
   },
 };
 </script>
-<style scoped></style>
+<style scoped>
+</style>

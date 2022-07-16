@@ -68,7 +68,7 @@ img {
   -moz-transition: margin 0.25s ease-out;
   -o-transition: margin 0.25s ease-out;
   transition: margin 0.25s ease-out;
-  padding-top: 58px;
+  padding-top: 50px;
   background: #f6f6f6;
 }
 

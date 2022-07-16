@@ -5,14 +5,16 @@
       <div class=" " id="sidebar-wrapper">
         <div class="list-group sidebar">
 
-          <nuxt-link class="sidebar-item" to="/admission"><img src="/images/dashboard.png" alt="" />Dashboard</nuxt-link>
+          <nuxt-link class="sidebar-item" to="/final_admission"><img src="/images/dashboard.png" alt="" />Dashboard</nuxt-link>
+           <nuxt-link class="sidebar-item" to="/admission/batch"><img src="/images/batch.png" alt="" />Batch</nuxt-link>
+           <nuxt-link class="sidebar-item" to="/admission/department"><img src="/images/department.png" alt="" />Department</nuxt-link>
         
-          <div class="dropdown_menu">
-            <a class="sidebar-item" @click.prevent="menu=!menu"><img src="/images/right-arrow1.png" alt="" style="height:15px"/>
+          <div class="dropdown_final_admission_form">
+            <a class="sidebar-item" @click.prevent="final_admission_form=!final_admission_form"><img src="/images/right-arrow1.png" alt="" style="height:15px"/>
               
                Admission Form
             </a>
-            <div v-if="menu" class="dropdown_item">
+            <div v-if="final_admission_form" class="dropdown_item">
               <nuxt-link to="/admission/form-import" class="">                
                 Form Import
               </nuxt-link>
@@ -22,6 +24,23 @@
                 <nuxt-link to="/admission/form-sale" class="">                
                 Form Sale
               </nuxt-link>
+            </div>
+          </div>
+           <div class="dropdown_final_admission_form">
+            <a class="sidebar-item" @click.prevent="final_admission=!final_admission"><img src="/images/right-arrow1.png" alt="" style="height:15px"/>
+              
+               Final Admission 
+            </a>
+            <div v-if="final_admission" class="dropdown_item">
+              <nuxt-link to="/admission/admissionInActiveBatch" class="">                
+                Admission in active batch
+              </nuxt-link>
+                <!-- <nuxt-link to="/admission/batch" class="">                
+                Batch
+              </nuxt-link> -->
+                <!-- <nuxt-link to="/admission/department" class="">                
+                Department
+              </nuxt-link> -->
             </div>
           </div>
         
@@ -45,20 +64,21 @@
 export default {
 data(){
     return {
-        menu: false,
+        final_admission_form: false,
+        final_admission: false,
     }
 
 }
 }
 </script>
 <style scoped>
-.dropdown_menu a{  
+.dropdown_final_admission_form a{  
   cursor: pointer;
   
 }
 .dropdown_item a{  
   border: none;
-  padding-left: 60px;
+  padding-left: 45px;
   line-height: 50px;
   color: #000;
   display: block;
@@ -106,16 +126,16 @@ img {
   background: #f6f6f6;
 }
 
-#menu-toggle {
+#final_admission_form-toggle {
   background: #fff;
   border: none;
 }
 
-#menu-toggle:hover {
+#final_admission_form-toggle:hover {
   background: #21537f;
 }
 
-#menu-toggle img {
+#final_admission_form-toggle img {
   height: 15px;
 }
 

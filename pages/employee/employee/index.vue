@@ -46,9 +46,9 @@
                         Inactive
                       </button>
                     </td>
-                    <td>
-                      <nuxt-link :to="`/employee/employee/update/${employee.id}`" class="btn btn-edit">Edit</nuxt-link>
-                      <nuxt-link :to="`/employee/employee/detail/${employee.id}`" class="btn btn-details">Details</nuxt-link>
+                    <td class="pt-3">
+                      <nuxt-link :to="`/employee/employee/update/${employee.id}`" class="btn-edit">Edit</nuxt-link>
+                      <nuxt-link :to="`/employee/employee/detail/${employee.id}`" class="btn-details">Details</nuxt-link>
 
                       <!-- <button class="btn-delete " @click="employeeDelete(employee.id)">
                         Delete

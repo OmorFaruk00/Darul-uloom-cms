@@ -130,6 +130,9 @@ export default {
 }
 </script>
 <style scoped>
+a{
+    text-decoration: none;;
+}
 .dashboard {
     color: #0B697E;
     background: linear-gradient(#0B697E, #0B697E 43%, transparent 43%, transparent 57%, #0B697E 57%);
