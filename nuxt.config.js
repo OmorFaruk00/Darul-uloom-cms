@@ -12,46 +12,46 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      // {rel: 'icon', type: 'image/x-icon', href: '/favicon.png'},      
-      {rel: 'stylesheet', id: 'bootstrap-style', href: '/css/bootstrap.min.css'},      
+      // {rel: 'icon', type: 'image/x-icon', href: '/favicon.png'},
+      {rel: 'stylesheet', id: 'bootstrap-style', href: '/css/bootstrap.min.css'},
       {rel: 'stylesheet', id: 'font-awesome-style', href: '/css/font-awesome.min.css'},
       // {rel: 'stylesheet', id: 'style-style', href: '/css/style.css'},
 
 
-      
+
     ],
 
     script: [
-      
-      {src: '/js/jquery.min.js', defer: true},  
+
+      {src: '/js/jquery.min.js', defer: true},
       {src: '/js/main.js', defer: true},
       {src: '/js/bootstrap.min.js', defer: true},
       {src: '/js/bootstrap.bundle.min.js', defer: true},
-      
 
-      
+
+
     ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [   
+  css: [
    '@/assets/css/main.css',
   //  '/css/font-awesome.min.css',
-  
-  
+
+
   ],
 
 
-  
+
   plugins: [
     {src: 'plugins/owl.js', ssr: false},
     {src: '~/plugins/vue-toaster.js', ssr: false},
   ],
 
-  
+
   components: true,
 
-  
+
   buildModules: [
     '@nuxtjs/google-fonts'
   ],
@@ -65,18 +65,18 @@ export default {
         ital: [100]
       }
     }
-   
+
   },
 
   router: {
     middleware: 'auth'
   },
-  
+
   auth: {
     strategies: {
       laravelSanctum: {
         provider: 'laravel/sanctum',
-        url: 'http://localhost:8000',
+        url: 'http://localhost:8001',
         token: {
           property: 'token',
           global: true,
@@ -86,14 +86,14 @@ export default {
         user: {
           property: false,
           autoFetch: true
-        },  
+        },
         endpoints: {
           login: { url: '/api/login', method: 'post'},
           logout: { url: '/api/logout', method: 'post' },
           user: { url: '/api/user', method: 'get'}
-        },        
+        },
       },
-     
+
     },
      redirect:{
           login: '/',
@@ -101,14 +101,14 @@ export default {
           home:'/app',
         }
   },
-      
 
- 
-  axios: {   
-    baseURL: 'http://localhost:8000/api',
+
+
+  axios: {
+    baseURL: 'http://localhost:8001/api',
     credentials: true
   },
-  
+
 
 
   modules: [
@@ -117,12 +117,12 @@ export default {
     'bootstrap-vue/nuxt',
     'nuxt-sweetalert2',
   ],
- 
- 
- 
+
+
+
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   }
-  
+
 }
