@@ -10,11 +10,11 @@
            <nuxt-link class="sidebar-item" to="/admission/department"><img src="/images/department.png" alt="" />Department</nuxt-link>
         
           <div class="dropdown_final_admission_form">
-            <a class="sidebar-item" @click.prevent="final_admission_form=!final_admission_form"><img src="/images/right-arrow1.png" alt="" style="height:15px"/>
+            <a class="sidebar-item" @click.prevent="admission_form=!admission_form"><img src="/images/right-arrow1.png" alt="" style="height:15px"/>
               
                Admission Form
             </a>
-            <div v-if="final_admission_form" class="dropdown_item">
+            <div v-if="admission_form" class="dropdown_item">
               <nuxt-link to="/admission/form-import" class="">                
                 Form Import
               </nuxt-link>
@@ -43,6 +43,20 @@
               </nuxt-link> -->
             </div>
           </div>
+              <div class="dropdown_final_admission_form">
+            <a class="sidebar-item" @click.prevent="students=!students"><img src="/images/right-arrow1.png" alt="" style="height:15px"/>
+              
+               Students
+            </a>
+            <div v-if="students" class="dropdown_item">
+              <nuxt-link to="/admission/dept-wish-student" class="">                
+               Dept. Wise Students
+              </nuxt-link>
+                <nuxt-link to="/admission/student" class="">                
+               Students
+              </nuxt-link>
+            </div>
+          </div>
         
           
         </div>
@@ -64,8 +78,9 @@
 export default {
 data(){
     return {
-        final_admission_form: false,
+        admission_form: false,
         final_admission: false,
+        students: false,
     }
 
 }

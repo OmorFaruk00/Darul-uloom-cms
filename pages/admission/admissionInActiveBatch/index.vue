@@ -30,7 +30,7 @@
                             <th>Session</th>
                             <th>Class Start Date</th>
                             <th>Last Date Of Admission</th>
-                            <th>Action</th>
+                            <!-- <th>Action</th> -->
                         </tr>
                         </thead>
 

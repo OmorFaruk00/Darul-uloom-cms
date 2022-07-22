@@ -16,7 +16,11 @@
             </div>
             <div class="user-text">
               <h4 class="pt-3">{{ $auth.user.name }}</h4>
+<<<<<<< HEAD
               <p >{{ $auth.user.rel_designation?$auth.user.rel_designation:'' }}</p>
+=======
+              <p >{{ $auth.user.rel_designation.designation}}</p>
+>>>>>>> 98af978fb0b9e065920ad98207a520e480bcc970
             </div>
             <button class="btn-logout" @click="logout">Log out</button>
           </div>
