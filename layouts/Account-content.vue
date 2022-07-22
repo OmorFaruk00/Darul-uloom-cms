@@ -4,12 +4,15 @@
     <div class="d-flex" id="wrapper">
       <div class=" " id="sidebar-wrapper">
         <div class="list-group sidebar">
-
-          <nuxt-link class="sidebar-item" to="/account"><img src="/images/dashboard.png" alt="" />Dashboard</nuxt-link>
-        
-        
-        
-          
+          <nuxt-link class="sidebar-item" to="/account"
+            ><img src="/images/dashboard.png" alt="" />Dashboard</nuxt-link
+          >
+          <nuxt-link class="sidebar-item" to="/account/purpose"
+            ><img src="/images/dashboard.png" alt="" />Purpose</nuxt-link
+          >
+          <nuxt-link class="sidebar-item" to="/account/class"
+            ><img src="/images/dashboard.png" alt="" />Class</nuxt-link
+          >
         </div>
       </div>
       <!-- /#sidebar-wrapper -->
@@ -27,42 +30,37 @@
 
 <script>
 export default {
-data(){
+  data() {
     return {
-        menu: false,
-    }
-
-}
-}
+      menu: false,
+    };
+  },
+};
 </script>
 <style scoped>
-.dropdown_menu a{  
+.dropdown_menu a {
   cursor: pointer;
-  
 }
-.dropdown_item a{  
+.dropdown_item a {
   border: none;
   padding-left: 60px;
   line-height: 50px;
   color: #000;
   display: block;
   font-size: 14px;
-
-  
 }
 
-/* .dropdown_item a:hover{  
+/* .dropdown_item a:hover{
  background: #fff;
-  
+
 } */
 .sidebar {
-  line-height: 50px;  
-  
+  line-height: 50px;
 }
 
 .sidebar-item {
   font-size: 15px;
-  color: #000;  
+  color: #000;
 }
 
 .sidebar-item svg,
@@ -72,11 +70,9 @@ img {
   padding-left: 20px;
 }
 
-
-
 .nuxt-link-exact-active {
   background: #fff !important;
-  color: #000;  
+  color: #000;
 }
 
 #sidebar-wrapper {

@@ -127,7 +127,7 @@
 
 <script>
 export default {
-  layout: "Emp-content",
+ layout:'Account-content',
   data() {
     return {
       name: "",
