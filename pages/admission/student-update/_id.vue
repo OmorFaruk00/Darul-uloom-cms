@@ -48,6 +48,7 @@
                         <div class="mt-3">
                             <div class="tab-content twitter-bs-wizard-tab-content">
                                 <!-- {{ --general--}} -->
+                                
                                 <div class="tab-pane" :class="generalStep ? 'active' : ''">
                                     <div class="form-group row">
                                         <label class="col-md-3 col-form-label">Department <span
@@ -68,12 +69,10 @@
                                     <div class="form-group row">
                                         <label class="col-md-3 col-form-label">Batch <span
                                                 class="text-danger">*</span></label>
-                                        <div class="col-md-9 mt-10">
-                                            <input type="text" disabled class="form-control"
-                                                placeholder="Select Department first" v-if="!batches" />
-                                            <select class="form-control" v-model="student.batch_id" required v-else
+                                        <div class="col-md-9 mt-10">                                            
+                                            <select class="form-control" v-model="student.batch_id" required
                                                 @change="fetchShiftGroup">
-                                                <option selected value="">Select Batch</option>
+                                                <option disabled selected value="">Select Batch</option>
                                                 <option v-for="batch in batches" :key="batch.id" :value="batch.id"
                                                     v-text="batch.batch_name">
                                                 </option>
@@ -83,20 +82,16 @@
                                                 v-html="errors.batch_id[0]"></small>
                                         </div>
                                     </div>
-
                                     <div class="form-group row">
                                         <label class="col-md-3 col-form-label">Shift <span
                                                 class="text-danger">*</span></label>
-                                        <div class="col-md-9 mt-10">
-                                            <input type="text" disabled class="form-control"
-                                                placeholder="Select Batch First" v-if="!shifts" />
+                                        <div class="col-md-9 mt-10">                                            
                                             <select name="shift_id" v-model="student.shift_id" id="shift_id"
-                                                class="form-control" required v-else>
+                                                class="form-control" required>
                                                 <option value="" disabled selected>Select Shift</option>
                                                 <option v-for="(shift, index) in shifts" :key="index" :value="shift.id"
                                                     v-html="shift.shift"></option>
                                             </select>
-
                                             <small v-if="errors.shift_id" class="text-danger with-errors"
                                                 v-html="errors.shift_id[0]"></small>
                                         </div>
@@ -105,11 +100,9 @@
                                     <div class="form-group row">
                                         <label class="col-md-3 col-form-label">Group <span
                                                 class="text-danger">*</span></label>
-                                        <div class="col-md-9 mt-10">
-                                            <input type="text" disabled class="form-control"
-                                                placeholder="Select Batch First" v-if="!shifts" />
+                                        <div class="col-md-9 mt-10">                                            
                                             <select name="group_id" v-model="student.group_id" id="group_id"
-                                                class="form-control" required v-else>
+                                                class="form-control" required>
                                                 <option value="" disabled selected>Select Group</option>
                                                 <option v-for="(group, index) in groups" :key="index" :value="group.id"
                                                     v-html="group.group"></option>
@@ -135,13 +128,12 @@
                                                 class="text-danger">*</span></label>
                                         <div class="col-md-9 mt-10">
                                             <input type="text" class="form-control" placeholder="Enter Reg Number"
-                                                v-model="student.reg_no" />
+                                                v-model="student.reg_code" />
 
-                                            <small v-if="errors.reg_no" class="text-danger with-errors"
-                                                v-html="errors.reg_no[0]"></small>
+                                            <small v-if="errors.reg_code" class="text-danger with-errors"
+                                                v-html="errors.reg_code[0]"></small>
                                         </div>
                                     </div>
-
                                     <div class="form-group row">
                                         <label class="col-md-3 col-form-label">Admission Form Sl
                                             <span class="text-danger">*</span></label>
@@ -152,24 +144,7 @@
                                             <small v-if="errors.adm_frm_sl" class="text-danger with-errors"
                                                 v-html="errors.adm_frm_sl[0]"></small>
                                         </div>
-                                    </div>
-
-                                    <!-- <div class="form-group row">
-                                        <label class="col-md-3 col-form-label">Admission Season
-                                            <span class="text-danger">*</span></label>
-                                        <div class="col-md-9 mt-10">
-                                            <select name="admission_season" v-model="student.admission_season"
-                                                id="admission_season" class="form-control" required>
-                                                <option value="" disabled selected>Select Admission Session</option>
-                                                <option value="1">Spring</option>
-                                                <option value="2">Summer</option>
-                                                <option value="3">Other(Fall)</option>
-                                            </select>
-
-                                            <small v-if="errors.admission_season" class="text-danger with-errors"
-                                                v-html="errors.admission_season[0]"></small>
-                                        </div>
-                                    </div> -->
+                                    </div>            
 
                                     <ul class="pager wizard twitter-bs-wizard-pager-link text-right">
                                         <button type="button" @click="nextStep('general')" class="btn btn-success">
@@ -177,7 +152,7 @@
                                         </button>
                                     </ul>
                                 </div>
-
+                               
                                 <!-- {{ --personal--}} -->
                                 <div class="tab-pane" :class="personalStep ? 'active' : ''">
                                     <div class="row">
@@ -375,8 +350,8 @@
                                                     1024KB</span>
                                                 <br />
 
-                                                <img v-if="file_path" :src="file_path" alt="gallery image"
-                                                    style="width: 120px; margin-top: 5px" />
+                                                <img :src="base_url + '/images/student_photo/' + this.student.photo" alt="image"
+                                                style="height:80px" />
                                             </div>
                                         </div>
 
@@ -397,8 +372,8 @@
                                                     500KB</span>
                                                 <br />
 
-                                                <img v-if="signature_path" :src="signature_path" alt=""
-                                                    style="width: 120px; margin-top: 5px" />
+                                               <img :src="base_url + '/images/student_signature/' + this.student.signature" alt="image"
+                                                style="height:80px" />
                                             </div>
                                         </div>
 
@@ -422,72 +397,7 @@
                                                             </div>
                                                         </div>
 
-                                                        <!-- <div class="col-lg-3 col-md-6 col-sm-12">
-                                                            <div class="form-group">
-                                                                <label for="division">Division</label>
-                                                                <select @change="fetchPermanentDistricts"
-                                                                    name="division" id="division" class="form-control"
-                                                                    v-model="permanent_division">
-                                                                    <option value="test">Test</option>
-                                                                    <option v-for="(division, index) in divisions"
-                                                                        :key="index" :value="division"
-                                                                        v-text="division.name"></option>
-                                                                </select>
-                                                            </div>
-                                                        </div> -->
-
-                                                        <!-- <div class="col-lg-3 col-md-6 col-sm-12">
-                                                            <div class="form-group">
-                                                                <label for="district">District</label>
-                                                                <select @change="fetchPermanentThana" name="district"
-                                                                    id="district" class="form-control"
-                                                                    v-model="permanent_district">
-                                                                    <option value="test">Test</option>
-                                                                    <option v-for="(district, index) in districts"
-                                                                        :key="index" :value="district"
-                                                                        v-text="district.name"></option>
-                                                                </select>
-                                                            </div>
-                                                        </div> -->
-
-                                                        <!-- <div class="col-lg-3 col-md-6 col-sm-12">
-                                                            <div class="form-group">
-                                                                <label for="thana">Thana / Upazila</label>
-                                                                <select @change="fetchPermanentUnion" name="thana"
-                                                                    id="thana" class="form-control"
-                                                                    v-model="permanent_thana">
-                                                                    <option value="test">Test</option>
-                                                                    <option v-for="(upazila, index) in upazilas"
-                                                                        :key="index" :value="upazila"
-                                                                        v-text="upazila.name"></option>
-                                                                </select>
-                                                            </div>
-                                                        </div> -->
-                                                        <!-- 
-                                                        <div class="col-lg-3 col-md-6 col-sm-12">
-                                                            <div class="form-group">
-                                                                <label for="union">Union</label>
-                                                                <select @change="fetchPermanentAddress" name="union"
-                                                                    id="union" class="form-control"
-                                                                    v-model="permanent_union">
-                                                                    <option value="test">Test</option>
-                                                                    <option v-for="(union, index) in unions"
-                                                                        :key="index" :value="union" v-text="union.name">
-                                                                    </option>
-                                                                </select>
-                                                            </div>
-                                                        </div> -->
-
-                                                        <!-- <div class="col-lg-12 col-md-12 col-sm-12">
-                                                            <div class="form-group">
-                                                                <label for="permanent_add">Road / House /
-                                                                    Village</label>
-                                                                <input @keyup="permanentAdd"
-                                                                    placeholder="Road / House / Village" type="text"
-                                                                    class="form-control"
-                                                                    v-model="permanent_sub_address" />
-                                                            </div>
-                                                        </div> -->
+                                                       
                                                     </div>
                                                 </div>
                                             </div>
@@ -522,74 +432,7 @@
                                                             </div>
                                                         </div>
 
-                                                        <!-- <div class="col-lg-3 col-md-6 col-sm-12">
-                                                            <div class="form-group">
-                                                                <label for="division">Division</label>
-                                                                <select @change="fetchMailingtDistricts" name="division"
-                                                                    id="division" class="form-control"
-                                                                    v-model="mailing_division">
-                                                                    <option v-for="(
-                                      division, index
-                                    ) in mailingDivisions" :key="index" :value="division" v-text="division.name">
-                                                                    </option>
-                                                                    <option value="test">Test</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-lg-3 col-md-6 col-sm-12">
-                                                            <div class="form-group">
-                                                                <label for="district">District</label>
-                                                                <select @change="fetchMailingThana" name="district"
-                                                                    id="district" class="form-control"
-                                                                    v-model="mailing_district">
-                                                                    <option v-for="(
-                                      district, index
-                                    ) in mailingDistricts" :key="index" :value="district" v-text="district.name">
-                                                                    </option>
-                                                                    <option value="test">Test</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-lg-3 col-md-6 col-sm-12">
-                                                            <div class="form-group">
-                                                                <label for="thana">Thana / Upazila</label>
-                                                                <select @change="fetchMailingtUnion" name="thana"
-                                                                    id="thana" class="form-control"
-                                                                    v-model="mailing_thana">
-                                                                    <option v-for="(upazila, index) in mailingUpazilas"
-                                                                        :key="index" :value="upazila"
-                                                                        v-text="upazila.name"></option>
-                                                                    <option value="test">Test</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-lg-3 col-md-6 col-sm-12">
-                                                            <div class="form-group">
-                                                                <label for="union">Union</label>
-                                                                <select @change="fetchMailingAddress" name="union"
-                                                                    id="union" class="form-control"
-                                                                    v-model="mailing_union">
-                                                                    <option v-for="(union, index) in mailingUnions"
-                                                                        :key="index" :value="union" v-text="union.name">
-                                                                    </option>
-                                                                    <option value="test">Test</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-lg-12 col-md-12 col-sm-12">
-                                                            <div class="form-group">
-                                                                <label for="permanent_add">Road / House /
-                                                                    Village</label>
-                                                                <input @keyup="mailingAdd"
-                                                                    placeholder="Road / House / Village" type="text"
-                                                                    class="form-control"
-                                                                    v-model="mailing_sub_address" />
-                                                            </div>
-                                                        </div> -->
+                                                       
                                                     </div>
                                                 </div>
                                             </div>
@@ -847,8 +690,8 @@
                                                         <div class="form-group">
                                                             <label for="e_exam_name1">Name of Examination
                                                                 <span class="text-danger">*</span></label>
-                                                            <input id="e_exam_name1" type="text" class="form-control"
-                                                                v-model="student.e_exam_name1"
+                                                            <input id="e_exam_name1" type="text" class="form-control"  
+                                                                v-model="education.exam_name1"
                                                                 placeholder="Enter name of examination" required />
 
                                                             <small v-if="errors.e_exam_name1"
@@ -862,7 +705,7 @@
                                                             <label for="e_group1">Group <span
                                                                     class="text-danger">*</span></label>
                                                             <input id="e_group1" type="text" class="form-control"
-                                                                v-model="student.e_group1" placeholder="Enter group no"
+                                                                v-model="education.group1" placeholder="Enter group no"
                                                                 required />
 
                                                             <small v-if="errors.e_group1"
@@ -876,7 +719,7 @@
                                                             <label for="e_roll_no_1">Roll <span
                                                                     class="text-danger">*</span></label>
                                                             <input id="e_roll_no_1" type="number" class="form-control"
-                                                                v-model="student.e_roll_no_1"
+                                                                v-model="education.roll_no1"
                                                                 placeholder="Enter roll no" />
 
                                                             <small v-if="errors.e_roll_no_1"
@@ -890,7 +733,7 @@
                                                             <label for="e_passing_year1">Passing Year
                                                                 <span class="text-danger">*</span></label>
                                                             <select name="e_passing_year1" id="e_passing_year1"
-                                                                v-model="student.e_passing_year1" class="form-control">
+                                                                v-model="education.passing_year1" class="form-control">
                                                                 <option v-for="(year, index) in years" :key="index"
                                                                     :value="year" v-text="year"></option>
                                                             </select>
@@ -907,7 +750,7 @@
                                                                 Marks
                                                                 <span class="text-danger">*</span></label>
                                                             <input id="e_ltr_grd_tmarks1" type="text"
-                                                                class="form-control" v-model="student.e_ltr_grd_tmarks1"
+                                                                class="form-control" v-model="education.ltr_grd_tmarks1"
                                                                 placeholder="Enter letter or grade or total marks" />
 
                                                             <small v-if="errors.e_ltr_grd_tmarks1"
@@ -921,7 +764,7 @@
                                                             <label for="e_div_cls_cgpa1">Divission Or Class Or CGPA
                                                                 <span class="text-danger">*</span></label>
                                                             <input id="e_div_cls_cgpa1" type="text" class="form-control"
-                                                                v-model="student.e_div_cls_cgpa1"
+                                                                v-model="education.div_cls_cgpa1"
                                                                 placeholder="Enter Divission Or Class Or CGPA" />
 
                                                             <small v-if="errors.e_div_cls_cgpa1"
@@ -936,7 +779,7 @@
                                                                 <span class="text-danger">*</span></label>
                                                             <input id="e_board_institute1" type="text"
                                                                 class="form-control"
-                                                                v-model="student.e_board_institute1"
+                                                                v-model="education.board_institute1"
                                                                 placeholder="Enter Board Or Institute" />
 
                                                             <small v-if="errors.e_board_institute1"
@@ -1061,6 +904,7 @@
 
                                         <div class="card mb-2">
                                             <div class="card-header">
+                                                
                                                 Back Ground Education Info 3
                                             </div>
                                             <div class="card-body">
@@ -1292,13 +1136,13 @@
                                                     <div class="col-lg-4 col-md-6 col-sm-12">
                                                         <div class="form-group">
                                                             <label for="refereed_by">Referred By</label>
-                                                            <select name="refereed_by" id="refereed_by" @change="refByEmail"
+                                                            <select name="refereed_by" id="refereed_by"
                                                                 v-model="student.refereed_by" class="form-control">
                                                                 <option v-for="(
                                     refereedByParent, index
-                                  ) in refBy" :key="index" :value="refereedByParent.id"
+                                  ) in refereedByParents" :key="index" :value="refereedByParent.id"
                                                                     v-text="refereedByParent.name"></option>
-                                                                <!-- <option value="test">Test</option> -->
+                                                                <option value="test">Test</option>
                                                             </select>
 
                                                             <small v-if="errors.refereed_by"
@@ -1307,12 +1151,36 @@
                                                         </div>
                                                     </div>
 
-
                                                     <div class="col-lg-4 col-md-6 col-sm-12"
-                                                      
-                                                    >
+                                                        v-show="student.refereed_by == 1">
                                                         <div class="form-group">
-                                                          
+                                                            <label for="refe_by_std_type">From</label>
+                                                            <select name="refe_by_std_type" id="refe_by_std_type"
+                                                                v-model="student.refe_by_std_type" class="form-control">
+                                                                <option v-for="(
+                                    refeByStdType, index
+                                  ) in refeByStdTypes" :key="index" :value="refeByStdType.id"
+                                                                    v-text="refeByStdType.name"></option>
+                                                            </select>
+
+                                                            <small v-if="errors.refe_by_std_type"
+                                                                class="text-danger with-errors"
+                                                                v-html="errors.refe_by_std_type[0]"></small>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-4 col-md-6 col-sm-12" v-show="
+                                                        student.refereed_by != '' &&
+                                                        student.refereed_by != 1
+                                                    ">
+                                                        <div class="form-group">
+                                                            <label for="refereed_by_email">
+                                                                <span v-if="student.refereed_by == 2">Liaison
+                                                                    Officer's Code</span>
+                                                                <span v-else-if="student.refereed_by == 3">Student's
+                                                                    Reg.Code</span>
+                                                                <span v-else>Employee's Email</span>
+                                                            </label>
                                                             <input type="text" class="form-control"
                                                                 id="refereed_by_email" name="refereed_by_email"
                                                                 v-model="student.refereed_by_email" />
@@ -1354,15 +1222,11 @@ export default {
     computed: {
         years() {
             const year = new Date().getFullYear();
-            let data = Array.from({ length: (year + 1) - 2020 }, (value, index) => 2020 + index);
+            let data = Array.from({ length: (year + 1) - 2000 }, (value, index) => 2020 + index);
             return data.slice().reverse();
         }
     },
-    mounted() {
-        this.fetchDepartmentInfo();
-        this.fetchRefBy();
-
-    },
+  
     data() {
         return {
             generalStep: true,
@@ -1372,6 +1236,7 @@ export default {
             othersStep: false,
 
             same_as_permanent: false,
+            base_url: process.env.url,
 
             student: {
                 general: '',
@@ -1382,7 +1247,7 @@ export default {
                 adm_frm_sl: '',
                 admission_season: '',
                 roll_no: '',
-                reg_no: '',
+                reg_code: '',
 
                 //personal
                 student_name: '',
@@ -1416,20 +1281,21 @@ export default {
                 e_occu: '',
                 e_relation: '',
                 //education
-                e_exam_name1: '',
-                e_group1: '',
-                e_roll_no_1: '',
-                e_passing_year1: '',
-                e_ltr_grd_tmarks1: '',
-                e_div_cls_cgpa1: '',
-                e_board_institute1: '',
-                e_exam_name2: '',
-                e_group2: '',
-                e_roll_no_2: '',
-                e_passing_year2: '',
-                e_ltr_grd_tmarks2: '',
-                e_div_cls_cgpa2: '',
-                e_board_institute2: '',
+                
+                exam_name1: '',
+                roup1: '',
+                roll_no_1: '',
+                passing_year1: '',
+                ltr_grd_tmarks1: '',
+                div_cls_cgpa1: '',
+                board_institute1: '',
+                exam_name2: '',
+                group2: '',
+                roll_no_2: '',
+                passing_year2: '',
+                ltr_grd_tmarks2: '',
+                div_cls_cgpa2: '',
+                board_institute2: '',
                 e_exam_name3: '',
                 e_group3: '',
                 e_roll_no_3: '',
@@ -1444,12 +1310,22 @@ export default {
                 e_ltr_grd_tmarks4: '',
                 e_div_cls_cgpa4: '',
                 e_board_institute4: '',
-                //others
+                                //others
                 refereed_by: '',
                 refe_by_std_type: '',
                 refereed_by_email: '',
 
             },
+            education:{
+                exam_name1: 'test',
+                group1: 'a',
+                roll_no1: '10',
+                passing_year1: '2020',
+                ltr_grd_tmarks1: '4',
+                div_cls_cgpa1: '4',
+                board_institute1: 'test',
+            },
+           
 
             errors: [],
             loading: false,
@@ -1473,7 +1349,7 @@ export default {
          
             countries: [],
             refereedByParents: [],
-            refBy: '',
+            refeByStdTypes: [],
             file_path: '',
             signature_path: '',
 
@@ -1481,8 +1357,29 @@ export default {
 
         }
     },
+      mounted() {
+          this.fetchStudentInfo();
+        this.fetchDepartmentInfo();
+        
+        
+        
+
+    },
     methods: {
-     
+          fetchStudentInfo(){
+            this.$axios.$get('/admission/student-edit/'+ this.$route.params.id).then(response => {
+                // console.log(response);   
+                            
+                this.student = response;               
+                this.fetchBatch();
+                this.fetchShiftGroup();
+                
+            }).catch((error) => {
+                this.$toaster.error("Student Not found");
+            });
+        },
+      
+
         fetchDepartmentInfo() {
 
             this.$axios.$get('/admission/department').then(response => {
@@ -1505,27 +1402,13 @@ export default {
         },
 
         fetchShiftGroup() {
-            this.$axios.$get("/admission/shift-group/" + this.student.batch_id).then((response) => {                
+
+            this.$axios.$get("/admission/shift-group/" + this.student.batch_id).then((response) => {
+                console.log('shift', response);
                 this.shifts = response;
                 this.groups = response;
             }).catch((error) => {
                 this.$toaster.error("Batch Not found");
-            });
-
-        },
-         fetchRefBy() {
-            this.$axios.$get("/employee/show").then((response) => {                
-                this.refBy = response;
-            }).catch((error) => {
-                this.$toaster.error("Employee Not found");
-            });
-
-        },
-           RefByEmail() {
-            this.$axios.$get("/employee/show").then((response) => {                
-                this.refBy = response;
-            }).catch((error) => {
-                this.$toaster.error("Employee Not found");
             });
 
         },
@@ -1671,15 +1554,15 @@ export default {
                 return false;
             }
 
-            if (document.getElementById('file_input').files[0] == undefined) {
-                this.$toaster.error("Please select image");
-                return false;
-            }
+            // if (document.getElementById('file_input').files[0] == undefined) {
+            //     this.$toaster.error("Please select image");
+            //     return false;
+            // }
 
-            if (document.getElementById('signature').files[0] == undefined) {
-                this.$toaster.error("Please select signature");
-                return false;
-            }
+            // if (document.getElementById('signature').files[0] == undefined) {
+            //     this.$toaster.error("Please select signature");
+            //     return false;
+            // }
 
             if (!this.student.permanent_add) {
                 this.$toaster.error("Please enter permanent address");
@@ -1751,75 +1634,75 @@ export default {
 
         educationInfo() {
 
-            if (!this.student.e_exam_name1) {
-                this.$toaster.error("Please enter name of the examination (Back Ground Education Info 1)");
-                return false;
-            }
+            // if (!this.student.e_exam_name1) {
+            //     this.$toaster.error("Please enter name of the examination (Back Ground Education Info 1)");
+            //     return false;
+            // }
 
-            if (!this.student.e_group1) {
-                this.$toaster.error("Please enter group (Back Ground Education Info 1)");
-                return false;
-            }
+            // if (!this.student.e_group1) {
+            //     this.$toaster.error("Please enter group (Back Ground Education Info 1)");
+            //     return false;
+            // }
 
-            if (!this.student.e_roll_no_1) {
-                this.$toaster.error("Please enter roll (Back Ground Education Info 1)");
-                return false;
-            }
+            // if (!this.student.e_roll_no_1) {
+            //     this.$toaster.error("Please enter roll (Back Ground Education Info 1)");
+            //     return false;
+            // }
 
-            if (!this.student.e_passing_year1) {
-                this.$toaster.error("Please enter passing year (Back Ground Education Info 1)");
-                return false;
-            }
+            // if (!this.student.e_passing_year1) {
+            //     this.$toaster.error("Please enter passing year (Back Ground Education Info 1)");
+            //     return false;
+            // }
 
-            if (!this.student.e_ltr_grd_tmarks1) {
-                this.$toaster.error("Please enter letter or grade or total Marks (Back Ground Education Info 1)");
-                return false;
-            }
+            // if (!this.student.e_ltr_grd_tmarks1) {
+            //     this.$toaster.error("Please enter letter or grade or total Marks (Back Ground Education Info 1)");
+            //     return false;
+            // }
 
-            if (!this.student.e_div_cls_cgpa1) {
-                this.$toaster.error("Please enter divission or class or CGPA (Back Ground Education Info 1)");
-                return false;
-            }
+            // if (!this.student.e_div_cls_cgpa1) {
+            //     this.$toaster.error("Please enter divission or class or CGPA (Back Ground Education Info 1)");
+            //     return false;
+            // }
 
-            if (!this.student.e_board_institute1) {
-                this.$toaster.error("Please enter board / institute (Back Ground Education Info 1)");
-                return false;
-            }
+            // if (!this.student.e_board_institute1) {
+            //     this.$toaster.error("Please enter board / institute (Back Ground Education Info 1)");
+            //     return false;
+            // }
 
-            if (!this.student.e_exam_name2) {
-                this.$toaster.error("Please enter name of the examination (Back Ground Education Info 2)");
-                return false;
-            }
+            // if (!this.student.e_exam_name2) {
+            //     this.$toaster.error("Please enter name of the examination (Back Ground Education Info 2)");
+            //     return false;
+            // }
 
-            if (!this.student.e_group2) {
-                this.$toaster.error("Please enter group (Back Ground Education Info 2)");
-                return false;
-            }
+            // if (!this.student.e_group2) {
+            //     this.$toaster.error("Please enter group (Back Ground Education Info 2)");
+            //     return false;
+            // }
 
-            if (!this.student.e_roll_no_2) {
-                this.$toaster.error("Please enter roll (Back Ground Education Info 2)");
-                return false;
-            }
+            // if (!this.student.e_roll_no_2) {
+            //     this.$toaster.error("Please enter roll (Back Ground Education Info 2)");
+            //     return false;
+            // }
 
-            if (!this.student.e_passing_year2) {
-                this.$toaster.error("Please enter passing year (Back Ground Education Info 2)");
-                return false;
-            }
+            // if (!this.student.e_passing_year2) {
+            //     this.$toaster.error("Please enter passing year (Back Ground Education Info 2)");
+            //     return false;
+            // }
 
-            if (!this.student.e_ltr_grd_tmarks2) {
-                this.$toaster.error("Please enter letter or grade or total Marks (Back Ground Education Info 2)");
-                return false;
-            }
+            // if (!this.student.e_ltr_grd_tmarks2) {
+            //     this.$toaster.error("Please enter letter or grade or total Marks (Back Ground Education Info 2)");
+            //     return false;
+            // }
 
-            if (!this.student.e_div_cls_cgpa2) {
-                this.$toaster.error("Please enter divission or class or CGPA (Back Ground Education Info 2)");
-                return false;
-            }
+            // if (!this.student.e_div_cls_cgpa2) {
+            //     this.$toaster.error("Please enter divission or class or CGPA (Back Ground Education Info 2)");
+            //     return false;
+            // }
 
-            if (!this.student.e_board_institute2) {
-                this.$toaster.error("Please enter board / institute (Back Ground Education Info 2)");
-                return false;
-            }
+            // if (!this.student.e_board_institute2) {
+            //     this.$toaster.error("Please enter board / institute (Back Ground Education Info 2)");
+            //     return false;
+            // }
 
             // this.fetchRefereedByParent();
 
@@ -1853,7 +1736,7 @@ export default {
             formData.append("signature", document.getElementById('signature').files[0]);
             console.log(formData);
 
-            this.$axios.$post('/admission/add_student', formData, {
+            this.$axios.$post('/admission/student-update/'+this.$route.params.id, formData,this.education, {
 
                 headers: {
                     "Content-Type": "multipart/form-data",

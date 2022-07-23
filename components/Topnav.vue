@@ -4,7 +4,7 @@
       <button class="btn btn-primary" id="menu-toggle"> <img src="/images/menu.png" alt="">
       </button>
       <nuxt-link to="/app">
-        <h4 class="cms-title">Central Management System | Darul Uloom Moniram</h4>
+        <h4 class="cms-title">Central Management System | Darul Uloom Islamia</h4>
       </nuxt-link>
       <div class="ml-auto">
         <div class="dropdown">

@@ -7,7 +7,7 @@
             <div class="panel-heading">
               <div class="row">
                 <div class="col col-sm-5 col-xs-12">
-                  <h6 class="title">committee Member List</h6>
+                  <h6 class="title">Committee Member List</h6>
                 </div>
                 <div class="col-sm-7 col-xs-12 text-right">
                   <nuxt-link to="/dum-ac/committee/create" class="btn-add">Add committee</nuxt-link>

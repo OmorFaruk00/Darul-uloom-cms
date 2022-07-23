@@ -2,28 +2,28 @@
   <div>
     <Topnav />
     <div class="d-flex" id="wrapper">
-      
-      <div class=" " id="sidebar-wrapper">        
+      <div class=" " id="sidebar-wrapper">
         <div class="list-group sidebar">
-          <nuxt-link class="sidebar-item" to="/student">Dashboard</nuxt-link>
-          <nuxt-link class="sidebar-item" to="##">Student</nuxt-link>
-          <nuxt-link class="sidebar-item" to="#">Transcript</nuxt-link>
-          <!-- <nuxt-link class="sidebar-item" to="/#">Event</nuxt-link> -->
-          <!-- <nuxt-link class="sidebar-item" to="/#">Program</nuxt-link> -->
 
+          <nuxt-link class="sidebar-item" to="/student"><img src="/images/dashboard.png" alt="" />Dashboard</nuxt-link>
+          <nuxt-link class="sidebar-item" to="/student/syllabus"><img src="/images/syllabus.png" alt="" />Syllabus</nuxt-link>
+          <nuxt-link class="sidebar-item" to="/student/question"><img src="/images/question.png" alt="" />Questions</nuxt-link>
+          
+        
+      
+         
+        
+          
         </div>
       </div>
       <!-- /#sidebar-wrapper -->
       <!-- Page Content -->
       <div id="page-content-wrapper">
-
         <div class="container-fluid">
           <router-view />
-
         </div>
       </div>
       <!-- /#page-content-wrapper -->
-
     </div>
   </div>
   <!-- /#wrapper -->
@@ -31,76 +31,83 @@
 
 <script>
 export default {
+data(){
+    return {
+        syllabus: false,
+        final_admission: false,
+        students: false,
+    }
 
- 
-
+}
 }
 </script>
 <style scoped>
-.sidebar {
-  text-align: center;
+.dropdown_final_syllabus a{  
+  cursor: pointer;
+  
+}
+.dropdown_item a{  
+  border: none;
+  padding-left: 45px;
   line-height: 50px;
-
-}
-
-.sidebar-item {
-  font-size: 18px;
   color: #000;
-  /* padding: 0px 50px; */
-}
+  display: block;
+  font-size: 14px;
 
-.user {
-  height: 30px;
-  padding-right: 30px;
-}
-
-.cms-title {
-  padding-left: 50px;
-  color: #fff;
-  font-weight: bolder;
-}
-.topnav{
-  background: #337ab7;
-}
-.nuxt-link-exact-active {
-  background: #fff !important;
-  /* background: #fff !important; */
-  color: #000;
-  margin: 0px 50px;
-  border-radius: 10px;
   
 }
 
+/* .dropdown_item a:hover{  
+ background: #fff;
+  
+} */
+.sidebar {
+  line-height: 50px;  
+  
+}
+
+.sidebar-item {
+  font-size: 15px;
+  color: #000;  
+}
+
+.sidebar-item svg,
+img {
+  height: 20px;
+  padding-right: 10px;
+  padding-left: 20px;
+}
+
+
+
+.nuxt-link-exact-active {
+  background: #fff !important;
+  color: #000;  
+}
 
 #sidebar-wrapper {
   min-height: 100vh;
   margin-left: -15rem;
-  -webkit-transition: margin .25s ease-out;
-  -moz-transition: margin .25s ease-out;
-  -o-transition: margin .25s ease-out;
-  transition: margin .25s ease-out;
-  padding-top: 58px;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+  padding-top: 40px;
   background: #f6f6f6;
 }
 
-
-#menu-toggle {
+#final_syllabus-toggle {
   background: #fff;
   border: none;
-
 }
 
-#menu-toggle:hover {
+#final_syllabus-toggle:hover {
   background: #21537f;
-
 }
 
-#menu-toggle img {
+#final_syllabus-toggle img {
   height: 15px;
-
-
 }
-
 
 #sidebar-wrapper .sidebar-heading {
   padding: 0.875rem 1.25rem;
@@ -136,12 +143,9 @@ export default {
 
 .bg-light {
   background-color: rgb(10, 94, 118);
-
 }
 
 #page-content-wrapper {
-  background-color: #fff;
-
+  background-color: #fff !important;
 }
 </style>
-

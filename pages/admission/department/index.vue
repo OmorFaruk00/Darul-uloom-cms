@@ -19,8 +19,7 @@
                 <thead>
                   <tr>
                     <th>ID</th>
-                    <th>Department name</th>
-                    
+                    <th>Department name</th>                    
                     <th>Status</th>
                     <th style="width:200px">Action</th>
                   </tr>
@@ -28,8 +27,7 @@
                 <tbody>
                   <tr v-for="department in departments" :key="department._id">
                     <td>{{ department.id }}</td>
-                    <td>{{ department.department_name }}</td>
-                    
+                    <td>{{ department.department_name }}</td>                    
                     <td>
                       <button v-if="department.status == 1" class="btn-active" @click="departmentStatus(department.id)">
                         Active
@@ -72,8 +70,7 @@
                 <label for="" class="">Department Name</label>
                 <input type="text" class="form-control" id="name" placeholder="Title" v-model="department.department_name" />
                 <p v-if="errors.title" v-text="errors.title[0]" class="text-danger"></p>
-              </div>
-          
+              </div>          
             </div>
             <div class="modal-footer">
               <button type="button" class="btn-submit" @click="departmentUpdate()">

@@ -5,9 +5,9 @@
       <div class=" " id="sidebar-wrapper">
         <div class="list-group sidebar">
 
-          <nuxt-link class="sidebar-item" to="/final_admission"><img src="/images/dashboard.png" alt="" />Dashboard</nuxt-link>
+          <nuxt-link class="sidebar-item" to="/admission"><img src="/images/dashboard.png" alt="" />Dashboard</nuxt-link>
            <nuxt-link class="sidebar-item" to="/admission/batch"><img src="/images/batch.png" alt="" />Batch</nuxt-link>
-           <nuxt-link class="sidebar-item" to="/admission/department"><img src="/images/department.png" alt="" />Department</nuxt-link>
+           <nuxt-link class="sidebar-item" to="/admission/department"><img src="/images/department.png" />Department</nuxt-link>
         
           <div class="dropdown_final_admission_form">
             <a class="sidebar-item" @click.prevent="admission_form=!admission_form"><img src="/images/right-arrow1.png" alt="" style="height:15px"/>
@@ -35,25 +35,19 @@
               <nuxt-link to="/admission/admissionInActiveBatch" class="">                
                 Admission in active batch
               </nuxt-link>
-                <!-- <nuxt-link to="/admission/batch" class="">                
-                Batch
-              </nuxt-link> -->
-                <!-- <nuxt-link to="/admission/department" class="">                
-                Department
-              </nuxt-link> -->
+             
             </div>
           </div>
               <div class="dropdown_final_admission_form">
-            <a class="sidebar-item" @click.prevent="students=!students"><img src="/images/right-arrow1.png" alt="" style="height:15px"/>
-              
+            <a class="sidebar-item" @click.prevent="students=!students"><img src="/images/right-arrow1.png" alt="" style="height:15px"/>              
                Students
             </a>
             <div v-if="students" class="dropdown_item">
               <nuxt-link to="/admission/dept-wish-student" class="">                
                Dept. Wise Students
               </nuxt-link>
-                <nuxt-link to="/admission/student" class="">                
-               Students
+                <nuxt-link to="/admission/search-student" class="">                
+              Search Students
               </nuxt-link>
             </div>
           </div>

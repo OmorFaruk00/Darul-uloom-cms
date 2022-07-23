@@ -9,7 +9,7 @@
 </template>
 <script>
 export default {
-
+layout:'Student-content',
 
 }
 </script>

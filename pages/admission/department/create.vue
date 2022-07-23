@@ -7,7 +7,8 @@
       <form>
         <div class="form-group">
           <label for="" class="">Department Name</label>
-          <input type="text" class="form-control" id="name" placeholder="Enter Department Name" v-model="department.department_name" />
+          <input type="text" class="form-control" id="name" placeholder="Enter Department Name"
+            v-model="department.department_name" />
           <p v-if="errors.department_name" v-text="errors.department_name[0]" class="text-danger"></p>
         </div>
         <!-- <div class="form-group">
@@ -32,7 +33,7 @@ export default {
     return {
       department: {
         department_name: "",
-        
+
       },
       errors: {},
     };
