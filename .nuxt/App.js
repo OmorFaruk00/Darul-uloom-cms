@@ -15,10 +15,11 @@ import _514a6c80 from '../layouts/Adm-content.vue'
 import _48d907d2 from '../layouts/Dum-content.vue'
 import _0f8102c4 from '../layouts/Emp-content.vue'
 import _0d822d02 from '../layouts/Profile-content.vue'
+import _982051b4 from '../layouts/Setting-content.vue'
 import _d1839fde from '../layouts/Student-content.vue'
 import _6f6c098b from './layouts/default.vue'
 
-const layouts = { "_Account-content": sanitizeComponent(_23cd2603),"_Adm-content": sanitizeComponent(_514a6c80),"_Dum-content": sanitizeComponent(_48d907d2),"_Emp-content": sanitizeComponent(_0f8102c4),"_Profile-content": sanitizeComponent(_0d822d02),"_Student-content": sanitizeComponent(_d1839fde),"_default": sanitizeComponent(_6f6c098b) }
+const layouts = { "_Account-content": sanitizeComponent(_23cd2603),"_Adm-content": sanitizeComponent(_514a6c80),"_Dum-content": sanitizeComponent(_48d907d2),"_Emp-content": sanitizeComponent(_0f8102c4),"_Profile-content": sanitizeComponent(_0d822d02),"_Setting-content": sanitizeComponent(_982051b4),"_Student-content": sanitizeComponent(_d1839fde),"_default": sanitizeComponent(_6f6c098b) }
 
 export default {
   render (h, props) {

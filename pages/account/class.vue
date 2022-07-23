@@ -85,11 +85,7 @@
 
 <script>
 export default {
-<<<<<<< HEAD
   layout:'Account-content',
-=======
-  layout: "Emp-content",
->>>>>>> 98af978fb0b9e065920ad98207a520e480bcc970
   data() {
     return {
       name: "",

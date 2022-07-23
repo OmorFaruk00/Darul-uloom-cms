@@ -42,6 +42,13 @@
     "_name": "_5d1db8ea"
   },
   {
+    "name": "setting",
+    "path": "/setting",
+    "component": "/home/it/Downloads/Darul-uloom-cms/pages/setting/index.vue",
+    "chunkName": "pages/setting/index",
+    "_name": "_2f49d8d1"
+  },
+  {
     "name": "student",
     "path": "/student",
     "component": "/home/it/Downloads/Darul-uloom-cms/pages/student/index.vue",
@@ -61,20 +68,6 @@
     "component": "/home/it/Downloads/Darul-uloom-cms/pages/account/purpose.vue",
     "chunkName": "pages/account/purpose",
     "_name": "_002c41ba"
-  },
-  {
-    "name": "account-class",
-    "path": "/account/class",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/account/class.vue",
-    "chunkName": "pages/account/class",
-    "_name": "_60de3e80"
-  },
-  {
-    "name": "account-purpose",
-    "path": "/account/purpose",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/account/purpose.vue",
-    "chunkName": "pages/account/purpose",
-    "_name": "_d1e8f534"
   },
   {
     "name": "admission-admissionInActiveBatch",
@@ -100,9 +93,9 @@
   {
     "name": "admission-dept-wish-student",
     "path": "/admission/dept-wish-student",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/admission/dept-wish-student.vue",
+    "component": "/home/it/Downloads/Darul-uloom-cms/pages/admission/dept-wish-student.vue",
     "chunkName": "pages/admission/dept-wish-student",
-    "_name": "_1100527e"
+    "_name": "_2c64b515"
   },
   {
     "name": "admission-form-import",
@@ -128,9 +121,9 @@
   {
     "name": "admission-student",
     "path": "/admission/student",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/admission/student.vue",
+    "component": "/home/it/Downloads/Darul-uloom-cms/pages/admission/student.vue",
     "chunkName": "pages/admission/student",
-    "_name": "_11068942"
+    "_name": "_c9409a9a"
   },
   {
     "name": "dum-ac-blog",
@@ -257,6 +250,41 @@
     "component": "/home/it/Downloads/Darul-uloom-cms/pages/profile/update.vue",
     "chunkName": "pages/profile/update",
     "_name": "_0b0d9861"
+  },
+  {
+    "name": "setting-assign-permission-to-role",
+    "path": "/setting/assign-permission-to-role",
+    "component": "/home/it/Downloads/Darul-uloom-cms/pages/setting/assign-permission-to-role.vue",
+    "chunkName": "pages/setting/assign-permission-to-role",
+    "_name": "_327a7fa7"
+  },
+  {
+    "name": "setting-assign-role",
+    "path": "/setting/assign-role",
+    "component": "/home/it/Downloads/Darul-uloom-cms/pages/setting/assign-role.vue",
+    "chunkName": "pages/setting/assign-role",
+    "_name": "_7860b453"
+  },
+  {
+    "name": "setting-permission",
+    "path": "/setting/permission",
+    "component": "/home/it/Downloads/Darul-uloom-cms/pages/setting/permission.vue",
+    "chunkName": "pages/setting/permission",
+    "_name": "_4c01aa40"
+  },
+  {
+    "name": "setting-role",
+    "path": "/setting/role",
+    "component": "/home/it/Downloads/Darul-uloom-cms/pages/setting/role.vue",
+    "chunkName": "pages/setting/role",
+    "_name": "_5e7a68c7"
+  },
+  {
+    "name": "setting-special-permission",
+    "path": "/setting/special-permission",
+    "component": "/home/it/Downloads/Darul-uloom-cms/pages/setting/special-permission.vue",
+    "chunkName": "pages/setting/special-permission",
+    "_name": "_38503518"
   },
   {
     "name": "admission-admissionInActiveBatch-create",
