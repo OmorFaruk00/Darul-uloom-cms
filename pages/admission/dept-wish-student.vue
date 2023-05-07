@@ -28,33 +28,29 @@
             <table class="table table-striped table-bordered text-center">
                 <thead class="bg-dark text-white">
                     <tr>
-                        <th>Serial</th>
+                        
+                        <th>SL</th>                        
+                        <th>Student ID</th>
                         <th>Name</th>
                         <th>Roll</th>
-                        <th>Reg. Code</th>
-                        <!-- <th>Group</th> -->
-                        <th>Email</th>
-                        <th>Phone Number</th>
-                        <th>F Name</th>
-                        <th>E Name</th>
-                        <th>E Cell</th>
-                        <th>Student ID</th>
+                        <th>Reg. Code</th>                      
+                        <th>Group</th>                      
+                        <th>Father Name</th>                        
+                        <th>Father Mobile</th>
                         <th v-if="$auth.user.permission.includes('Student-update')">Action</th>
+                    
                     </tr>
                 </thead>
                 <tbody>
                     <tr v-for="(student, index) in students" :key="index">
                         <td>{{ index + 1 }}</td>
-                        <td>{{ student.student_name }}</td>
-                        <td>{{ student.roll_no }}</td>
-                        <td>{{ student.reg_code }}</td>
-                        <!-- <td >{{student.GROUP}}</td> -->
-                        <td>{{ student.email }}</td>
-                        <td>{{ student.phone_no }}</td>
-                        <td>{{ student.f_name }}</td>
-                        <td>{{ student.e_name }}</td>
-                        <td>{{ student.e_cellno }}</td>
                         <td>{{ student.id }}</td>
+                        <td>{{ student.student_name_english }}</td>
+                        <td>{{ student.roll_no }}</td>
+                        <td>{{ student.reg_no }}</td>
+                        <td >{{student.group_id}}</td>                        
+                        <td>{{ student.f_name }}</td>                       
+                        <td>{{ student.f_cellno1 }}</td>
                         <td v-if="$auth.user.permission.includes('Student-update')">
                             <nuxt-link :to="`/admission/student-update/${student.id}`" class="btn-edit mr-3"
                                 style="padding:7px 15px">

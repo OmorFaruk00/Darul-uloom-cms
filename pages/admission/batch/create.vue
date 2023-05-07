@@ -48,8 +48,9 @@
 
                         <select name="shift" v-model="batch.shift" id="shift" class="form-control" required>
                             <option value="" disabled selected>Select Shift</option>
-                            <option value="1st">1st</option>
-                            <option value="2nd">2nd</option>
+                            <option value="Resident">Resident</option>
+                            <option value="Non-Resident">Non-Resident</option>
+                            <option value="Day-Care">Day-Care</option>
                         </select>
                         <small v-if="errors.shift" class="text-danger with-errors" v-html="errors.shift[0]"></small>
                     </div>

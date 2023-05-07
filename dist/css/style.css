@@ -16,7 +16,7 @@ a:hover{
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 8px 15px 9px;
-    border-radius: 10px;
+    border-radius: 5px;
     transition: all 0.3s ease 0s;
 }
 .btn-add:hover{
@@ -27,59 +27,92 @@ a:hover{
     text-decoration: none;
 }
 .btn-edit{
-    background:#daaa1d;
+    /* background:#daaa1d; */
+    background:#3db8ac;
     color:#fff;
     border:none;
     padding: 5px 15px;
-    border-radius: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
 }
 .btn-edit:hover{
-    background: #21537f;
-    color:#fff;
+    /* background: #21537f;
+    color:#fff; */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.15), 5px 5px rgba(0, 0, 0, 0.1);
+    outline: none;
+    color: #fff;
+    text-decoration: none;
 }
 .btn-delete{
     background:#ff6d12;
     color:#fff;
     border:none;
     padding: 5px 15px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 .btn-delete:hover{
-    background: #21537f;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.15), 5px 5px rgba(0, 0, 0, 0.1);
+    outline: none;
     color: #fff;
+    text-decoration: none;
+}
+.btn-download{
+    background: #5980f8;
+    color:#fff;
+    border:none;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+.btn-download:hover{
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.15), 5px 5px rgba(0, 0, 0, 0.1);
+    outline: none;
+    color: #fff;
+    text-decoration: none;
 }
 .btn-active{
     background:#3a900c;
     color:#fff;
     border:none;
     padding: 5px 15px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 .btn-active:hover{
-    background: #21537f;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.15), 5px 5px rgba(0, 0, 0, 0.1);
+    outline: none;
     color: #fff;
+    text-decoration: none;
 }
 .btn-inactive{
     background:#b02f0f;
     color:#fff;
     border:none;
     padding: 5px 15px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 .btn-inactive:hover{
-    background: #21537f;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.15), 5px 5px rgba(0, 0, 0, 0.1);
+    outline: none;
     color: #fff;
+    text-decoration: none;
 }
 .btn-details{
     background:#aeb43d;
     color:#fff;
     border:none;
     padding: 5px 15px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 .btn-details:hover{
-    background: #21537f;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.15), 5px 5px rgba(0, 0, 0, 0.1);
+    outline: none;
     color: #fff;
+    text-decoration: none;
 }
 .btn-reset{
     color: #fff;
@@ -89,7 +122,7 @@ a:hover{
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 8px 15px 9px;
-    border-radius: 10px;
+    border-radius: 5px;
     transition: all 0.3s ease 0s;
     border: none;
 }
@@ -98,6 +131,7 @@ a:hover{
     box-shadow: 3px 3px rgba(0, 0, 0, 0.15), 5px 5px rgba(0, 0, 0, 0.1);
     outline: none;
     color: #fff;
+    text-decoration: none;
 }
 .btn-submit:hover{
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
@@ -119,7 +153,7 @@ a:hover{
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 8px 15px 9px;
-    border-radius: 10px;
+    border-radius: 5px;
     transition: all 0.3s ease 0s;
     border: none;
 }
@@ -131,12 +165,59 @@ a:hover{
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 8px 15px 9px;
-    border-radius: 10px;
+    border-radius: 5px;
     transition: all 0.3s ease 0s;
     border: none;
 }
+.btn-change{
+    color: #313133;
+    background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;    
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 2px 20px;
+    margin: 0 15px;
+    border: none;    
+    border-radius: 50px;
+  
+}
+.btn-change:hover{    
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.15), 5px 5px rgba(0, 0, 0, 0.1);
+    outline: none;
+    color: #fff !important;
+    text-decoration: none;    
+} 
+.btn-logout{    
+    color: #fff !important;
+    background: linear-gradient(90deg, rgb(178, 69, 42) 0%, rgb(202, 46, 35)100%);
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;    
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase; 
+    width: 240px;   
+    padding: 5px 20px;
+    margin: 0 30px;
+    border: none;    
+    border-radius: 50px;
+   
+}
+.btn-logout:hover{    
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.15), 5px 5px rgba(0, 0, 0, 0.1);
+    outline: none;
+    color: #313133 !important;    
+    text-decoration: none;     
+}
 
 /* form */
+.select {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: none;
+}
 .form-container {
     background-color: #fff;
     font-family: "Titillium Web", sans-serif;
@@ -149,7 +230,7 @@ a:hover{
 .title {
     color: #000;
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 500;
     text-transform: capitalize;
     margin: 0 0 25px;
    
@@ -199,4 +280,33 @@ a:hover{
 
 .form-container .form-horizontal .form-control:focus {
     box-shadow: 1px 1px 5px #dcdcdc;
+}
+.line_height {
+    line-height: 10px;
+
+}
+@media only screen and (max-width: 880px){
+    .btn-responsive{       
+        display: flex;        
+        align-items: center;
+        margin-bottom: 5px;
+    }
+    .btn-edit{
+        margin-bottom: 10px!important;
+    }
+    
+	
+}
+@media only screen and (max-width: 1280px){
+    .btn-download{       
+        display: flex;        
+        
+    }
+    .line_height {
+        line-height: 20px !important;
+    
+    }
+   
+    
+	
 }

@@ -1,6 +1,15 @@
 <template>
     <div>
-        <div class="pt-5">
+        <div class="col-md-4 mx-auto mt-5">
+            <div class="form-group">
+                <select class="form-control select" v-model="assign_id">
+                    <option disabled selected value="">Select Course Teacher</option>
+                    <option disable v-for="(teacher, index) in teachers" :key="index" :value="teacher.id"
+                        v-text="teacher.name"></option>
+                </select>
+            </div>
+        </div>
+        <div class="">
             <div class="row">
                 <div class="mx-auto col-md-12">
                     <div class="panel">
@@ -21,7 +30,7 @@
                                         <th>Course Name</th>
                                         <th>Course Code</th>
                                         <th>Course Teacher</th>
-                                        <th v-if="$auth.user.permission.includes('Assign-course')">Action</th>
+                                        <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -31,12 +40,14 @@
                                         <td>{{ course.batch[0].batch_name }}</td>
                                         <td>{{ course.course_name }}</td>
                                         <td>{{ course.course_code }}</td>
-
                                         <td v-if="course.assigned_by_id != null">{{ course.teacher[0].name }}</td>
                                         <td v-else>Not Assigned</td>
-                                        <td v-if="$auth.user.permission.includes('Assign-course')">
-                                            <button class="btn-edit" 
-                                                @click="assignCourseTeacher(course.id)" >Assign</button>
+                                        <td>
+                                            <div class="checkbox">
+                                                <input type="checkbox" v-model="course_id" :value="course.id"
+                                                    class="text-center select" :id="index">
+                                                <label :for="index"></label>
+                                            </div>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -46,32 +57,10 @@
                 </div>
             </div>
         </div>
-        <!-- The Modal -->
-        <div class="modal fade" id="assignModal">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <h4 class="modal-title">Assign Course Teacher</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <!-- Modal body -->
-                    <div class="form-group p-4">
-                        <label>Assign</label>
-                        <select class="form-control" v-model="assign">
-                            <option disabled selected value="">Select Teacher</option>
-                            <option disable v-for="(teacher, index) in teachers" :key="index" :value="teacher.id"
-                                v-text="teacher.name"></option>
-                        </select>
-                        <!-- <h6 v-if="errors.assign" v-text="errors.assign[0]" class="text-danger">
-                                </h6> -->
-                    </div>
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                        <button type="button" class="btn-submit" @click="SubmitCourseTeacher">Assign</button>
-                    </div>
-                </div>
-            </div>
+
+        <div class="d-flex justify-content-end pt-4">
+            <button class="btn-submit select" @click.prevent="CourseAssign()"
+                v-if="$auth.user.permission.includes('Assign-course')">Assign</button>
         </div>
     </div>
 </template>
@@ -82,8 +71,8 @@ export default {
         return {
             courses: '',
             teachers: '',
-            assign: '',
-            course_id: ''
+            assign_id: '',
+            course_id: [],
 
         }
     },
@@ -96,7 +85,6 @@ export default {
         fetchcourseInfo() {
             this.$axios.$get('/student/course-show').then(response => {
                 this.courses = response;
-                console.log("course", response);
             }).catch((error) => {
                 console.log(error);
             });
@@ -104,30 +92,35 @@ export default {
 
         },
         fetchTeacher() {
-            this.$axios.$get("/employee/show").then((response) => {
+            this.$axios.$get("/student/teacher-show").then((response) => {
                 this.teachers = response;
+                console.log(response);
             }).catch((error) => {
                 this.$toaster.error("Employee Not found");
             });
 
         },
-        assignCourseTeacher($id) {
-            $('#assignModal').modal('show');
-            this.course_id = $id;
+        CourseAssign() {
+            if (this.assign_id == '') {
+                this.$toaster.error('Please Select Teacher');
 
-        },
-        SubmitCourseTeacher() {
-            this.$axios.$get("/student/assign-course-teacher/" + this.course_id + "/" + this.assign).then((response) => {
-                this.$toaster.success(response.message);
-                this.fetchcourseInfo();
-                $('#assignModal').modal('hide');
-            }).catch((error) => {
-                if (error.response.status == 401) {
-                    this.auth = false;
-                    this.$toaster.error(error.response.data.message);
-                }
-                console.log(error);
-            });
+            } else {
+                this.$axios.$post("/student/assign-course-teacher", { "assign_id": this.assign_id, 'course_id': this.course_id }).then((response) => {
+                    console.log(response);
+                    this.$toaster.success(response.message);
+                    this.fetchcourseInfo();
+                    this.assign_id = '';
+                    this.course_id = '';
+
+                }).catch((error) => {
+                    if (error.response.status == 401) {
+                        this.$toaster.error(error.response.data.message);
+                    }
+                    console.log(error);
+                });
+
+
+            }
 
         }
 
@@ -136,3 +129,70 @@ export default {
 
 }
 </script>
+<style>
+.table-bg {
+
+    background: #337ab7;
+    color: #fff;
+}
+
+.checkbox {
+    display: inline-block;
+}
+
+.checkbox input[type=checkbox] {
+    margin: 0;
+    visibility: hidden;
+    left: 1px;
+    top: 1px;
+}
+
+.checkbox label {
+    background: linear-gradient(to right, #f5f5f5 0, #f5f5f5 45%, #337ab7 55%, #007177 100%) 0 0;
+    background-size: 650px 100%;
+    width: 57px;
+    height: 35px;
+    margin: 0;
+    border-radius: 100px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: all 500ms ease;
+}
+
+.checkbox label:before {
+    content: "";
+    color: #fd1a15;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 28px;
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    transition: all 150ms ease;
+}
+
+.checkbox input[type=checkbox]:checked+label {
+    background-position-x: -400px;
+}
+
+.checkbox input[type=checkbox]:checked+label:before {
+    content: "A";
+    color: #007177;
+    left: 25px;
+}
+
+@media only screen and (max-width:767px) {
+    .checkbox {
+        margin: 0 0 20px;
+    }
+}
+</style>

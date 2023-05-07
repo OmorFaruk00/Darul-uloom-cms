@@ -150,10 +150,8 @@ export default {
                                     timer: 4000,
                                     type: "error",
                                     showConfirmButton: false
-                                });
-                                setTimeout(function () {
-                                    window.location.reload();
-                                }, 5000);
+                                });                             
+                            
                             }
 
                         })
