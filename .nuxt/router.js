@@ -65,7 +65,7 @@ const _775c549e = () => interopDefault(import('../pages/web-dui/notice/index.vue
 const _1ead3abe = () => interopDefault(import('../pages/web-dui/program/index.vue' /* webpackChunkName: "pages/web-dui/program/index" */))
 const _6082807a = () => interopDefault(import('../pages/web-dui/slider/index.vue' /* webpackChunkName: "pages/web-dui/slider/index" */))
 const _7d80e0a4 = () => interopDefault(import('../pages/web-dui/tution/index.vue' /* webpackChunkName: "pages/web-dui/tution/index" */))
-const _2e0fda69 = () => interopDefault(import('../pages/admission/admissionInActiveBatch/create.vue' /* webpackChunkName: "pages/admission/admissionInActiveBatch/create" */))
+const _13b41782 = () => interopDefault(import('../pages/admission/admissionInActiveBatch/test.vue' /* webpackChunkName: "pages/admission/admissionInActiveBatch/test" */))
 const _4f6b12fd = () => interopDefault(import('../pages/admission/batch/create.vue' /* webpackChunkName: "pages/admission/batch/create" */))
 const _5ba7997d = () => interopDefault(import('../pages/admission/department/create.vue' /* webpackChunkName: "pages/admission/department/create" */))
 const _4bd116fe = () => interopDefault(import('../pages/employee/department/create.vue' /* webpackChunkName: "pages/employee/department/create" */))
@@ -89,6 +89,8 @@ const _24c5a9a6 = () => interopDefault(import('../pages/web-dui/notice/create.vu
 const _4c373c3d = () => interopDefault(import('../pages/web-dui/program/create.vue' /* webpackChunkName: "pages/web-dui/program/create" */))
 const _50fc4cf8 = () => interopDefault(import('../pages/web-dui/slider/create.vue' /* webpackChunkName: "pages/web-dui/slider/create" */))
 const _e3329e60 = () => interopDefault(import('../pages/web-dui/tution/create.vue' /* webpackChunkName: "pages/web-dui/tution/create" */))
+const _271acb94 = () => interopDefault(import('../pages/admission/admissionInActiveBatch/create/_id.vue' /* webpackChunkName: "pages/admission/admissionInActiveBatch/create/_id" */))
+const _6f5e232e = () => interopDefault(import('../pages/admission/batch/BatchWiseStudent/_id.vue' /* webpackChunkName: "pages/admission/batch/BatchWiseStudent/_id" */))
 const _3d2014f5 = () => interopDefault(import('../pages/admission/batch/update/_id.vue' /* webpackChunkName: "pages/admission/batch/update/_id" */))
 const _01ba6062 = () => interopDefault(import('../pages/employee/employee/detail/_id.vue' /* webpackChunkName: "pages/employee/employee/detail/_id" */))
 const _374488da = () => interopDefault(import('../pages/employee/employee/update/_id.vue' /* webpackChunkName: "pages/employee/employee/update/_id" */))
@@ -360,9 +362,9 @@ export const routerOptions = {
     component: _7d80e0a4,
     name: "web-dui-tution"
   }, {
-    path: "/admission/admissionInActiveBatch/create",
-    component: _2e0fda69,
-    name: "admission-admissionInActiveBatch-create"
+    path: "/admission/admissionInActiveBatch/test",
+    component: _13b41782,
+    name: "admission-admissionInActiveBatch-test"
   }, {
     path: "/admission/batch/create",
     component: _4f6b12fd,
@@ -455,6 +457,14 @@ export const routerOptions = {
     path: "/web-dui/tution/create",
     component: _e3329e60,
     name: "web-dui-tution-create"
+  }, {
+    path: "/admission/admissionInActiveBatch/create/:id?",
+    component: _271acb94,
+    name: "admission-admissionInActiveBatch-create-id"
+  }, {
+    path: "/admission/batch/BatchWiseStudent/:id?",
+    component: _6f5e232e,
+    name: "admission-batch-BatchWiseStudent-id"
   }, {
     path: "/admission/batch/update/:id?",
     component: _3d2014f5,

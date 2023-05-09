@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div>
     <div class="card mx-auto mt-5">
       <div class="card-header">
@@ -210,7 +210,7 @@
                       >REG No<span class="text-danger">*</span></label
                     >
                     <div class="col-md-9 mt-10">
-                      <input
+                      <input readonly
                         type="text"
                         class="form-control"
                         placeholder="Enter Reg Number"
@@ -1664,11 +1664,6 @@ export default {
       return data.slice().reverse();
     },
   },
-  mounted() {
-    this.fetchDepartmentInfo();
-
-    this.fetchDivision();
-  },
   data() {
     return {
       generalStep:true,
@@ -1680,8 +1675,8 @@ export default {
       same_as_permanent: false,
 
       student: {
-        department_id: "",
-        batch_id: "",
+        department_id: 1,
+        batch_id: 1,
         shift_id: "",
         group_id: "",
         adm_frm_sl: "",    
@@ -1798,6 +1793,11 @@ export default {
       institute_sub_address: "",
     };
   },
+  mounted() {
+    this.fetchDepartmentInfo();
+    this.fetchRegistrationInfo();
+    this.fetchDivision();    
+  },
   methods: {
     fetchDepartmentInfo() {
       this.$axios
@@ -1807,6 +1807,31 @@ export default {
         })
         .catch((error) => {
           this.$toaster.error("Department Not found");
+        });
+    },
+    fetchRegistrationInfo() {
+      this.$axios
+        .$get("/admission/registration")
+        .then((response) => {
+          this.student.reg_no = response.reg_code;
+        })
+        .catch((error) => {
+          this.$toaster.error("Registration Not found");
+        });
+    },
+
+    formNumberCheck() {
+      this.$axios
+        .$get("/admission/formnumber-check/"+this.student.adm_frm_sl)
+        .then((response) => {          
+          this.student.student_name_english = response.name_of_student;
+          this.generalStep = false;
+          this.personalStep = true;
+          this.familyStep = false;
+          this.educationStep = false;
+        })
+        .catch((error) => {
+          this.$toaster.error("Admission Form Not found");
         });
     },
 
@@ -2154,7 +2179,9 @@ export default {
 
     nextStep(stepName) {
         if (stepName == "general") {
+          
           this.generalInfo();
+          this.formNumberCheck();
         }
 
       if (stepName == "personal") {
@@ -2196,10 +2223,10 @@ export default {
         return false;
       }
 
-      this.generalStep = false;
-      this.personalStep = true;
-      this.familyStep = false;
-      this.educationStep = false;
+      // this.generalStep = false;
+      // this.personalStep = true;
+      // this.familyStep = false;
+      // this.educationStep = false;
       
     
     },
@@ -2399,7 +2426,7 @@ export default {
         .then((response) => {
           this.$toaster.success(response.message);
           this.student = "";
-          this.$router.push("/admission/search-student");
+          this.$router.push("/admission/admissionInActiveBatch");
         })
         .catch((error) => {
             ;
@@ -2565,4 +2592,4 @@ input[placeholder="SELECT DATE"] {
 .nav-item a {
   text-align: center !important;
 }
-</style>
+</style> -->

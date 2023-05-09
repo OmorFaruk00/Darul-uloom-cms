@@ -54,8 +54,8 @@
                           v-model="student.department_id"
                           id="department_id"
                           class="form-control"
-                          required
-                          @change="fetchBatch"
+                          disabled
+                          
                         >
                           <option value="" disabled selected>
                             Select Department
@@ -81,20 +81,13 @@
                       <label class="col-md-3 col-form-label"
                         >Batch <span class="text-danger">*</span></label
                       >
-                      <div class="col-md-9 mt-10">
-                        <input
-                          type="text"
-                          disabled
-                          class="form-control"
-                          placeholder="Select Department first"
-                          v-if="!batches"
-                        />
+                      <div class="col-md-9 mt-10">                       
                         <select
                           class="form-control"
                           v-model="student.batch_id"
-                          required
-                          v-else
-                          @change="fetchShiftGroup"
+                          disabled
+                          
+                          
                         >
                           <option selected value="">Select Batch</option>
                           <option
@@ -112,6 +105,8 @@
                         ></small>
                       </div>
                     </div>
+  
+                    
                     <div class="form-group row">
                       <label class="col-md-3 col-form-label"
                         >Shift<span class="text-danger">*</span></label
@@ -119,7 +114,8 @@
                       <div class="col-md-9 mt-10">
                         <input
                           type="text"
-                          class="form-control"                          
+                          class="form-control"
+                          readonly
                           v-model="student.shift_id"
                         />
   
@@ -137,7 +133,8 @@
                       <div class="col-md-9 mt-10">
                         <input
                           type="text"
-                          class="form-control"                        
+                          class="form-control"
+                          readonly
                           v-model="student.group_id"
                         />
   
@@ -148,80 +145,7 @@
                         ></small>
                       </div>
                     </div>
-<!--   
-                    <div class="form-group row">
-                      <label class="col-md-3 col-form-label"
-                        >Shift <span class="text-danger">*</span></label
-                      >
-                      <div class="col-md-9 mt-10">
-                        <input
-                          type="text"
-                          disabled
-                          class="form-control"
-                          placeholder="Select Batch First"
-                          v-if="!shifts"
-                        />
-                        <select
-                          name="shift_id"
-                          v-model="student.shift_id"
-                          id="shift_id"
-                          class="form-control"
-                          required
-                          v-else
-                        >
-                          <option value="" disabled selected>Select Shift</option>
-                          <option
-                            v-for="(shift, index) in shifts"
-                            :key="index"
-                            :value="shift.id"
-                            v-html="shift.shift"
-                          ></option>
-                        </select>
-  
-                        <small
-                          v-if="errors.shift_id"
-                          class="text-danger with-errors"
-                          v-html="errors.shift_id[0]"
-                        ></small>
-                      </div>
-                    </div>
-  
-                    <div class="form-group row">
-                      <label class="col-md-3 col-form-label"
-                        >Group <span class="text-danger">*</span></label
-                      >
-                      <div class="col-md-9 mt-10">
-                        <input
-                          type="text"
-                          disabled
-                          class="form-control"
-                          placeholder="Select Batch First"
-                          v-if="!shifts"
-                        />
-                        <select
-                          name="group_id"
-                          v-model="student.group_id"
-                          id="group_id"
-                          class="form-control"
-                          required
-                          v-else
-                        >
-                          <option value="" disabled selected>Select Group</option>
-                          <option
-                            v-for="(group, index) in groups"
-                            :key="index"
-                            :value="group.id"
-                            v-html="group.group"
-                          ></option>
-                        </select>
-  
-                        <small
-                          v-if="errors.group_id"
-                          class="text-danger with-errors"
-                          v-html="errors.group_id[0]"
-                        ></small>
-                      </div>
-                    </div> -->
+                   
                     <div class="form-group row">
                       <label class="col-md-3 col-form-label"
                         >Roll No<span class="text-danger">*</span></label
@@ -246,7 +170,7 @@
                         >REG No<span class="text-danger">*</span></label
                       >
                       <div class="col-md-9 mt-10">
-                        <input
+                        <input readonly
                           type="text"
                           class="form-control"
                           placeholder="Enter Reg Number"
@@ -459,8 +383,83 @@
                             v-html="errors.std_birth_no[0]"
                           ></small>
                         </div>
-                      </div> 
-                                        
+                      </div>
+  
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="form-group">
+                          <label for="image"
+                            >Photo of Students
+                            <span class="text-danger">*</span></label
+                          >
+                          <br />
+  
+                          <input
+                            type="file"
+                            id="file_input"
+                            name="file"
+                            v-on:change="fileValidationCheck"
+                            accept="image/*"
+                            required
+                          />
+                          <br />   
+                          <small
+                            v-if="errors.s_photo"
+                            class="text-danger with-errors"
+                            v-html="errors.s_photo[0]"
+                          ></small>
+                          <br />               
+                          <span class="text-danger"
+                            >File extension must be jpeg,jpg,png and max file size
+                            1024KB</span
+                          >                      
+  
+                          <img
+                            v-if="file_path"
+                            :src="file_path"
+                            alt="gallery image"
+                            style="width: 120px; margin-top: 5px"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="form-group">
+                          <label for="birth_certificate_photo"
+                            >Photo of Birth Certificate
+                            <span class="text-danger">*</span></label
+                          >
+                          <br />
+  
+                          <input
+                            type="file"
+                            id="birth_certificate_photo"
+                            name="birth_certificate_photo"
+                            v-on:change="fileBirthCertificateValidationCheck"
+                            accept="image/*"
+                            required
+                          />
+                          <br />
+                          <small
+                            v-if="errors.birth_certificate_photo"
+                            class="text-danger with-errors"
+                            v-html="errors.birth_certificate_photo[0]"
+                          ></small>
+  
+                          <br />
+  
+                          <span class="text-danger"
+                            >File extension must be jpeg,jpg,png and max file size
+                            500KB</span
+                          >
+                          <br />
+  
+                          <img
+                            v-if="birth_certificate_photo_path"
+                            :src="birth_certificate_photo_path"
+                            alt=""
+                            style="width: 120px; margin-top: 5px"
+                          />
+                        </div>
+                      </div>
   
                       <div class="col-lg-12 col-md-12 col-sm-12">
                         <div class="card my-2">
@@ -894,10 +893,44 @@
                                   v-html="errors.f_nid_no[0]"
                                 ></small>
                               </div>
-                            </div>                           
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                              <div class="form-group">
+                                <label for="image"
+                                  >Photo of Father
+                                  <span class="text-danger">*</span></label
+                                >
+                                <br />
+  
+                                <input
+                                  type="file"
+                                  id="f_photo"
+                                  name="f_photo"
+                                  v-on:change="fileFatherValidationCheck"
+                                  accept="image/*"
+                                  required
+                                />
+  
+                                <br />
+  
+                                <span class="text-danger"
+                                  >File extension must be jpeg,jpg,png and max
+                                  file size 1024KB</span
+                                >
+                                <br />
+  
+                                <img
+                                  v-if="f_photo_path"
+                                  :src="f_photo_path"
+                                  alt="gallery image"
+                                  style="width: 120px; margin-top: 5px"
+                                />
+                              </div>
+                            </div>
                           </div>
                         </div>
-                      </div>  
+                      </div>
+  
                       <div class="card mb-2">
                         <div class="card-header">Mother Info</div>
                         <div class="card-body">
@@ -1117,7 +1150,36 @@
                                   v-html="errors.g_nid_no[0]"
                                 ></small>
                               </div>
-                            </div>                                                   
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                              <div class="form-group">
+                                <label for="image"
+                                  >Photo of Guardian
+                                  <span class="text-danger">*</span></label
+                                >
+                                <br />
+                                <input
+                                  type="file"
+                                  id="g_photo"
+                                  name="file"
+                                  v-on:change="fileGuardianValidationCheck"
+                                  accept="image/*"
+                                  required
+                                />
+                                <br />
+                                <span class="text-danger"
+                                  >File extension must be jpeg,jpg,png and max
+                                  file size 1024KB</span
+                                >
+                                <br />
+                                <img
+                                  v-if="g_photo_path"
+                                  :src="g_photo_path"
+                                  alt="gallery image"
+                                  style="width: 120px; margin-top: 5px"
+                                />
+                              </div>
+                            </div>                          
                           <div class="card-body">
                             <div class="row">
                               <div class="col-lg-12 col-md-12 col-sm-12">
@@ -1562,11 +1624,6 @@
         return data.slice().reverse();
       },
     },
-    mounted() {
-    //   this.fetchDepartmentInfo();
-      this.fatchStudentInfo();  
-      this.fetchDivision();
-    },
     data() {
       return {
         generalStep:true,
@@ -1696,20 +1753,65 @@
         institute_sub_address: "",
       };
     },
+    mounted() {
+      this.fetchAdmissionBatchInfo();
+      this.fetchRegistrationInfo();
+      this.fetchDivision();  
+      this.fetchDepartmentInfo(); 
+    //   this. fetchBatch();
+    //   this.fetchShiftGroup(); 
+    },
     methods: {
 
-        fetchDepartmentInfo() {
+        fetchAdmissionBatchInfo() {            
         this.$axios
-          .$get("/admission/department")
-          .then((response) => {
-            this.departments = response;
-            
+          .$get("/admission/batch-info/"+this.$route.params.id)
+          .then((response) => {                     
+            this.student.department_id = response.department_id;
+            this.student.batch_id = response.id;
+            this.student.shift_id = response.shift;
+            this.student.group_id = response.group;
+            this.fetchBatch();
           })
           .catch((error) => {
             this.$toaster.error("Department Not found");
           });
       },
-    
+      fetchDepartmentInfo() {
+        this.$axios
+          .$get("/admission/department")
+          .then((response) => {
+            this.departments = response;
+          })
+          .catch((error) => {
+            this.$toaster.error("Department Not found");
+          });
+      },
+      fetchRegistrationInfo() {
+        this.$axios
+          .$get("/admission/registration")
+          .then((response) => {
+            this.student.reg_no = response.reg_code;
+          })
+          .catch((error) => {
+            this.$toaster.error("Registration Not found");
+          });
+      },
+  
+      formNumberCheck() {
+        this.$axios
+          .$get("/admission/formnumber-check/"+this.student.adm_frm_sl)
+          .then((response) => {          
+            this.student.student_name_english = response.name_of_student;
+            this.generalStep = false;
+            this.personalStep = true;
+            this.familyStep = false;
+            this.educationStep = false;
+          })
+          .catch((error) => {
+            this.$toaster.error("Admission Form Not found");
+          });
+      },
   
       fetchBatch() {
         this.$axios
@@ -1720,32 +1822,8 @@
           .catch((error) => {
             this.$toaster.error("Batch Not found");
           });
-      },
-  
-      fetchShiftGroup() {
-        this.$axios
-          .$get("/admission/shift-group/" + this.student.batch_id)
-          .then((response) => {
-            this.shifts = response;
-            this.groups = response;
-          })
-          .catch((error) => {
-            this.$toaster.error("Batch Not found");
-          });
-      },
-      fatchStudentInfo() {
-        this.$axios
-          .$get("/admission/student-edit/"+ this.$route.params.id)
-          .then((response) => {
-            this.student = response;
-            this.fetchDepartmentInfo();
-            this.fetchBatch();
-            this.fetchShiftGroup();            
-          })
-          .catch((error) => {
-            this.$toaster.error("Student Not found");
-          });
-      },
+      },  
+ 
       fetchDivision() {
         this.$axios
           .$get("admission/division")
@@ -2068,7 +2146,9 @@
   
       nextStep(stepName) {
           if (stepName == "general") {
+            
             this.generalInfo();
+            this.formNumberCheck();
           }
   
         if (stepName == "personal") {
@@ -2099,6 +2179,10 @@
           this.$toaster.error("Please select shift");
           return false;
         }
+        if (!this.student.roll_no) {
+          this.$toaster.error("Please select roll");
+          return false;
+        }
   
         if (!this.student.group_id) {
           this.$toaster.error("Please select group");
@@ -2110,10 +2194,10 @@
           return false;
         }
   
-        this.generalStep = false;
-        this.personalStep = true;
-        this.familyStep = false;
-        this.educationStep = false;
+        // this.generalStep = false;
+        // this.personalStep = true;
+        // this.familyStep = false;
+        // this.educationStep = false;
         
       
       },
@@ -2149,7 +2233,18 @@
           this.$toaster.error("Please enter birth certificate No");
           return false;
         }
-    
+  
+        if (document.getElementById("file_input").files[0] == undefined) {
+          this.$toaster.error("Please select image");
+          return false;
+        }
+  
+        if (
+          document.getElementById("birth_certificate_photo").files[0] == undefined
+        ) {
+          this.$toaster.error("Please select birth_certificate_photo");
+          return false;
+        }
   
         if (!this.student.permanent_add) {
           this.$toaster.error("Please enter permanent address");
@@ -2215,7 +2310,14 @@
           this.$toaster.error("Please enter guardian address");
           return false;
         }
-     
+        if (document.getElementById("f_photo").files[0] == undefined) {
+          this.$toaster.error("Please select father image");
+          return false;
+        }
+        if (document.getElementById("g_photo").files[0] == undefined) {
+          this.$toaster.error("Please select guardian image");
+          return false;
+        }
        
   
        
@@ -2273,17 +2375,29 @@
   
         for (const property in this.student) {
           formData.append(`${property}`, `${this.student[property]}`);
-        }   
+        }
+  
+        formData.append(
+          "s_photo",
+          document.getElementById("file_input").files[0]
+        );
+        formData.append("f_photo", document.getElementById("f_photo").files[0]);
+        formData.append("g_photo", document.getElementById("g_photo").files[0]);
+        formData.append(
+          "birth_certificate_photo",
+          document.getElementById("birth_certificate_photo").files[0]
+        );
   
         this.$axios
-          .$post("/admission/student-update/"+ this.$route.params.id, formData, {
+          .$post("/admission/add_student", formData, {
             headers: {
               "Content-Type": "multipart/form-data",
             },
           })
           .then((response) => {
             this.$toaster.success(response.message);
-            this.$router.push("/admission/search-student");
+            this.student = "";
+            this.$router.push("/admission/admissionInActiveBatch");
           })
           .catch((error) => {
               ;
