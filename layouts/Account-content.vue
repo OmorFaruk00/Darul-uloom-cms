@@ -7,20 +7,32 @@
           <nuxt-link class="sidebar-item" to="/account"
             ><img src="/images/dashboard.png" alt="" />Dashboard</nuxt-link
           >
-          <nuxt-link class="sidebar-item" to="/account/account" v-if="$auth.user.permission.includes('Accounts')"
-            ><img src="/images/acc.png" alt="" />Account</nuxt-link
+          <nuxt-link class="sidebar-item" to="/account/fee-collect" 
+            ><img src="/images/acc.png" alt="" />Fee Collect</nuxt-link
           >
+          <nuxt-link class="sidebar-item" to="/account/deposite" 
+            ><img src="/images/deposite.png" alt="" />Deposite</nuxt-link
+          >
+          <nuxt-link class="sidebar-item" to="/account/expense" 
+            ><img src="/images/expense.png" alt="" />Expense</nuxt-link
+          >
+          <!-- <nuxt-link class="sidebar-item" to="/account/account" v-if="$auth.user.permission.includes('Accounts')"
+            ><img src="/images/acc.png" alt="" />Account</nuxt-link
+          > -->
           <nuxt-link class="sidebar-item" to="/account/fund" v-if="$auth.user.permission.includes('Funds')"
             ><img src="/images/fund.png" alt="" />Fund</nuxt-link
           >
-          <nuxt-link class="sidebar-item" to="/account/sub_fund" v-if="$auth.user.permission.includes('Sub-funds')"
+          <!-- <nuxt-link class="sidebar-item" to="/account/sub_fund" v-if="$auth.user.permission.includes('Sub-funds')"
             ><img src="/images/fund.png" alt="" />Sub Fund</nuxt-link
-          >
-          <nuxt-link class="sidebar-item" to="/account/purpose" v-if="$auth.user.permission.includes('Account-purpose')"
+          > -->
+          <nuxt-link class="sidebar-item" to="/account/purpose" 
             ><img src="/images/purpose.png" alt="" />Purpose</nuxt-link
           >
+          <nuxt-link class="sidebar-item" to="/account/fund-transfer" 
+            ><img src="/images/transfer.png" alt="" />Fund Transfer</nuxt-link
+          >
           <nuxt-link class="sidebar-item" to="/account/statement" v-if="$auth.user.permission.includes('Account-statement')"
-            ><img src="/images/purpose.png" alt="" />Student Account Statment</nuxt-link
+            ><img src="/images/statement.png" alt="" />Student Account Statment</nuxt-link
           >
         </div>
       </div>

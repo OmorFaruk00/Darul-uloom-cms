@@ -10,7 +10,7 @@
 						<img src="/images/logo.png" alt="" />
 					</div>
 					<div class="login-header">
-						<h2 class="">Central Management System | Darul Uloom Moniram</h2>
+						<h2 class="">Central Management System | Darul Uloom Islamia</h2>
 					</div>
 					<div class="login-header">
 						<h3>Sign In</h3>

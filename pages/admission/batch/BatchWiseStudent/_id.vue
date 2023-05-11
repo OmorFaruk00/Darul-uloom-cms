@@ -1,8 +1,10 @@
 <template>
-    <div>
-       
+    <div>       
         <div>
-        <div class="panel-body table-responsive pt-5" v-if="students.length>0">
+            <div class="d-flex justify-content-end mt-4">         
+                <nuxt-link to="/admission/admissionInActiveBatch" class="btn-add" >Admission In Active Batch List</nuxt-link>    
+        </div>
+        <div class="panel-body table-responsive pt-3" v-if="students.length>0">
             <table class="table table-striped table-bordered text-center">
                 <thead class="bg-dark text-white">
                     <tr>

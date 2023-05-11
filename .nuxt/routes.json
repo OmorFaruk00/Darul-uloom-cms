@@ -84,6 +84,27 @@
     "_name": "_63701a16"
   },
   {
+    "name": "account-deposite",
+    "path": "/account/deposite",
+    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/account/deposite.vue",
+    "chunkName": "pages/account/deposite",
+    "_name": "_64175422"
+  },
+  {
+    "name": "account-expense",
+    "path": "/account/expense",
+    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/account/expense.vue",
+    "chunkName": "pages/account/expense",
+    "_name": "_39f823a0"
+  },
+  {
+    "name": "account-fee-collect",
+    "path": "/account/fee-collect",
+    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/account/fee-collect.vue",
+    "chunkName": "pages/account/fee-collect",
+    "_name": "_7a3cafab"
+  },
+  {
     "name": "account-fund",
     "path": "/account/fund",
     "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/account/fund.vue",
@@ -91,11 +112,18 @@
     "_name": "_37ed142d"
   },
   {
+    "name": "account-fund-transfer",
+    "path": "/account/fund-transfer",
+    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/account/fund-transfer.vue",
+    "chunkName": "pages/account/fund-transfer",
+    "_name": "_ae8d908a"
+  },
+  {
     "name": "account-purpose",
     "path": "/account/purpose",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/account/purpose.vue",
-    "chunkName": "pages/account/purpose",
-    "_name": "_d1e8f534"
+    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/account/purpose/index.vue",
+    "chunkName": "pages/account/purpose/index",
+    "_name": "_b1c8312e"
   },
   {
     "name": "account-statement",
@@ -110,6 +138,13 @@
     "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/account/sub_fund.vue",
     "chunkName": "pages/account/sub_fund",
     "_name": "_196d674c"
+  },
+  {
+    "name": "account-test",
+    "path": "/account/test",
+    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/account/test.vue",
+    "chunkName": "pages/account/test",
+    "_name": "_bd78f10c"
   },
   {
     "name": "admission-admissionInActiveBatch",
@@ -593,6 +628,13 @@
     "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/web-dui/tution/create.vue",
     "chunkName": "pages/web-dui/tution/create",
     "_name": "_e3329e60"
+  },
+  {
+    "name": "account-purpose-update-id",
+    "path": "/account/purpose/update/:id?",
+    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/account/purpose/update/_id.vue",
+    "chunkName": "pages/account/purpose/update/_id",
+    "_name": "_4efed66d"
   },
   {
     "name": "admission-admissionInActiveBatch-create-id",

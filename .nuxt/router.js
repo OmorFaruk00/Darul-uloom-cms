@@ -16,10 +16,15 @@ const _9b83d106 = () => interopDefault(import('../pages/setting/index.vue' /* we
 const _094c3cb0 = () => interopDefault(import('../pages/student/index.vue' /* webpackChunkName: "pages/student/index" */))
 const _93ea1328 = () => interopDefault(import('../pages/web-dui/index.vue' /* webpackChunkName: "pages/web-dui/index" */))
 const _63701a16 = () => interopDefault(import('../pages/account/account.vue' /* webpackChunkName: "pages/account/account" */))
+const _64175422 = () => interopDefault(import('../pages/account/deposite.vue' /* webpackChunkName: "pages/account/deposite" */))
+const _39f823a0 = () => interopDefault(import('../pages/account/expense.vue' /* webpackChunkName: "pages/account/expense" */))
+const _7a3cafab = () => interopDefault(import('../pages/account/fee-collect.vue' /* webpackChunkName: "pages/account/fee-collect" */))
 const _37ed142d = () => interopDefault(import('../pages/account/fund.vue' /* webpackChunkName: "pages/account/fund" */))
-const _d1e8f534 = () => interopDefault(import('../pages/account/purpose.vue' /* webpackChunkName: "pages/account/purpose" */))
+const _ae8d908a = () => interopDefault(import('../pages/account/fund-transfer.vue' /* webpackChunkName: "pages/account/fund-transfer" */))
+const _b1c8312e = () => interopDefault(import('../pages/account/purpose/index.vue' /* webpackChunkName: "pages/account/purpose/index" */))
 const _31d89592 = () => interopDefault(import('../pages/account/statement.vue' /* webpackChunkName: "pages/account/statement" */))
 const _196d674c = () => interopDefault(import('../pages/account/sub_fund.vue' /* webpackChunkName: "pages/account/sub_fund" */))
+const _bd78f10c = () => interopDefault(import('../pages/account/test.vue' /* webpackChunkName: "pages/account/test" */))
 const _31236216 = () => interopDefault(import('../pages/admission/admissionInActiveBatch/index.vue' /* webpackChunkName: "pages/admission/admissionInActiveBatch/index" */))
 const _3f80983e = () => interopDefault(import('../pages/admission/batch/index.vue' /* webpackChunkName: "pages/admission/batch/index" */))
 const _a1cf453e = () => interopDefault(import('../pages/admission/department/index.vue' /* webpackChunkName: "pages/admission/department/index" */))
@@ -89,6 +94,7 @@ const _24c5a9a6 = () => interopDefault(import('../pages/web-dui/notice/create.vu
 const _4c373c3d = () => interopDefault(import('../pages/web-dui/program/create.vue' /* webpackChunkName: "pages/web-dui/program/create" */))
 const _50fc4cf8 = () => interopDefault(import('../pages/web-dui/slider/create.vue' /* webpackChunkName: "pages/web-dui/slider/create" */))
 const _e3329e60 = () => interopDefault(import('../pages/web-dui/tution/create.vue' /* webpackChunkName: "pages/web-dui/tution/create" */))
+const _4efed66d = () => interopDefault(import('../pages/account/purpose/update/_id.vue' /* webpackChunkName: "pages/account/purpose/update/_id" */))
 const _271acb94 = () => interopDefault(import('../pages/admission/admissionInActiveBatch/create/_id.vue' /* webpackChunkName: "pages/admission/admissionInActiveBatch/create/_id" */))
 const _6f5e232e = () => interopDefault(import('../pages/admission/batch/BatchWiseStudent/_id.vue' /* webpackChunkName: "pages/admission/batch/BatchWiseStudent/_id" */))
 const _3d2014f5 = () => interopDefault(import('../pages/admission/batch/update/_id.vue' /* webpackChunkName: "pages/admission/batch/update/_id" */))
@@ -166,12 +172,28 @@ export const routerOptions = {
     component: _63701a16,
     name: "account-account"
   }, {
+    path: "/account/deposite",
+    component: _64175422,
+    name: "account-deposite"
+  }, {
+    path: "/account/expense",
+    component: _39f823a0,
+    name: "account-expense"
+  }, {
+    path: "/account/fee-collect",
+    component: _7a3cafab,
+    name: "account-fee-collect"
+  }, {
     path: "/account/fund",
     component: _37ed142d,
     name: "account-fund"
   }, {
+    path: "/account/fund-transfer",
+    component: _ae8d908a,
+    name: "account-fund-transfer"
+  }, {
     path: "/account/purpose",
-    component: _d1e8f534,
+    component: _b1c8312e,
     name: "account-purpose"
   }, {
     path: "/account/statement",
@@ -181,6 +203,10 @@ export const routerOptions = {
     path: "/account/sub_fund",
     component: _196d674c,
     name: "account-sub_fund"
+  }, {
+    path: "/account/test",
+    component: _bd78f10c,
+    name: "account-test"
   }, {
     path: "/admission/admissionInActiveBatch",
     component: _31236216,
@@ -457,6 +483,10 @@ export const routerOptions = {
     path: "/web-dui/tution/create",
     component: _e3329e60,
     name: "web-dui-tution-create"
+  }, {
+    path: "/account/purpose/update/:id?",
+    component: _4efed66d,
+    name: "account-purpose-update-id"
   }, {
     path: "/admission/admissionInActiveBatch/create/:id?",
     component: _271acb94,

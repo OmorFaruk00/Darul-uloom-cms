@@ -61,7 +61,7 @@
                         <div class="col-md-4 col-xl-4 col-sm-12">
                             <div class="form-group">
                                 <label>Personal Phone No *</label>
-                                <input type="text" class="form-control" placeholder="Phone Number"
+                                <input type="number" class="form-control" placeholder="Phone Number"
                                     v-model="employee.personal_phone_no" />
                                 <h6 v-if="errors.personal_phone_no" v-text="errors.personal_phone_no[0]"
                                     class="text-danger"></h6>
@@ -70,28 +70,28 @@
                         <div class="col-md-4 col-xl-4 col-sm-12">
                             <div class="form-group">
                                 <label>Alternative Phone No</label>
-                                <input type="text" class="form-control" placeholder="Alternative Phone No"
+                                <input type="number" class="form-control" placeholder="Alternative Phone No"
                                     v-model="employee.alternative_phone_no" />
                             </div>
                         </div>
                         <div class="col-md-4 col-xl-4 col-sm-12">
                             <div class="form-group">
                                 <label>Home Phone No</label>
-                                <input type="text" class="form-control" placeholder="Home Phone No"
+                                <input type="number" class="form-control" placeholder="Home Phone No"
                                     v-model="employee.home_phone_no" />
                             </div>
                         </div>
                         <div class="col-md-4 col-xl-4 col-sm-12">
                             <div class="form-group">
                                 <label>Parents Phone No</label>
-                                <input type="text" class="form-control" placeholder="parents Phone No"
+                                <input type="number" class="form-control" placeholder="parents Phone No"
                                     v-model="employee.parent_phone_no" />
                             </div>
                         </div>
                         <div class="col-md-4 col-xl-4 col-sm-12">
                             <div class="form-group">
                                 <label>NID No *</label>
-                                <input type="text" class="form-control" placeholder="NID No"
+                                <input type="number" class="form-control" placeholder="NID No"
                                     v-model="employee.nid_no" />
                                 <h6 v-if="errors.nid_no" v-text="errors.nid_no[0]" class="text-danger"></h6>
                             </div>
