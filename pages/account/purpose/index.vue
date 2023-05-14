@@ -60,7 +60,7 @@
         </div>
       </div>
       <div>
-        <table class="table table-striped border text-center" v-if="purposes">
+        <table class="table table-striped table-bordered" v-if="purposes">
           <thead>
             <tr>
               <th scope="col">SL NO</th>
@@ -68,7 +68,7 @@
               <th scope="col">Payment Type</th>           
               <th scope="col">Type</th>          
               <th scope="col">Fund</th>           
-              <th scope="col">Action</th>           
+              <th width="200px" scope="col">Action</th>           
             </tr>
           </thead>
           <tbody>

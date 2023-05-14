@@ -2,6 +2,7 @@
     <section class="accounts">
       <div class="container mt-5">
         <div class="form-shadow p-5">
+          <h3 class="title">Create Deposite</h3>
           <div class="">           
             <div class="row">         
               <div class="col-md-6">
@@ -14,6 +15,14 @@
                   <h6 v-if="error && error.purpose_id" v-text="error.purpose_id[0]" class="text-danger"></h6>
                 </div>
               </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="inpu4" class="form-label">Reference Id
+                  </label>
+                  <input type="number" v-model="reference_id" class="form-control" id="inpu4" />
+                  <h6 v-if="error && error.reference_id" v-text="error.reference_id[0]" class="text-danger"></h6>
+                </div>
+              </div> 
   
               <div class="col-md-6">
                 <div class="form-group">
@@ -35,7 +44,7 @@
                 </div>
               </div>                        
              
-              <div class="col-md-6">
+              <div class="col-md-12">
                 <div class="form-group">
                   <label for="inputAddress2" class="form-label">Payment Date</label>
                   <input v-model="date" type="date" class="form-control" id="inputAddress2" placeholder="Date" />
@@ -69,6 +78,7 @@
         date: "",
         note: "",      
         purposes: "",
+        reference_id:"",
         error: "",
       };
     },
@@ -93,6 +103,7 @@
         this.$axios
           .post("/accounts/deposite", {          
             purpose_id: this.purpose_id,
+            reference_id: this.reference_id,
             note: this.note,           
             pay_by: this.pay_by,
             amount: this.amount,           
@@ -101,6 +112,7 @@
           })
           .then((response) => {             
               (this.purpose_id = ""),
+              (this.reference_id = ""),
               (this.pay_by = ""),
               (this.amount = ""),              
               (this.date = ""),

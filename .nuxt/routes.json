@@ -217,13 +217,6 @@
     "_name": "_4b5b78df"
   },
   {
-    "name": "employee-employee",
-    "path": "/employee/employee",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/employee/employee/index.vue",
-    "chunkName": "pages/employee/employee/index",
-    "_name": "_2221a4dc"
-  },
-  {
     "name": "employee-office-time",
     "path": "/employee/office-time",
     "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/employee/office-time/index.vue",
@@ -502,6 +495,20 @@
     "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/employee/employee/create.vue",
     "chunkName": "pages/employee/employee/create",
     "_name": "_49c74162"
+  },
+  {
+    "name": "employee-employee-show",
+    "path": "/employee/employee/show",
+    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/employee/employee/show.vue",
+    "chunkName": "pages/employee/employee/show",
+    "_name": "_30752e63"
+  },
+  {
+    "name": "employee-employee-test",
+    "path": "/employee/employee/test",
+    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/employee/employee/test.vue",
+    "chunkName": "pages/employee/employee/test",
+    "_name": "_004cc578"
   },
   {
     "name": "profile-qualification-create",

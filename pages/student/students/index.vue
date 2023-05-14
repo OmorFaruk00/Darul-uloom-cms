@@ -8,9 +8,7 @@
             <thead class="bg-dark text-white">
               <tr>
                 <th>Sl</th>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Phone</th>
+                <th>Name</th>       
                 <th>Roll</th>
                 <th>Reg No</th>
                 <th>Department</th>
@@ -21,11 +19,9 @@
             <tbody>
               <tr v-for="(student, index) in students" :key="index">
                 <td>{{ index + 1 }}</td>
-                <td>{{ student.student_name }}</td>
-                <td>{{ student.email }}</td>
-                <td>{{ student.phone_no }}</td>
+                <td>{{ student.student_name_english }}</td>                
                 <td>{{ student.roll_no }}</td>
-                <td>{{ student.reg_code }}</td>
+                <td>{{ student.reg_no }}</td>
                 <td>{{ student.department[0].department_name }}</td>
                 <td>{{ student.batch.batch_name }}</td>
               </tr>

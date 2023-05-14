@@ -35,7 +35,6 @@ const _22fdd159 = () => interopDefault(import('../pages/admission/form-stock.vue
 const _73225922 = () => interopDefault(import('../pages/admission/search-student.vue' /* webpackChunkName: "pages/admission/search-student" */))
 const _3af8abc0 = () => interopDefault(import('../pages/employee/department/index.vue' /* webpackChunkName: "pages/employee/department/index" */))
 const _4b5b78df = () => interopDefault(import('../pages/employee/designation/index.vue' /* webpackChunkName: "pages/employee/designation/index" */))
-const _2221a4dc = () => interopDefault(import('../pages/employee/employee/index.vue' /* webpackChunkName: "pages/employee/employee/index" */))
 const _e1bd1134 = () => interopDefault(import('../pages/employee/office-time/index.vue' /* webpackChunkName: "pages/employee/office-time/index" */))
 const _3310122f = () => interopDefault(import('../pages/leave/application_denied_by_other.vue' /* webpackChunkName: "pages/leave/application_denied_by_other" */))
 const _750ebdf1 = () => interopDefault(import('../pages/leave/application_form.vue' /* webpackChunkName: "pages/leave/application_form" */))
@@ -76,6 +75,8 @@ const _5ba7997d = () => interopDefault(import('../pages/admission/department/cre
 const _4bd116fe = () => interopDefault(import('../pages/employee/department/create.vue' /* webpackChunkName: "pages/employee/department/create" */))
 const _47c7edbf = () => interopDefault(import('../pages/employee/designation/create.vue' /* webpackChunkName: "pages/employee/designation/create" */))
 const _49c74162 = () => interopDefault(import('../pages/employee/employee/create.vue' /* webpackChunkName: "pages/employee/employee/create" */))
+const _30752e63 = () => interopDefault(import('../pages/employee/employee/show.vue' /* webpackChunkName: "pages/employee/employee/show" */))
+const _004cc578 = () => interopDefault(import('../pages/employee/employee/test.vue' /* webpackChunkName: "pages/employee/employee/test" */))
 const _69979b08 = () => interopDefault(import('../pages/profile/qualification/create.vue' /* webpackChunkName: "pages/profile/qualification/create" */))
 const _a63bbabc = () => interopDefault(import('../pages/profile/social/create.vue' /* webpackChunkName: "pages/profile/social/create" */))
 const _91913fd6 = () => interopDefault(import('../pages/profile/training/create.vue' /* webpackChunkName: "pages/profile/training/create" */))
@@ -248,10 +249,6 @@ export const routerOptions = {
     component: _4b5b78df,
     name: "employee-designation"
   }, {
-    path: "/employee/employee",
-    component: _2221a4dc,
-    name: "employee-employee"
-  }, {
     path: "/employee/office-time",
     component: _e1bd1134,
     name: "employee-office-time"
@@ -411,6 +408,14 @@ export const routerOptions = {
     path: "/employee/employee/create",
     component: _49c74162,
     name: "employee-employee-create"
+  }, {
+    path: "/employee/employee/show",
+    component: _30752e63,
+    name: "employee-employee-show"
+  }, {
+    path: "/employee/employee/test",
+    component: _004cc578,
+    name: "employee-employee-test"
   }, {
     path: "/profile/qualification/create",
     component: _69979b08,

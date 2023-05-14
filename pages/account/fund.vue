@@ -27,8 +27,8 @@
         </div>
       </div>
     </div>
-    <div class="mt-5">
-      <table class="table table-striped text-center">
+    <div class="mt-5 form-shadow p-2 col-md-6 mx-auto">
+      <table class="table table-bordered text-center">
         <thead>
           <tr>
             <th scope="col">Sl NO</th>

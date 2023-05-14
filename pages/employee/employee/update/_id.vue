@@ -306,7 +306,7 @@ export default {
                     this.employee = "";
                     this.errors = {};
                     this.$toaster.success(res.message);
-                    this.$router.push("/employee/employee");
+                    this.$router.push("/employee/employee/show");
                 })
                 .catch((error) => {
                       if (error.response.status == 401) {

@@ -200,7 +200,7 @@ export async function setContext (app, context) {
       payload: context.payload,
       error: context.error,
       base: app.router.options.base,
-      env: {"url":"http://localhost:8000"}
+      env: {"url":"https://api.darululoom-islamia.org"}
     }
     // Only set once
 

@@ -2,6 +2,7 @@
     <section class="accounts">
       <div class="container mt-5">
         <div class="form-shadow p-5">
+          <h3 class="title">Student Fee Collect</h3>
           <div class="">            
             <div class="row">
               <div class="col-md-12 col-xl-6 col-sm-12">

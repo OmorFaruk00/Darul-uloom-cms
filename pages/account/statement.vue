@@ -1,7 +1,6 @@
 <template>
-  <section class="col-md-6 mx-auto py-5">
-    <div class="card">
-      <div class="card-body">
+  <section class="col-md-6 mx-auto py-5">   
+      <div class="form-shadow p-5">
         <div class="row">
           <div class="col-md-12 col-xl-12 col-sm-12">
             <div class="form-group">
@@ -38,10 +37,9 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="card mt-3" v-if="statements">
-      <div class="card-body">
+      </div>    
+    <div class="mt-3" v-if="statements">
+      <div class="form-shadow p-5">
         <h4 class="card-title text-center">Student Account Statement</h4>
         <div class="table-responsive">
           <table class="table table-bordered">

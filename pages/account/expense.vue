@@ -2,6 +2,7 @@
     <section class="accounts">
       <div class="container mt-5">
         <div class="form-shadow p-5">
+          <h3 class="title">Create Expense</h3>
           <div class="">           
             <div class="row">         
               <div class="col-md-6">
