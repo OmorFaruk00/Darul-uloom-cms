@@ -27,6 +27,7 @@
            <div class="d-flex justify-content-end">
              <button class="btn-logout" @click="logout">Log out</button>
            </div>
+
           </div>
         </div>
       </div>

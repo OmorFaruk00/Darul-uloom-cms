@@ -2,7 +2,14 @@
     <section class="accounts">
       <div class="container mt-5">
         <div class="form-shadow p-5">
-          <h3 class="title">Create Expense</h3>
+          <div class="d-flex justify-content-between">
+          <div>
+            <h3 class="title">Add Deposite</h3>
+          </div>
+          <div>
+             <nuxt-link to="/account/deposite"><img src="/images/list.png" alt=""></nuxt-link>
+            </div>
+        </div>
           <div class="">           
             <div class="row">         
               <div class="col-md-6">
@@ -15,6 +22,14 @@
                   <h6 v-if="error && error.purpose_id" v-text="error.purpose_id[0]" class="text-danger"></h6>
                 </div>
               </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="inpu4" class="form-label">Reference Id
+                  </label>
+                  <input type="number" v-model="reference_id" class="form-control" id="inpu4" />
+                  <h6 v-if="error && error.reference_id" v-text="error.reference_id[0]" class="text-danger"></h6>
+                </div>
+              </div> 
   
               <div class="col-md-6">
                 <div class="form-group">
@@ -36,7 +51,7 @@
                 </div>
               </div>                        
              
-              <div class="col-md-6">
+              <div class="col-md-12">
                 <div class="form-group">
                   <label for="inputAddress2" class="form-label">Payment Date</label>
                   <input v-model="date" type="date" class="form-control" id="inputAddress2" placeholder="Date" />
@@ -51,7 +66,7 @@
               </div>
             </div>
             <div class="d-flex justify-content-end mt-3">
-              <button type="submit" class="btn btn-info" @click="makeExpense()">
+              <button type="submit" class="btn btn-info" @click="makeDeposited()">
                 Make Payment
               </button>
             </div>
@@ -70,6 +85,7 @@
         date: "",
         note: "",      
         purposes: "",
+        reference_id:"",
         error: "",
       };
     },
@@ -80,7 +96,7 @@
   
       getPurpose() {
         this.$axios
-          .$get("/accounts/purpose/Expense")
+          .$get("/accounts/purpose/Deposited")
           .then((response) => {
             this.purposes = response;
             console.log(response)
@@ -90,10 +106,11 @@
           });
     
       },
-      makeExpense() {
+      makeDeposited() {
         this.$axios
-          .post("/accounts/expense", {          
+          .post("/accounts/deposite", {          
             purpose_id: this.purpose_id,
+            reference_id: this.reference_id,
             note: this.note,           
             pay_by: this.pay_by,
             amount: this.amount,           
@@ -102,6 +119,7 @@
           })
           .then((response) => {             
               (this.purpose_id = ""),
+              (this.reference_id = ""),
               (this.pay_by = ""),
               (this.amount = ""),              
               (this.date = ""),

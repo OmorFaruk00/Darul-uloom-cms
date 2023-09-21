@@ -16,8 +16,8 @@ const _9b83d106 = () => interopDefault(import('../pages/setting/index.vue' /* we
 const _094c3cb0 = () => interopDefault(import('../pages/student/index.vue' /* webpackChunkName: "pages/student/index" */))
 const _93ea1328 = () => interopDefault(import('../pages/web-dui/index.vue' /* webpackChunkName: "pages/web-dui/index" */))
 const _63701a16 = () => interopDefault(import('../pages/account/account.vue' /* webpackChunkName: "pages/account/account" */))
-const _64175422 = () => interopDefault(import('../pages/account/deposite.vue' /* webpackChunkName: "pages/account/deposite" */))
-const _39f823a0 = () => interopDefault(import('../pages/account/expense.vue' /* webpackChunkName: "pages/account/expense" */))
+const _6f5e6d32 = () => interopDefault(import('../pages/account/deposite/index.vue' /* webpackChunkName: "pages/account/deposite/index" */))
+const _7dc37223 = () => interopDefault(import('../pages/account/expense/index.vue' /* webpackChunkName: "pages/account/expense/index" */))
 const _7a3cafab = () => interopDefault(import('../pages/account/fee-collect.vue' /* webpackChunkName: "pages/account/fee-collect" */))
 const _37ed142d = () => interopDefault(import('../pages/account/fund.vue' /* webpackChunkName: "pages/account/fund" */))
 const _ae8d908a = () => interopDefault(import('../pages/account/fund-transfer.vue' /* webpackChunkName: "pages/account/fund-transfer" */))
@@ -35,6 +35,7 @@ const _22fdd159 = () => interopDefault(import('../pages/admission/form-stock.vue
 const _73225922 = () => interopDefault(import('../pages/admission/search-student.vue' /* webpackChunkName: "pages/admission/search-student" */))
 const _3af8abc0 = () => interopDefault(import('../pages/employee/department/index.vue' /* webpackChunkName: "pages/employee/department/index" */))
 const _4b5b78df = () => interopDefault(import('../pages/employee/designation/index.vue' /* webpackChunkName: "pages/employee/designation/index" */))
+const _2221a4dc = () => interopDefault(import('../pages/employee/employee/index.vue' /* webpackChunkName: "pages/employee/employee/index" */))
 const _e1bd1134 = () => interopDefault(import('../pages/employee/office-time/index.vue' /* webpackChunkName: "pages/employee/office-time/index" */))
 const _3310122f = () => interopDefault(import('../pages/leave/application_denied_by_other.vue' /* webpackChunkName: "pages/leave/application_denied_by_other" */))
 const _750ebdf1 = () => interopDefault(import('../pages/leave/application_form.vue' /* webpackChunkName: "pages/leave/application_form" */))
@@ -69,6 +70,8 @@ const _775c549e = () => interopDefault(import('../pages/web-dui/notice/index.vue
 const _1ead3abe = () => interopDefault(import('../pages/web-dui/program/index.vue' /* webpackChunkName: "pages/web-dui/program/index" */))
 const _6082807a = () => interopDefault(import('../pages/web-dui/slider/index.vue' /* webpackChunkName: "pages/web-dui/slider/index" */))
 const _7d80e0a4 = () => interopDefault(import('../pages/web-dui/tution/index.vue' /* webpackChunkName: "pages/web-dui/tution/index" */))
+const _b7b8f868 = () => interopDefault(import('../pages/account/deposite/create.vue' /* webpackChunkName: "pages/account/deposite/create" */))
+const _625f1cfb = () => interopDefault(import('../pages/account/expense/create.vue' /* webpackChunkName: "pages/account/expense/create" */))
 const _13b41782 = () => interopDefault(import('../pages/admission/admissionInActiveBatch/test.vue' /* webpackChunkName: "pages/admission/admissionInActiveBatch/test" */))
 const _4f6b12fd = () => interopDefault(import('../pages/admission/batch/create.vue' /* webpackChunkName: "pages/admission/batch/create" */))
 const _5ba7997d = () => interopDefault(import('../pages/admission/department/create.vue' /* webpackChunkName: "pages/admission/department/create" */))
@@ -76,7 +79,6 @@ const _4bd116fe = () => interopDefault(import('../pages/employee/department/crea
 const _47c7edbf = () => interopDefault(import('../pages/employee/designation/create.vue' /* webpackChunkName: "pages/employee/designation/create" */))
 const _49c74162 = () => interopDefault(import('../pages/employee/employee/create.vue' /* webpackChunkName: "pages/employee/employee/create" */))
 const _30752e63 = () => interopDefault(import('../pages/employee/employee/show.vue' /* webpackChunkName: "pages/employee/employee/show" */))
-const _004cc578 = () => interopDefault(import('../pages/employee/employee/test.vue' /* webpackChunkName: "pages/employee/employee/test" */))
 const _69979b08 = () => interopDefault(import('../pages/profile/qualification/create.vue' /* webpackChunkName: "pages/profile/qualification/create" */))
 const _a63bbabc = () => interopDefault(import('../pages/profile/social/create.vue' /* webpackChunkName: "pages/profile/social/create" */))
 const _91913fd6 = () => interopDefault(import('../pages/profile/training/create.vue' /* webpackChunkName: "pages/profile/training/create" */))
@@ -174,11 +176,11 @@ export const routerOptions = {
     name: "account-account"
   }, {
     path: "/account/deposite",
-    component: _64175422,
+    component: _6f5e6d32,
     name: "account-deposite"
   }, {
     path: "/account/expense",
-    component: _39f823a0,
+    component: _7dc37223,
     name: "account-expense"
   }, {
     path: "/account/fee-collect",
@@ -248,6 +250,10 @@ export const routerOptions = {
     path: "/employee/designation",
     component: _4b5b78df,
     name: "employee-designation"
+  }, {
+    path: "/employee/employee",
+    component: _2221a4dc,
+    name: "employee-employee"
   }, {
     path: "/employee/office-time",
     component: _e1bd1134,
@@ -385,6 +391,14 @@ export const routerOptions = {
     component: _7d80e0a4,
     name: "web-dui-tution"
   }, {
+    path: "/account/deposite/create",
+    component: _b7b8f868,
+    name: "account-deposite-create"
+  }, {
+    path: "/account/expense/create",
+    component: _625f1cfb,
+    name: "account-expense-create"
+  }, {
     path: "/admission/admissionInActiveBatch/test",
     component: _13b41782,
     name: "admission-admissionInActiveBatch-test"
@@ -412,10 +426,6 @@ export const routerOptions = {
     path: "/employee/employee/show",
     component: _30752e63,
     name: "employee-employee-show"
-  }, {
-    path: "/employee/employee/test",
-    component: _004cc578,
-    name: "employee-employee-test"
   }, {
     path: "/profile/qualification/create",
     component: _69979b08,

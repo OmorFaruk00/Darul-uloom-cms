@@ -26,7 +26,7 @@
                       <th>E-mail</th>
                       <th>Phone</th>
                       <th>Image</th>
-                      <th>Status</th>
+                      <th v-if="$auth.user.permission.includes('Employee-update')">Status</th>
                       <th>Action</th>
                     </tr>
                   </thead>
@@ -41,7 +41,7 @@
                       <td>{{ employee.personal_phone_no }}</td>
                        <td><img :src="base_url + '/images/emp/' + employee.profile_photo" alt="image"
                           style="height:80px;width: 100px;" /></td>
-                      <td>
+                      <td  v-if="$auth.user.permission.includes('Employee-update')">
                         <button v-if="employee.status == 1" class="btn-active" @click="employeeStatus(employee.id)">
                           Active
                         </button>

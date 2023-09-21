@@ -42,7 +42,7 @@ export default function (ctx, inject) {
   // Register strategies
   // laravelSanctum
   $auth.registerStrategy('laravelSanctum', new CookieScheme($auth, {
-  "url": "http://localhost:8000",
+  "url": "https://www.api.darululoom-islamia.org",
   "token": {
     "property": "token",
     "global": true,
@@ -61,7 +61,7 @@ export default function (ctx, inject) {
         "Content-Type": "application/json",
         "Accept": "application/json"
       },
-      "url": "http://localhost:8000/sanctum/csrf-cookie"
+      "url": "https://www.api.darululoom-islamia.org/sanctum/csrf-cookie"
     },
     "login": {
       "withCredentials": true,
@@ -70,7 +70,7 @@ export default function (ctx, inject) {
         "Content-Type": "application/json",
         "Accept": "application/json"
       },
-      "url": "http://localhost:8000/api/login",
+      "url": "https://www.api.darululoom-islamia.org/api/login",
       "method": "post"
     },
     "logout": {
@@ -80,7 +80,7 @@ export default function (ctx, inject) {
         "Content-Type": "application/json",
         "Accept": "application/json"
       },
-      "url": "http://localhost:8000/api/logout",
+      "url": "https://www.api.darululoom-islamia.org/api/logout",
       "method": "post"
     },
     "user": {
@@ -90,7 +90,7 @@ export default function (ctx, inject) {
         "Content-Type": "application/json",
         "Accept": "application/json"
       },
-      "url": "http://localhost:8000/api/user",
+      "url": "https://www.api.darululoom-islamia.org/api/user",
       "method": "get"
     }
   },

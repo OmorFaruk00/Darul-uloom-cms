@@ -78,8 +78,8 @@ export default {
     strategies: {
       laravelSanctum: {
         provider: 'laravel/sanctum',
-        // url: 'https://www.api.darululoom-islamia.org',
-        url: 'http://localhost:8000',
+        url: 'https://www.api.darululoom-islamia.org',
+        // url: 'http://localhost:8000',
         token: {
           property: 'token',
           global: true,
@@ -107,8 +107,8 @@ export default {
 
  
   axios: {   
-    baseURL: 'http://localhost:8000/api',
-    // baseURL: 'https://www.api.darululoom-islamia.org/api',
+    // baseURL: 'http://localhost:8000/api',
+    baseURL: 'https://www.api.darululoom-islamia.org/api',
 
     credentials: true
   },

@@ -86,16 +86,16 @@
   {
     "name": "account-deposite",
     "path": "/account/deposite",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/account/deposite.vue",
-    "chunkName": "pages/account/deposite",
-    "_name": "_64175422"
+    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/account/deposite/index.vue",
+    "chunkName": "pages/account/deposite/index",
+    "_name": "_6f5e6d32"
   },
   {
     "name": "account-expense",
     "path": "/account/expense",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/account/expense.vue",
-    "chunkName": "pages/account/expense",
-    "_name": "_39f823a0"
+    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/account/expense/index.vue",
+    "chunkName": "pages/account/expense/index",
+    "_name": "_7dc37223"
   },
   {
     "name": "account-fee-collect",
@@ -215,6 +215,13 @@
     "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/employee/designation/index.vue",
     "chunkName": "pages/employee/designation/index",
     "_name": "_4b5b78df"
+  },
+  {
+    "name": "employee-employee",
+    "path": "/employee/employee",
+    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/employee/employee/index.vue",
+    "chunkName": "pages/employee/employee/index",
+    "_name": "_2221a4dc"
   },
   {
     "name": "employee-office-time",
@@ -455,6 +462,20 @@
     "_name": "_7d80e0a4"
   },
   {
+    "name": "account-deposite-create",
+    "path": "/account/deposite/create",
+    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/account/deposite/create.vue",
+    "chunkName": "pages/account/deposite/create",
+    "_name": "_b7b8f868"
+  },
+  {
+    "name": "account-expense-create",
+    "path": "/account/expense/create",
+    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/account/expense/create.vue",
+    "chunkName": "pages/account/expense/create",
+    "_name": "_625f1cfb"
+  },
+  {
     "name": "admission-admissionInActiveBatch-test",
     "path": "/admission/admissionInActiveBatch/test",
     "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/admission/admissionInActiveBatch/test.vue",
@@ -502,13 +523,6 @@
     "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/employee/employee/show.vue",
     "chunkName": "pages/employee/employee/show",
     "_name": "_30752e63"
-  },
-  {
-    "name": "employee-employee-test",
-    "path": "/employee/employee/test",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/employee/employee/test.vue",
-    "chunkName": "pages/employee/employee/test",
-    "_name": "_004cc578"
   },
   {
     "name": "profile-qualification-create",
