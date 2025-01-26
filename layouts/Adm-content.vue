@@ -24,6 +24,12 @@
                 <nuxt-link to="/admission/form-sale" v-if="$auth.user.permission.includes('Form-sale')">                
                 Form Sale
               </nuxt-link>
+              <nuxt-link to="/admission/form-sale-list" >                
+                Form Sale List
+              </nuxt-link>
+              <nuxt-link to="/admission/form-unsold-list" >                
+                Form Unsold List
+              </nuxt-link>
             </div>
           </div>
            <div class="dropdown_final_admission_form">

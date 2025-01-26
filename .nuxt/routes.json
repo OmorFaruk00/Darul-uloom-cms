@@ -2,771 +2,785 @@
   {
     "name": "account",
     "path": "/account",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/account/index.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/account/index.vue",
     "chunkName": "pages/account/index",
-    "_name": "_bff9b9cc"
+    "_name": "_56cb27ef"
   },
   {
     "name": "admission",
     "path": "/admission",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/admission/index.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/admission/index.vue",
     "chunkName": "pages/admission/index",
-    "_name": "_4275d176"
+    "_name": "_674ff50b"
   },
   {
     "name": "app",
     "path": "/app",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/app.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/app.vue",
     "chunkName": "pages/app",
-    "_name": "_78bf08cb"
+    "_name": "_43aa23e0"
   },
   {
     "name": "change-password",
     "path": "/change-password",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/change-password.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/change-password.vue",
     "chunkName": "pages/change-password",
-    "_name": "_40fcc042"
+    "_name": "_65d6e3d7"
   },
   {
     "name": "employee",
     "path": "/employee",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/employee/index.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/employee/index.vue",
     "chunkName": "pages/employee/index",
-    "_name": "_68d6c877"
+    "_name": "_e9e1437c"
   },
   {
     "name": "leave",
     "path": "/leave",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/leave/index.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/leave/index.vue",
     "chunkName": "pages/leave/index",
-    "_name": "_0d9ac0b8"
+    "_name": "_0a6fd5b9"
   },
   {
     "name": "password-reset",
     "path": "/password-reset",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/password-reset.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/password-reset.vue",
     "chunkName": "pages/password-reset",
-    "_name": "_79fae3e3"
+    "_name": "_c7990ca4"
   },
   {
     "name": "profile",
     "path": "/profile",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/profile/index.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/profile/index.vue",
     "chunkName": "pages/profile/index",
-    "_name": "_3fdc10d4"
+    "_name": "_d24c072a"
   },
   {
     "name": "setting",
     "path": "/setting",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/setting/index.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/setting/index.vue",
     "chunkName": "pages/setting/index",
-    "_name": "_9b83d106"
+    "_name": "_69061c52"
   },
   {
     "name": "student",
     "path": "/student",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/student/index.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/student/index.vue",
     "chunkName": "pages/student/index",
-    "_name": "_094c3cb0"
+    "_name": "_9bbc3306"
   },
   {
     "name": "web-dui",
     "path": "/web-dui",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/web-dui/index.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/web-dui/index.vue",
     "chunkName": "pages/web-dui/index",
-    "_name": "_93ea1328"
+    "_name": "_6cd2fb41"
   },
   {
     "name": "account-account",
     "path": "/account/account",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/account/account.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/account/account.vue",
     "chunkName": "pages/account/account",
-    "_name": "_63701a16"
+    "_name": "_19bbd2ec"
   },
   {
     "name": "account-deposite",
     "path": "/account/deposite",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/account/deposite/index.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/account/deposite/index.vue",
     "chunkName": "pages/account/deposite/index",
-    "_name": "_6f5e6d32"
+    "_name": "_407607fd"
   },
   {
     "name": "account-expense",
     "path": "/account/expense",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/account/expense/index.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/account/expense/index.vue",
     "chunkName": "pages/account/expense/index",
-    "_name": "_7dc37223"
+    "_name": "_5b37d1f8"
   },
   {
     "name": "account-fee-collect",
     "path": "/account/fee-collect",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/account/fee-collect.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/account/fee-collect.vue",
     "chunkName": "pages/account/fee-collect",
-    "_name": "_7a3cafab"
+    "_name": "_d0fdfe80"
   },
   {
     "name": "account-fund",
     "path": "/account/fund",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/account/fund.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/account/fund.vue",
     "chunkName": "pages/account/fund",
-    "_name": "_37ed142d"
+    "_name": "_4e56a0b8"
   },
   {
     "name": "account-fund-transfer",
     "path": "/account/fund-transfer",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/account/fund-transfer.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/account/fund-transfer.vue",
     "chunkName": "pages/account/fund-transfer",
-    "_name": "_ae8d908a"
+    "_name": "_f3a4d0e0"
   },
   {
     "name": "account-purpose",
     "path": "/account/purpose",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/account/purpose/index.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/account/purpose/index.vue",
     "chunkName": "pages/account/purpose/index",
-    "_name": "_b1c8312e"
+    "_name": "_f6df7184"
   },
   {
     "name": "account-statement",
     "path": "/account/statement",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/account/statement.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/account/statement.vue",
     "chunkName": "pages/account/statement",
-    "_name": "_31d89592"
+    "_name": "_3df3478c"
   },
   {
     "name": "account-sub_fund",
     "path": "/account/sub_fund",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/account/sub_fund.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/account/sub_fund.vue",
     "chunkName": "pages/account/sub_fund",
-    "_name": "_196d674c"
+    "_name": "_e0509352"
   },
   {
     "name": "account-test",
     "path": "/account/test",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/account/test.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/account/test.vue",
     "chunkName": "pages/account/test",
-    "_name": "_bd78f10c"
+    "_name": "_90a5d7f6"
   },
   {
     "name": "admission-admissionInActiveBatch",
     "path": "/admission/admissionInActiveBatch",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/admission/admissionInActiveBatch/index.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/admission/admissionInActiveBatch/index.vue",
     "chunkName": "pages/admission/admissionInActiveBatch/index",
-    "_name": "_31236216"
+    "_name": "_5e761880"
   },
   {
     "name": "admission-batch",
     "path": "/admission/batch",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/admission/batch/index.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/admission/batch/index.vue",
     "chunkName": "pages/admission/batch/index",
-    "_name": "_3f80983e"
+    "_name": "_8497d894"
   },
   {
     "name": "admission-department",
     "path": "/admission/department",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/admission/department/index.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/admission/department/index.vue",
     "chunkName": "pages/admission/department/index",
-    "_name": "_a1cf453e"
+    "_name": "_bc00caa8"
   },
   {
     "name": "admission-dept-wish-student",
     "path": "/admission/dept-wish-student",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/admission/dept-wish-student.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/admission/dept-wish-student.vue",
     "chunkName": "pages/admission/dept-wish-student",
-    "_name": "_1100527e"
+    "_name": "_618042d6"
   },
   {
     "name": "admission-form-import",
     "path": "/admission/form-import",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/admission/form-import.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/admission/form-import.vue",
     "chunkName": "pages/admission/form-import",
-    "_name": "_d353031c"
+    "_name": "_73cade47"
   },
   {
     "name": "admission-form-sale",
     "path": "/admission/form-sale",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/admission/form-sale.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/admission/form-sale.vue",
     "chunkName": "pages/admission/form-sale",
-    "_name": "_97d25958"
+    "_name": "_5d49b72e"
+  },
+  {
+    "name": "admission-form-sale-list",
+    "path": "/admission/form-sale-list",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/admission/form-sale-list.vue",
+    "chunkName": "pages/admission/form-sale-list",
+    "_name": "_1cab1f9c"
   },
   {
     "name": "admission-form-stock",
     "path": "/admission/form-stock",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/admission/form-stock.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/admission/form-stock.vue",
     "chunkName": "pages/admission/form-stock",
-    "_name": "_22fdd159"
+    "_name": "_a378ba38"
+  },
+  {
+    "name": "admission-form-unsold-list",
+    "path": "/admission/form-unsold-list",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/admission/form-unsold-list.vue",
+    "chunkName": "pages/admission/form-unsold-list",
+    "_name": "_6c927268"
   },
   {
     "name": "admission-search-student",
     "path": "/admission/search-student",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/admission/search-student.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/admission/search-student.vue",
     "chunkName": "pages/admission/search-student",
-    "_name": "_73225922"
+    "_name": "_5cbe6d2d"
   },
   {
     "name": "employee-department",
     "path": "/employee/department",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/employee/department/index.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/employee/department/index.vue",
     "chunkName": "pages/employee/department/index",
-    "_name": "_3af8abc0"
+    "_name": "_f641cdd6"
   },
   {
     "name": "employee-designation",
     "path": "/employee/designation",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/employee/designation/index.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/employee/designation/index.vue",
     "chunkName": "pages/employee/designation/index",
-    "_name": "_4b5b78df"
+    "_name": "_3e42b62a"
   },
   {
     "name": "employee-employee",
     "path": "/employee/employee",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/employee/employee/index.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/employee/employee/index.vue",
     "chunkName": "pages/employee/employee/index",
-    "_name": "_2221a4dc"
+    "_name": "_73fd6371"
   },
   {
     "name": "employee-office-time",
     "path": "/employee/office-time",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/employee/office-time/index.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/employee/office-time/index.vue",
     "chunkName": "pages/employee/office-time/index",
-    "_name": "_e1bd1134"
+    "_name": "_fbee969e"
   },
   {
     "name": "leave-application_denied_by_other",
     "path": "/leave/application_denied_by_other",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/leave/application_denied_by_other.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/leave/application_denied_by_other.vue",
     "chunkName": "pages/leave/application_denied_by_other",
-    "_name": "_3310122f"
+    "_name": "_d61b4af8"
   },
   {
     "name": "leave-application_form",
     "path": "/leave/application_form",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/leave/application_form.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/leave/application_form.vue",
     "chunkName": "pages/leave/application_form",
-    "_name": "_750ebdf1"
+    "_name": "_462658bc"
   },
   {
     "name": "leave-approval_application",
     "path": "/leave/approval_application",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/leave/approval_application.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/leave/approval_application.vue",
     "chunkName": "pages/leave/approval_application",
-    "_name": "_26a48d72"
+    "_name": "_198bcabd"
   },
   {
     "name": "leave-approved_application",
     "path": "/leave/approved_application",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/leave/approved_application.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/leave/approved_application.vue",
     "chunkName": "pages/leave/approved_application",
-    "_name": "_98c5b434"
+    "_name": "_b2f7399e"
   },
   {
     "name": "leave-pending_application",
     "path": "/leave/pending_application",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/leave/pending_application.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/leave/pending_application.vue",
     "chunkName": "pages/leave/pending_application",
-    "_name": "_1d739e0c"
+    "_name": "_3b2c9e4f"
   },
   {
     "name": "leave-self_denied_application",
     "path": "/leave/self_denied_application",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/leave/self_denied_application.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/leave/self_denied_application.vue",
     "chunkName": "pages/leave/self_denied_application",
-    "_name": "_55adc851"
+    "_name": "_41438326"
   },
   {
     "name": "leave-withdraw_application",
     "path": "/leave/withdraw_application",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/leave/withdraw_application.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/leave/withdraw_application.vue",
     "chunkName": "pages/leave/withdraw_application",
-    "_name": "_9f90778e"
+    "_name": "_b9c1fcf8"
   },
   {
     "name": "profile-qualification",
     "path": "/profile/qualification",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/profile/qualification/index.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/profile/qualification/index.vue",
     "chunkName": "pages/profile/qualification/index",
-    "_name": "_33ac7e76"
+    "_name": "_c4a62aea"
   },
   {
     "name": "profile-social",
     "path": "/profile/social",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/profile/social/index.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/profile/social/index.vue",
     "chunkName": "pages/profile/social/index",
-    "_name": "_28f4c8c8"
+    "_name": "_76cb6d27"
   },
   {
     "name": "profile-training",
     "path": "/profile/training",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/profile/training/index.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/profile/training/index.vue",
     "chunkName": "pages/profile/training/index",
-    "_name": "_25a963c9"
+    "_name": "_127e02d8"
   },
   {
     "name": "profile-update",
     "path": "/profile/update",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/profile/update.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/profile/update.vue",
     "chunkName": "pages/profile/update",
-    "_name": "_32bda196"
+    "_name": "_08d9c500"
   },
   {
     "name": "setting-assign-role",
     "path": "/setting/assign-role",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/setting/assign-role.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/setting/assign-role.vue",
     "chunkName": "pages/setting/assign-role",
-    "_name": "_415e41ff"
+    "_name": "_5ea29314"
   },
   {
     "name": "setting-permission",
     "path": "/setting/permission",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/setting/permission.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/setting/permission.vue",
     "chunkName": "pages/setting/permission",
-    "_name": "_018337b4"
+    "_name": "_f2d42002"
   },
   {
     "name": "setting-role",
     "path": "/setting/role",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/setting/role.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/setting/role.vue",
     "chunkName": "pages/setting/role",
-    "_name": "_49eda49b"
+    "_name": "_60573126"
   },
   {
     "name": "setting-special-permission",
     "path": "/setting/special-permission",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/setting/special-permission.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/setting/special-permission.vue",
     "chunkName": "pages/setting/special-permission",
-    "_name": "_453bde48"
+    "_name": "_38231b93"
   },
   {
     "name": "student-attendance",
     "path": "/student/attendance",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/student/attendance/index.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/student/attendance/index.vue",
     "chunkName": "pages/student/attendance/index",
-    "_name": "_1ff0e8c6"
+    "_name": "_098cfcd1"
   },
   {
     "name": "student-course",
     "path": "/student/course",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/student/course/index.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/student/course/index.vue",
     "chunkName": "pages/student/course/index",
-    "_name": "_b2ec3f10"
+    "_name": "_31cfb203"
   },
   {
     "name": "student-lecture-sheet",
     "path": "/student/lecture-sheet",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/student/lecture-sheet/index.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/student/lecture-sheet/index.vue",
     "chunkName": "pages/student/lecture-sheet/index",
-    "_name": "_16fbe629"
+    "_name": "_fe075b84"
   },
   {
     "name": "student-lesson-plan",
     "path": "/student/lesson-plan",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/student/lesson-plan/index.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/student/lesson-plan/index.vue",
     "chunkName": "pages/student/lesson-plan/index",
-    "_name": "_58afe312"
+    "_name": "_1d8e7bcc"
   },
   {
     "name": "student-question",
     "path": "/student/question",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/student/question/index.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/student/question/index.vue",
     "chunkName": "pages/student/question/index",
-    "_name": "_2b198203"
+    "_name": "_079dc664"
   },
   {
     "name": "student-search-student",
     "path": "/student/search-student",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/student/search-student.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/student/search-student.vue",
     "chunkName": "pages/student/search-student",
-    "_name": "_6faf3da0"
+    "_name": "_cd80080a"
   },
   {
     "name": "student-students",
     "path": "/student/students",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/student/students/index.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/student/students/index.vue",
     "chunkName": "pages/student/students/index",
-    "_name": "_9753d596"
+    "_name": "_f524a000"
   },
   {
     "name": "student-syllabus",
     "path": "/student/syllabus",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/student/syllabus/index.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/student/syllabus/index.vue",
     "chunkName": "pages/student/syllabus/index",
-    "_name": "_7a782142"
+    "_name": "_4b8fbc0d"
   },
   {
     "name": "web-dui-blog",
     "path": "/web-dui/blog",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/web-dui/blog/index.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/web-dui/blog/index.vue",
     "chunkName": "pages/web-dui/blog/index",
-    "_name": "_3c31d17b"
+    "_name": "_7d76ec74"
   },
   {
     "name": "web-dui-committee",
     "path": "/web-dui/committee",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/web-dui/committee/index.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/web-dui/committee/index.vue",
     "chunkName": "pages/web-dui/committee/index",
-    "_name": "_6ad89fda"
+    "_name": "_86974322"
   },
   {
     "name": "web-dui-contact",
     "path": "/web-dui/contact",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/web-dui/contact.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/web-dui/contact.vue",
     "chunkName": "pages/web-dui/contact",
-    "_name": "_5077a23a"
+    "_name": "_7551c5cf"
   },
   {
     "name": "web-dui-event",
     "path": "/web-dui/event",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/web-dui/event/index.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/web-dui/event/index.vue",
     "chunkName": "pages/web-dui/event/index",
-    "_name": "_9fd0a892"
+    "_name": "_65480668"
   },
   {
     "name": "web-dui-facilitie",
     "path": "/web-dui/facilitie",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/web-dui/facilitie/index.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/web-dui/facilitie/index.vue",
     "chunkName": "pages/web-dui/facilitie/index",
-    "_name": "_42772362"
+    "_name": "_30a02ce4"
   },
   {
     "name": "web-dui-gallery",
     "path": "/web-dui/gallery",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/web-dui/gallery/index.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/web-dui/gallery/index.vue",
     "chunkName": "pages/web-dui/gallery/index",
-    "_name": "_46bedc22"
+    "_name": "_8bd61c78"
   },
   {
     "name": "web-dui-notice",
     "path": "/web-dui/notice",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/web-dui/notice/index.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/web-dui/notice/index.vue",
     "chunkName": "pages/web-dui/notice/index",
-    "_name": "_775c549e"
+    "_name": "_4f97a73c"
   },
   {
     "name": "web-dui-program",
     "path": "/web-dui/program",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/web-dui/program/index.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/web-dui/program/index.vue",
     "chunkName": "pages/web-dui/program/index",
-    "_name": "_1ead3abe"
+    "_name": "_63c47b14"
   },
   {
     "name": "web-dui-slider",
     "path": "/web-dui/slider",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/web-dui/slider/index.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/web-dui/slider/index.vue",
     "chunkName": "pages/web-dui/slider/index",
-    "_name": "_6082807a"
+    "_name": "_286f5bf6"
   },
   {
     "name": "web-dui-tution",
     "path": "/web-dui/tution",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/web-dui/tution/index.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/web-dui/tution/index.vue",
     "chunkName": "pages/web-dui/tution/index",
-    "_name": "_7d80e0a4"
+    "_name": "_4c856139"
   },
   {
     "name": "account-deposite-create",
     "path": "/account/deposite/create",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/account/deposite/create.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/account/deposite/create.vue",
     "chunkName": "pages/account/deposite/create",
-    "_name": "_b7b8f868"
+    "_name": "_14017b3e"
   },
   {
     "name": "account-expense-create",
     "path": "/account/expense/create",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/account/expense/create.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/account/expense/create.vue",
     "chunkName": "pages/account/expense/create",
-    "_name": "_625f1cfb"
+    "_name": "_3376b7c6"
   },
   {
     "name": "admission-admissionInActiveBatch-test",
     "path": "/admission/admissionInActiveBatch/test",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/admission/admissionInActiveBatch/test.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/admission/admissionInActiveBatch/test.vue",
     "chunkName": "pages/admission/admissionInActiveBatch/test",
-    "_name": "_13b41782"
+    "_name": "_db5bebd8"
   },
   {
     "name": "admission-batch-create",
     "path": "/admission/batch/create",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/admission/batch/create.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/admission/batch/create.vue",
     "chunkName": "pages/admission/batch/create",
-    "_name": "_4f6b12fd"
+    "_name": "_2082adc8"
   },
   {
     "name": "admission-department-create",
     "path": "/admission/department/create",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/admission/department/create.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/admission/department/create.vue",
     "chunkName": "pages/admission/department/create",
-    "_name": "_5ba7997d"
+    "_name": "_74aff4dc"
   },
   {
     "name": "employee-department-create",
     "path": "/employee/department/create",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/employee/department/create.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/employee/department/create.vue",
     "chunkName": "pages/employee/department/create",
-    "_name": "_4bd116fe"
+    "_name": "_3eb85449"
   },
   {
     "name": "employee-designation-create",
     "path": "/employee/designation/create",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/employee/designation/create.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/employee/designation/create.vue",
     "chunkName": "pages/employee/designation/create",
-    "_name": "_47c7edbf"
+    "_name": "_9c6f4c58"
   },
   {
     "name": "employee-employee-create",
     "path": "/employee/employee/create",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/employee/employee/create.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/employee/employee/create.vue",
     "chunkName": "pages/employee/employee/create",
-    "_name": "_49c74162"
+    "_name": "_3363556d"
   },
   {
     "name": "employee-employee-show",
     "path": "/employee/employee/show",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/employee/employee/show.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/employee/employee/show.vue",
     "chunkName": "pages/employee/employee/show",
-    "_name": "_30752e63"
+    "_name": "_018cc92e"
   },
   {
     "name": "profile-qualification-create",
     "path": "/profile/qualification/create",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/profile/qualification/create.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/profile/qualification/create.vue",
     "chunkName": "pages/profile/qualification/create",
-    "_name": "_69979b08"
+    "_name": "_3fa4b193"
   },
   {
     "name": "profile-social-create",
     "path": "/profile/social/create",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/profile/social/create.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/profile/social/create.vue",
     "chunkName": "pages/profile/social/create",
-    "_name": "_a63bbabc"
+    "_name": "_eb52fb12"
   },
   {
     "name": "profile-training-create",
     "path": "/profile/training/create",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/profile/training/create.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/profile/training/create.vue",
     "chunkName": "pages/profile/training/create",
-    "_name": "_91913fd6"
+    "_name": "_09131eaa"
   },
   {
     "name": "student-attendance-report",
     "path": "/student/attendance/report",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/student/attendance/report.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/student/attendance/report.vue",
     "chunkName": "pages/student/attendance/report",
-    "_name": "_276252f0"
+    "_name": "_7148c045"
   },
   {
     "name": "student-course-assign",
     "path": "/student/course/assign",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/student/course/assign.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/student/course/assign.vue",
     "chunkName": "pages/student/course/assign",
-    "_name": "_3dea27b9"
+    "_name": "_1b5e878e"
   },
   {
     "name": "student-course-create",
     "path": "/student/course/create",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/student/course/create.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/student/course/create.vue",
     "chunkName": "pages/student/course/create",
-    "_name": "_52667946"
+    "_name": "_2fdad91b"
   },
   {
     "name": "student-lecture-sheet-create",
     "path": "/student/lecture-sheet/create",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/student/lecture-sheet/create.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/student/lecture-sheet/create.vue",
     "chunkName": "pages/student/lecture-sheet/create",
-    "_name": "_1f95ac96"
+    "_name": "_737b7f80"
   },
   {
     "name": "student-lesson-plan-create",
     "path": "/student/lesson-plan/create",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/student/lesson-plan/create.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/student/lesson-plan/create.vue",
     "chunkName": "pages/student/lesson-plan/create",
-    "_name": "_6de3e9b2"
+    "_name": "_88156f1c"
   },
   {
     "name": "student-question-create",
     "path": "/student/question/create",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/student/question/create.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/student/question/create.vue",
     "chunkName": "pages/student/question/create",
-    "_name": "_5fcb091b"
+    "_name": "_9cb270a0"
   },
   {
     "name": "student-syllabus-create",
     "path": "/student/syllabus/create",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/student/syllabus/create.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/student/syllabus/create.vue",
     "chunkName": "pages/student/syllabus/create",
-    "_name": "_077f5c88"
+    "_name": "_4e1c1051"
   },
   {
     "name": "web-dui-blog-create",
     "path": "/web-dui/blog/create",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/web-dui/blog/create.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/web-dui/blog/create.vue",
     "chunkName": "pages/web-dui/blog/create",
-    "_name": "_71bca8a3"
+    "_name": "_e1fe0c90"
   },
   {
     "name": "web-dui-committee-create",
     "path": "/web-dui/committee/create",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/web-dui/committee/create.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/web-dui/committee/create.vue",
     "chunkName": "pages/web-dui/committee/create",
-    "_name": "_17efa624"
+    "_name": "_018bba2f"
   },
   {
     "name": "web-dui-event-create",
     "path": "/web-dui/event/create",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/web-dui/event/create.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/web-dui/event/create.vue",
     "chunkName": "pages/web-dui/event/create",
-    "_name": "_7a9215e7"
+    "_name": "_05d7e772"
   },
   {
     "name": "web-dui-facilitie-create",
     "path": "/web-dui/facilitie/create",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/web-dui/facilitie/create.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/web-dui/facilitie/create.vue",
     "chunkName": "pages/web-dui/facilitie/create",
-    "_name": "_217da64f"
+    "_name": "_0b19ba5a"
   },
   {
     "name": "web-dui-notice-create",
     "path": "/web-dui/notice/create",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/web-dui/notice/create.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/web-dui/notice/create.vue",
     "chunkName": "pages/web-dui/notice/create",
-    "_name": "_24c5a9a6"
+    "_name": "_69dce9fc"
   },
   {
     "name": "web-dui-program-create",
     "path": "/web-dui/program/create",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/web-dui/program/create.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/web-dui/program/create.vue",
     "chunkName": "pages/web-dui/program/create",
-    "_name": "_4c373c3d"
+    "_name": "_1d4ed708"
   },
   {
     "name": "web-dui-slider-create",
     "path": "/web-dui/slider/create",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/web-dui/slider/create.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/web-dui/slider/create.vue",
     "chunkName": "pages/web-dui/slider/create",
-    "_name": "_50fc4cf8"
+    "_name": "_96138d4e"
   },
   {
     "name": "web-dui-tution-create",
     "path": "/web-dui/tution/create",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/web-dui/tution/create.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/web-dui/tution/create.vue",
     "chunkName": "pages/web-dui/tution/create",
-    "_name": "_e3329e60"
+    "_name": "_6bdb10a5"
   },
   {
     "name": "account-purpose-update-id",
     "path": "/account/purpose/update/:id?",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/account/purpose/update/_id.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/account/purpose/update/_id.vue",
     "chunkName": "pages/account/purpose/update/_id",
-    "_name": "_4efed66d"
+    "_name": "_41e613b8"
   },
   {
     "name": "admission-admissionInActiveBatch-create-id",
     "path": "/admission/admissionInActiveBatch/create/:id?",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/admission/admissionInActiveBatch/create/_id.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/admission/admissionInActiveBatch/create/_id.vue",
     "chunkName": "pages/admission/admissionInActiveBatch/create/_id",
-    "_name": "_271acb94"
+    "_name": "_4e9b24ae"
   },
   {
     "name": "admission-batch-BatchWiseStudent-id",
     "path": "/admission/batch/BatchWiseStudent/:id?",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/admission/batch/BatchWiseStudent/_id.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/admission/batch/BatchWiseStudent/_id.vue",
     "chunkName": "pages/admission/batch/BatchWiseStudent/_id",
-    "_name": "_6f5e232e"
+    "_name": "_b7df6c18"
   },
   {
     "name": "admission-batch-update-id",
     "path": "/admission/batch/update/:id?",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/admission/batch/update/_id.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/admission/batch/update/_id.vue",
     "chunkName": "pages/admission/batch/update/_id",
-    "_name": "_3d2014f5"
+    "_name": "_30075240"
   },
   {
     "name": "employee-employee-detail-id",
     "path": "/employee/employee/detail/:id?",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/employee/employee/detail/_id.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/employee/employee/detail/_id.vue",
     "chunkName": "pages/employee/employee/detail/_id",
-    "_name": "_01ba6062"
+    "_name": "_50711226"
   },
   {
     "name": "employee-employee-update-id",
     "path": "/employee/employee/update/:id?",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/employee/employee/update/_id.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/employee/employee/update/_id.vue",
     "chunkName": "pages/employee/employee/update/_id",
-    "_name": "_374488da"
+    "_name": "_0d519f65"
   },
   {
     "name": "student-attendance-create-id",
     "path": "/student/attendance/create/:id?",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/student/attendance/create/_id.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/student/attendance/create/_id.vue",
     "chunkName": "pages/student/attendance/create/_id",
-    "_name": "_69f4ac63"
+    "_name": "_558a6738"
   },
   {
     "name": "student-course-update-id",
     "path": "/student/course/update/:id?",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/student/course/update/_id.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/student/course/update/_id.vue",
     "chunkName": "pages/student/course/update/_id",
-    "_name": "_2805a284"
+    "_name": "_35e39c13"
   },
   {
     "name": "student-lecture-sheet-update-id",
     "path": "/student/lecture-sheet/update/:id",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/student/lecture-sheet/update/_id.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/student/lecture-sheet/update/_id.vue",
     "chunkName": "pages/student/lecture-sheet/update/_id",
-    "_name": "_addfe0a6"
+    "_name": "_236e2e90"
   },
   {
     "name": "student-lesson-plan-update-id",
     "path": "/student/lesson-plan/update/:id",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/student/lesson-plan/update/_id.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/student/lesson-plan/update/_id.vue",
     "chunkName": "pages/student/lesson-plan/update/_id",
-    "_name": "_82522fc2"
+    "_name": "_45f887ea"
   },
   {
     "name": "student-question-update-id",
     "path": "/student/question/update/:id?",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/student/question/update/_id.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/student/question/update/_id.vue",
     "chunkName": "pages/student/question/update/_id",
-    "_name": "_db8867da"
+    "_name": "_07878fb0"
   },
   {
     "name": "student-syllabus-update-id",
     "path": "/student/syllabus/update/:id?",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/student/syllabus/update/_id.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/student/syllabus/update/_id.vue",
     "chunkName": "pages/student/syllabus/update/_id",
-    "_name": "_28ac4798"
+    "_name": "_55aa4849"
   },
   {
     "name": "web-dui-committee-update-id",
     "path": "/web-dui/committee/update/:id",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/web-dui/committee/update/_id.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/web-dui/committee/update/_id.vue",
     "chunkName": "pages/web-dui/committee/update/_id",
-    "_name": "_3d48bc9c"
+    "_name": "_1355d327"
   },
   {
     "name": "admission-print-receive-id",
     "path": "/admission/print-receive/:id?",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/admission/print-receive/_id.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/admission/print-receive/_id.vue",
     "chunkName": "pages/admission/print-receive/_id",
-    "_name": "_21940a12"
+    "_name": "_e8d713b2"
   },
   {
     "name": "admission-student-update-id",
     "path": "/admission/student-update/:id?",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/admission/student-update/_id.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/admission/student-update/_id.vue",
     "chunkName": "pages/admission/student-update/_id",
-    "_name": "_7d3d8652"
+    "_name": "_534a9cdd"
   },
   {
     "name": "password-reset-confirm-token",
     "path": "/password-reset-confirm/:token?",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/password-reset-confirm/_token.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/password-reset-confirm/_token.vue",
     "chunkName": "pages/password-reset-confirm/_token",
-    "_name": "_087dd383"
+    "_name": "_17d8e350"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/media/omorfaruk/0D3E384B49BCFC29/Darul-uloom-cms/pages/index.vue",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/index.vue",
     "chunkName": "pages/index",
-    "_name": "_0ae5cb08"
+    "_name": "_91c4775e"
   }
 ]

@@ -53,12 +53,12 @@ export default {
         },
         importForm() {
             this.$axios.$post('/admission/form-import', this.form).then(response => {
-                this.$toaster.success(response.message);
+                this.$toaster.success('Form Imported Successfully');
                 this.form = '',
                 this.errors = '';
             }).catch(error => {
                 this.errors = error.response.data.errors;
-                this.$toast.error(error.response.data.message);
+                this.$toast.error("Something went wrong");
             });
 
 

@@ -37,10 +37,16 @@
                     <h6 v-if="errors.duration" v-text="errors.duration[0]" class="text-danger"></h6>
                 </div>
                 <div class="form-group">
-                    <label for="" class="">Total Fee</label>
+                    <label for="" class="">Monthly Fee For Male</label>
                     <input type="text" class="form-control" id="name_of_program" placeholder="Total Fee"
-                        v-model="tution.total_fee" />
-                    <p v-if="errors.total_fee" v-text="errors.total_fee[0]" class="text-danger"></p>
+                        v-model="tution.monthly_fee_for_male" />
+                    <p v-if="errors.monthly_fee_for_male" v-text="errors.monthly_fee_for_male[0]" class="text-danger"></p>
+                </div>
+                <div class="form-group">
+                    <label for="" class="">Monthly Fee For Male</label>
+                    <input type="text" class="form-control" id="name_of_program" placeholder="Total Fee"
+                        v-model="tution.monthly_fee_for_female" />
+                    <p v-if="errors.monthly_fee_for_female" v-text="errors.monthly_fee_for_male[0]" class="text-danger"></p>
                 </div>
 
                 <div class="d-flex justify-content-end">
@@ -60,7 +66,8 @@ export default {
         return {
             tution: {
                 name_of_program: "",
-                total_fee: "",
+                monthly_fee_for_male: "",
+                monthly_fee_for_female: "",
                 duration: "",
                 type: "",
 

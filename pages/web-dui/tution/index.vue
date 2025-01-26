@@ -22,7 +22,8 @@
                     <th>Name Of Program</th>
                     <th>Duration</th>
                     <th>Type</th>
-                    <th>Total Fee</th>
+                    <th>Monthly Fee For Male</th>
+                    <th>Monthly Fee For Female</th>
                     <th>Status</th>
                     <th style="width:200px">Action</th>
                   </tr>
@@ -33,7 +34,8 @@
                     <td>{{ tution.name_of_program }}</td>
                     <td>{{ tution.duration }}</td>
                     <td>{{ tution.type }}</td>
-                    <td>{{ tution.total_fee }}</td>
+                    <td>{{ tution.monthly_fee_for_male }}</td>
+                    <td>{{ tution.monthly_fee_for_female }}</td>
                     <td>
                       <button v-if="tution.status == 1" class="btn-active" @click="tutionStatus(tution.id)">
                         Active
