@@ -410,7 +410,7 @@
                           <br />               
                           <span class="text-danger"
                             >File extension must be jpeg,jpg,png and max file size
-                            1024KB</span
+                            2MB</span
                           >                      
   
                           <img
@@ -448,7 +448,7 @@
   
                           <span class="text-danger"
                             >File extension must be jpeg,jpg,png and max file size
-                            500KB</span
+                            2MB</span
                           >
                           <br />
   
@@ -915,7 +915,7 @@
   
                                 <span class="text-danger"
                                   >File extension must be jpeg,jpg,png and max
-                                  file size 1024KB</span
+                                  file size 2MB</span
                                 >
                                 <br />
   
@@ -1169,7 +1169,7 @@
                                 <br />
                                 <span class="text-danger"
                                   >File extension must be jpeg,jpg,png and max
-                                  file size 1024KB</span
+                                  file size 2MB</span
                                 >
                                 <br />
                                 <img
@@ -2419,8 +2419,8 @@
         const file = document.getElementById("file_input").files[0];
         this.file_path = URL.createObjectURL(file);
   
-        if (FileSize > 1) {
-          alert("File max size must be 1024KB");
+        if (FileSize > 2) {
+          alert("File max size must be 2MB");
           $("#file_input").val("");
           this.file_path = "";
           return false;
@@ -2436,8 +2436,8 @@
         const file = document.getElementById("birth_certificate_photo").files[0];
         this.birth_certificate_photo_path = URL.createObjectURL(file);
   
-        if (FileSize > 1) {
-          alert("File max size must be 500KB");
+        if (FileSize > 2) {
+          alert("File max size must be 2MB");
           $("#birth_certificate_photo").val("");
           this.birth_certificate_photo_path = "";
           return false;
@@ -2450,8 +2450,8 @@
         const file = document.getElementById("f_photo").files[0];
         this.f_photo_path = URL.createObjectURL(file);
   
-        if (FileSize > 1) {
-          alert("File max size must be 500KB");
+        if (FileSize > 2) {
+          alert("File max size must be 2MB");
           $("#f_photo").val("");
           this.f_photo_path = "";
           return false;
@@ -2464,8 +2464,8 @@
         const file = document.getElementById("g_photo").files[0];
         this.g_photo_path = URL.createObjectURL(file);
   
-        if (FileSize > 1) {
-          alert("File max size must be 500KB");
+        if (FileSize > 2) {
+          alert("File max size must be 2MB");
           $("#g_photo").val("");
           this.birth_certificate_photo_path = "";
           return false;
