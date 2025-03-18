@@ -62,6 +62,7 @@ const _079dc664 = () => interopDefault(import('../pages/student/question/index.v
 const _cd80080a = () => interopDefault(import('../pages/student/search-student.vue' /* webpackChunkName: "pages/student/search-student" */))
 const _f524a000 = () => interopDefault(import('../pages/student/students/index.vue' /* webpackChunkName: "pages/student/students/index" */))
 const _4b8fbc0d = () => interopDefault(import('../pages/student/syllabus/index.vue' /* webpackChunkName: "pages/student/syllabus/index" */))
+const _a7308a08 = () => interopDefault(import('../pages/student/update-image.vue' /* webpackChunkName: "pages/student/update-image" */))
 const _7d76ec74 = () => interopDefault(import('../pages/web-dui/blog/index.vue' /* webpackChunkName: "pages/web-dui/blog/index" */))
 const _86974322 = () => interopDefault(import('../pages/web-dui/committee/index.vue' /* webpackChunkName: "pages/web-dui/committee/index" */))
 const _7551c5cf = () => interopDefault(import('../pages/web-dui/contact.vue' /* webpackChunkName: "pages/web-dui/contact" */))
@@ -360,6 +361,10 @@ export const routerOptions = {
     path: "/student/syllabus",
     component: _4b8fbc0d,
     name: "student-syllabus"
+  }, {
+    path: "/student/update-image",
+    component: _a7308a08,
+    name: "student-update-image"
   }, {
     path: "/web-dui/blog",
     component: _7d76ec74,

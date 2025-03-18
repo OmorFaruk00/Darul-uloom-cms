@@ -406,6 +406,13 @@
     "_name": "_4b8fbc0d"
   },
   {
+    "name": "student-update-image",
+    "path": "/student/update-image",
+    "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/student/update-image.vue",
+    "chunkName": "pages/student/update-image",
+    "_name": "_a7308a08"
+  },
+  {
     "name": "web-dui-blog",
     "path": "/web-dui/blog",
     "component": "/home/omorfaruk/Desktop/Project/Darul Uloom/Darul-uloom-cms/pages/web-dui/blog/index.vue",
