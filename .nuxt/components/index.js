@@ -1,4 +1,4 @@
-export const Topnav = () => import('../../components/Topnav.vue' /* webpackChunkName: "components/topnav" */).then(c => wrapFunctional(c.default || c))
+export { default as Topnav } from '../../components/Topnav.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {
