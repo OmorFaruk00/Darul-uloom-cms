@@ -1,5 +1,5 @@
 <template>
-  <section class="col-md-6 mx-auto py-5">   
+  <section class="col-md-6 mx-auto py-5">
       <div class="form-shadow p-5">
         <div class="row">
           <div class="col-md-12 col-xl-12 col-sm-12">
@@ -37,7 +37,7 @@
             </div>
           </div>
         </div>
-      </div>    
+      </div>
     <div class="mt-3" v-if="statements">
       <div class="form-shadow p-5">
         <h4 class="card-title text-center">Student Account Statement</h4>
@@ -46,23 +46,25 @@
             <thead>
               <tr>
                 <th>Sl</th>
+                <th>CashId</th>
                 <th>Date</th>
-                <th>Receipt</th>
+                <th>Receipt No</th>
                 <th>Purpose </th>
-                <th class="text-right">Amount</th>              
+                <th class="text-right">Amount</th>
               </tr>
             </thead>
             <tbody>
               <tr v-for="(rows, index) in statements" :key="index">
                 <td>{{ index + 1 }}</td>
+                <td>{{ rows.id }}</td>
                 <td>{{ rows.date }}</td>
                 <td>{{ rows.receipt_no }}</td>
                 <td>{{ rows.purpose.name }}</td>
-                <td class="text-right">{{ rows.amount }}</td>            
-               
+                <td class="text-right">{{ rows.amount }}</td>
+
               </tr>
               <tr>
-                <td colspan="4">
+                <td colspan="5">
                   <h6 class="text-right">Total Paid</h6>
                 </td>
                 <td>
@@ -118,7 +120,7 @@ export default {
   },
   created() {
     this.getDepartment();
-    
+
   },
   methods: {
     getDepartment() {

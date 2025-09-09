@@ -98,8 +98,8 @@ export default {
 	data() {
 		return {
 			login: {
-				email: "",
-				password: "",
+				email: "admin@gmail.com",
+				password: "Dui@1234",
 			},
 			errors: [],
 			login_error: "",
@@ -122,8 +122,8 @@ export default {
 				this.nonvisibile = true;
 				this.visibile = false;
 			}
-		},	
-		
+		},
+
 		async userLogin() {
 			await this.$auth
 				.loginWith("laravelSanctum", { data: this.login })

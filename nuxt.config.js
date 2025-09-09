@@ -36,7 +36,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
 
-  css: [   
+  css: [
   //  '@/assets/css/main.css',
   //  '/css/font-awesome.min.css',
 
@@ -78,8 +78,8 @@ export default {
     strategies: {
       laravelSanctum: {
         provider: 'laravel/sanctum',
-        // url: 'https://api.darululoom-islamia.org',
-        url: 'http://localhost:8000',
+        url: 'https://api.darululoom-islamia.org',
+        // url: 'http://localhost:8000',
         token: {
           property: 'token',
           global: true,
@@ -105,10 +105,10 @@ export default {
         }
   },
 
- 
-  axios: {   
-    baseURL: 'http://localhost:8000/api',
-    // baseURL: 'https://api.darululoom-islamia.org/api',
+
+  axios: {
+    // baseURL: 'http://localhost:8000/api',
+    baseURL: 'https://api.darululoom-islamia.org/api',
 
     credentials: true
   },
@@ -128,7 +128,7 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-   
+
   }
 
 }
